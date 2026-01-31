@@ -1,0 +1,47 @@
+[gd_scene format=4 uid="uid://dasofxp1cgwec"]
+
+[ext_resource type="Texture2D" uid="uid://dsoeb3h3mx354" path="res://art/interior/parkett_tile.png" id="1_78dr7"]
+[ext_resource type="Texture2D" uid="uid://blpc46hp5lwo3" path="res://art/interior/skirting.png" id="1_njkbw"]
+[ext_resource type="Texture2D" uid="uid://8wh8l24qxmsb" path="res://art/interior/stucco.png" id="2_oad0b"]
+[ext_resource type="PackedScene" uid="uid://dep05ji8y74ox" path="res://scenes/DetectiveCharacter.tscn" id="3_oad0b"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvgt0"]
+texture = ExtResource("1_78dr7")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_703yv"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_pvgt0")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_78dr7"]
+texture = ExtResource("1_njkbw")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_svklx"]
+texture = ExtResource("2_oad0b")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_pvgt0"]
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_78dr7")
+sources/2 = SubResource("TileSetAtlasSource_svklx")
+
+[node name="OlesScene" type="Node2D" unique_id=877657729]
+metadata/_edit_horizontal_guides_ = [7.0]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1800031399]
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="Node2D" unique_id=1271249723]
+tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD//wAAAAAAAAAAAAD+/wAAAAAAAAAAAAD+/wEAAAAAAAAAAAD//wEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAP//AAAAAAAAAAABAAEAAAAAAAAAAAABAP//AAAAAAAAAAD+////AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_703yv")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Node2D" unique_id=412538307]
+tile_map_data = PackedByteArray("AAACAAAAAQAAAAAAAAD//wIAAQAAAAAAAAAAAAIAAQAAAAAAAAABAAIAAQAAAAAAAAACAAIAAQAAAAAAAAABAAEAAQAAAAAAAAADAAAAAQAAAAAAAAADAAEAAQAAAAAAAAACAAEAAQAAAAAAAAD+/wAAAQAAAAAAAAADAAIAAQAAAAAAAAAEAAIAAQAAAAAAAAACAAQAAgABAAAAAAABAAQAAgABAAAAAAAAAAQAAgABAAAAAAD//wQAAgABAAAAAAD+/wQAAgABAAAAAAD+/wMAAgAAAAAAAAADAAQAAgABAAAAAAAEAAQAAgABAAAAAAAFAAQAAgABAAAAAAAGAAQAAgAAAAAAAAAFAAMAAgAAAAAAAAAEAAMAAgAAAAAAAAADAAMAAgAAAAAAAAACAAMAAgAAAAAAAAABAAMAAgAAAAAAAAAAAAMAAgAAAAAAAAD//wMAAgAAAAAAAAAAAAEAAQAAAAAAAAD//wEAAQAAAAAAAAD+/wEAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_pvgt0")
+
+[node name="CharacterBody2D" parent="." unique_id=1062132348 instance=ExtResource("3_oad0b")]
