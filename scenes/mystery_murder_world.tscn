@@ -1,13 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7thjt7rptns5"]
+[gd_scene format=3 uid="uid://b7thjt7rptns5"]
 
 [ext_resource type="Script" uid="uid://tw3w7ty80xya" path="res://scripts/mystery_murder_world.gd" id="1_qiau5"]
+[ext_resource type="Texture2D" uid="uid://dsoeb3h3mx354" path="res://art/parkett_tile.png" id="2_5x8ul"]
+[ext_resource type="Texture2D" uid="uid://dxark1dk65mir" path="res://art/pendulum clock.png" id="2_eoph2"]
+[ext_resource type="PackedScene" uid="uid://dep05ji8y74ox" path="res://scenes/DetectiveCharacter.tscn" id="2_lka24"]
 
-[node name="MysteryMurderWorld" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5x8ul"]
+
+[node name="MysteryMurderWorld" type="Node2D" unique_id=1122988744]
 script = ExtResource("1_qiau5")
 
-[node name="hud" type="CanvasLayer" parent="."]
+[node name="hud" type="CanvasLayer" parent="." unique_id=718431685]
 
-[node name="Panel" type="PanelContainer" parent="hud"]
+[node name="Panel" type="PanelContainer" parent="hud" unique_id=1826922824]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -16,6 +21,31 @@ offset_right = 87.5
 offset_bottom = 23.0
 grow_horizontal = 2
 
-[node name="Label" type="Label" parent="hud/Panel"]
+[node name="Label" type="Label" parent="hud/Panel" unique_id=1327389353]
 layout_mode = 2
 text = "Mystery Murder World"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1066346187]
+offset_left = 256.0
+offset_top = 25.0
+offset_right = 914.0
+offset_bottom = 412.0
+texture = ExtResource("2_5x8ul")
+stretch_mode = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=756982858]
+
+[node name="PendulumClock" type="Sprite2D" parent="StaticBody2D" unique_id=694327934]
+position = Vector2(647, 99)
+texture = ExtResource("2_eoph2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=897869830]
+position = Vector2(647, 119)
+shape = SubResource("RectangleShape2D_5x8ul")
+
+[node name="CharacterBody2D" parent="." unique_id=1062132348 instance=ExtResource("2_lka24")]
+position = Vector2(492, 167)
+
+[node name="ParkettTile" type="Sprite2D" parent="." unique_id=2062725521]
+position = Vector2(305, 231)
+texture = ExtResource("2_5x8ul")

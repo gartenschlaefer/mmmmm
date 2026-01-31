@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dep05ji8y74ox"]
+
+[ext_resource type="Script" uid="uid://2b8pe8le5lrd" path="res://scripts/detective_character.gd" id="1_uv6sp"]
+[ext_resource type="Texture2D" uid="uid://dco3vhwvstqxr" path="res://art/penguin.png" id="2_w0kna"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5eaa"]
+size = Vector2(26, 14.25)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1062132348]
+script = ExtResource("1_uv6sp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1277098450]
+position = Vector2(0, 7.125)
+shape = SubResource("RectangleShape2D_f5eaa")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=885842856]
+
+[node name="Penguin" type="Sprite2D" parent="." unique_id=2016920102]
+position = Vector2(0, -8)
+texture = ExtResource("2_w0kna")
