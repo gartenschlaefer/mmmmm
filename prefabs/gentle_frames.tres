@@ -2,6 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://cpxmer3ma2pkm" path="res://art/character/gentleman_anim.png" id="1_poaip"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_poaip"]
+atlas = ExtResource("1_poaip")
+region = Rect2(192, 64, 64, 64)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_rrdf5"]
 atlas = ExtResource("1_poaip")
 region = Rect2(0, 64, 64, 64)
@@ -34,13 +38,24 @@ region = Rect2(192, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_poaip")
+}],
+"loop": true,
+"name": &"dead_mouse",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_rrdf5")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8md4i")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_melj1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8md4i")
 }],
 "loop": true,
 "name": &"idle",
