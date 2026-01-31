@@ -1,19 +1,24 @@
 extends Node
 
 # refs
-@onready var dialogue_panel:DialoguePanel = $hud/dialogue_panel
 @export var actual_dialogue: Dialogue
+@onready var mystery_murder_world: MysteryMurderWorld = $mystery_murder_world
 
 # vars
 var actual_state: int = 0
+var dialogue_panel:DialoguePanel = null
+
 
 func _ready():
 
 	# actual state init
 	actual_state = 0
 	
-	print("dialogue: ")
-	print_rich("img: [img=100]art/icon.svg[/img]")
+	#print("dialogue: ")
+	#print_rich("img: [img=100]art/icon.svg[/img]")
+
+	# connect
+	dialogue_panel = mystery_murder_world.dialogue_panel
 
 	# load dialogue
 	dialogue_panel.load_dialogue(actual_dialogue, actual_state)

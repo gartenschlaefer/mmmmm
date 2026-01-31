@@ -14,7 +14,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var new_description = current_description
 	if(Input.is_action_just_pressed("next_page")):
 		if (current_description < notePageDetails.size()-1):

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://6thoyevkxer4"]
+
+[ext_resource type="PackedScene" uid="uid://bmvqay3t0brlc" path="res://scenes/notepage.tscn" id="1_3ehsa"]
+[ext_resource type="Script" uid="uid://bdbfrev8wqx3f" path="res://scripts/hud.gd" id="1_448xx"]
+[ext_resource type="PackedScene" uid="uid://dgl8qlru0b7u7" path="res://prefabs/dialogue_panel.tscn" id="2_448xx"]
+
+[node name="hud" type="CanvasLayer" unique_id=961846994]
+script = ExtResource("1_448xx")
+
+[node name="notepage" parent="." unique_id=123220286 instance=ExtResource("1_3ehsa")]
+visible = false
+
+[node name="dialogue_panel" parent="." unique_id=16156403 instance=ExtResource("2_448xx")]
+visible = false

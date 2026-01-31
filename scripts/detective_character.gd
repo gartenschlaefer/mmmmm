@@ -1,14 +1,27 @@
 extends CharacterBody2D
 
+# refs
 @onready var detective_sprite : AnimatedSprite2D  = $AnimatedSprite2D
 @onready var detective_mask : Sprite2D = $Sprite2D
 @onready var idle_timer : Timer = $IdleTimer
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+@onready var interaction_area: Area2D = $interaction_area
+
+# var
 var old_direction  : Vector2
 
+# const
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
 
-func _physics_process(delta: float) -> void:
+
+func _ready():
+
+	# signal connection
+	interaction_area.area_entered.connect(self.on_area_entered)
+	interaction_area.area_exited.connect(self.on_area_exited)
+
+
+func _physics_process(_delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -40,3 +53,24 @@ func _physics_process(delta: float) -> void:
 func _on_idle_timer_timeout() -> void:
 	detective_sprite.animation = "idle"
 	detective_sprite.play()
+
+
+func on_area_entered(area: Area2D):
+
+	# get parent
+	var guest = area.get_parent()
+
+	# guest character
+	if not guest is GuestCharacter: return
+
+	# get active dialogue
+	print("is guest")
+
+	# get dialogue
+	print(guest.get_dialogue())
+
+
+func on_area_exited(_area: Area2D):
+
+	print("exited")
+	pass

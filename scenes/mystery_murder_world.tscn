@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://dsoeb3h3mx354" path="res://art/interior/parkett_tile.png" id="2_5x8ul"]
 [ext_resource type="Texture2D" uid="uid://dxark1dk65mir" path="res://art/interior/pendulum clock.png" id="2_eoph2"]
 [ext_resource type="PackedScene" uid="uid://df8xv1nmmg3vu" path="res://scenes/DetectiveCharacter.tscn" id="2_lka24"]
+[ext_resource type="PackedScene" uid="uid://6thoyevkxer4" path="res://prefabs/hud.tscn" id="2_tffub"]
 [ext_resource type="TileSet" uid="uid://cyffe4ui6ol81" path="res://art/interior/floor_tilemap.tres" id="5_m2k0q"]
 [ext_resource type="TileSet" uid="uid://daog56ui4pwhc" path="res://art/interior/walls_tile_set.tres" id="5_tffub"]
 [ext_resource type="Texture2D" uid="uid://djtrvafapyrec" path="res://art/interior/soil.png" id="7_sy5t6"]
 [ext_resource type="Texture2D" uid="uid://c2p7tlobnvc7n" path="res://art/character/gentleman.png" id="9_schnp"]
-[ext_resource type="PackedScene" uid="uid://bmvqay3t0brlc" path="res://scenes/notepage.tscn" id="10_7x5hx"]
 [ext_resource type="Texture2D" uid="uid://04h7j82dmpqy" path="res://art/trees/fence_05t.png" id="10_lss6i"]
 [ext_resource type="Texture2D" uid="uid://c2iqkl062evyc" path="res://art/interior/carpet2.png" id="10_schnp"]
 [ext_resource type="Texture2D" uid="uid://ycpebkk5dip8" path="res://art/interior/carpet.png" id="11_sy5t6"]
@@ -49,23 +49,7 @@ size = Vector2(56, 65)
 texture_filter = 1
 script = ExtResource("1_qiau5")
 
-[node name="hud" type="CanvasLayer" parent="." unique_id=718431685]
-
-[node name="Panel" type="PanelContainer" parent="hud" unique_id=1826922824]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -87.5
-offset_right = 87.5
-offset_bottom = 23.0
-grow_horizontal = 2
-
-[node name="Label" type="Label" parent="hud/Panel" unique_id=1327389353]
-layout_mode = 2
-text = "Mystery Murder World"
-
-[node name="notepage" parent="hud" unique_id=653591928 instance=ExtResource("10_7x5hx")]
-visible = false
+[node name="hud" parent="." unique_id=961846994 instance=ExtResource("2_tffub")]
 
 [node name="Floor" type="TextureRect" parent="." unique_id=1066346187]
 visible = false

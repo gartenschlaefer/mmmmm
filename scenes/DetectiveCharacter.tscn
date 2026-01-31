@@ -7,6 +7,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5eaa"]
 size = Vector2(32, 12)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_fah66"]
+radius = 25.0
+
 [node name="detective_character" type="CharacterBody2D" unique_id=1062132348]
 script = ExtResource("1_uv6sp")
 
@@ -29,5 +32,13 @@ texture = ExtResource("3_uv8th")
 
 [node name="IdleTimer" type="Timer" parent="." unique_id=604313753]
 wait_time = 3.0
+
+[node name="interaction_area" type="Area2D" parent="." unique_id=898353260]
+collision_layer = 8
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area" unique_id=51631549]
+position = Vector2(0, -25)
+shape = SubResource("CircleShape2D_fah66")
 
 [connection signal="timeout" from="IdleTimer" to="." method="_on_idle_timer_timeout"]

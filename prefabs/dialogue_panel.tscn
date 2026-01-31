@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://dgl8qlru0b7u7"]
+
+[ext_resource type="Script" uid="uid://ckj1cwipmhiwh" path="res://scripts/dialogue_panel.gd" id="1_hqhia"]
+[ext_resource type="Texture2D" uid="uid://chrcxxy83ud1y" path="res://art/character_pictures/pic_mole.png" id="2_8x2p3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4rg8y"]
+bg_color = Color(0.18717611, 0.18717617, 0.18717602, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5019848, 0.43711394, 0.77155674, 1)
+
+[node name="dialogue_panel" type="Panel" unique_id=16156403 node_paths=PackedStringArray("actual_text", "actual_dialogue_picture_rect")]
+custom_minimum_size = Vector2(0, 200)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_4rg8y")
+script = ExtResource("1_hqhia")
+actual_text = NodePath("HBoxContainer/dialogue/RichTextLabel")
+actual_dialogue_picture_rect = NodePath("HBoxContainer/MarginContainer/TextureRect")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1597736364]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -325.0
+offset_right = 2.0
+offset_bottom = 325.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer" unique_id=1278338881]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MarginContainer" unique_id=698375123]
+layout_mode = 2
+texture = ExtResource("2_8x2p3")
+expand_mode = 2
+
+[node name="dialogue" type="MarginContainer" parent="HBoxContainer" unique_id=1132764621]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/dialogue" unique_id=483377295]
+layout_mode = 2
+bbcode_enabled = true
+text = "Hi, welcome to the [b]mansion[/b] of [color=red] mr. mole[/color], wahaha [img=50]art/icon.svg[/img] this isfakkj soo great and i will write this text to get a line break"
