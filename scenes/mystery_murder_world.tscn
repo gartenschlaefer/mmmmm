@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://tw3w7ty80xya" path="res://scripts/mystery_murder_world.gd" id="1_qiau5"]
 [ext_resource type="Texture2D" uid="uid://dsoeb3h3mx354" path="res://art/interior/parkett_tile.png" id="2_5x8ul"]
 [ext_resource type="Texture2D" uid="uid://dxark1dk65mir" path="res://art/interior/pendulum clock.png" id="2_eoph2"]
-[ext_resource type="PackedScene" uid="uid://dep05ji8y74ox" path="res://scenes/DetectiveCharacter.tscn" id="2_lka24"]
+[ext_resource type="PackedScene" uid="uid://df8xv1nmmg3vu" path="res://scenes/DetectiveCharacter.tscn" id="2_lka24"]
 [ext_resource type="Texture2D" uid="uid://ye4oaxd1xixs" path="res://art/interior/window.png" id="5_gynhn"]
 [ext_resource type="TileSet" uid="uid://cyffe4ui6ol81" path="res://art/interior/floor_tilemap.tres" id="5_m2k0q"]
 [ext_resource type="Texture2D" uid="uid://cuirey8ja08ki" path="res://art/interior/wallpaper.png" id="6_1fv0o"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://ycpebkk5dip8" path="res://art/interior/carpet.png" id="11_sy5t6"]
 [ext_resource type="SpriteFrames" uid="uid://dvfjvmgt38rtq" path="res://art/interior/flame_sprite_frames.tres" id="13_ghuc2"]
 [ext_resource type="Texture2D" uid="uid://boo65sqml5s3b" path="res://art/interior/stove.png" id="14_xemsr"]
+[ext_resource type="PackedScene" uid="uid://bmvqay3t0brlc" path="res://scenes/notepage.tscn" id="10_7x5hx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wvpsb"]
 texture = ExtResource("6_1fv0o")
@@ -83,6 +84,9 @@ grow_horizontal = 2
 [node name="Label" type="Label" parent="hud/Panel" unique_id=1327389353]
 layout_mode = 2
 text = "Mystery Murder World"
+
+[node name="notepage" parent="hud" unique_id=653591928 instance=ExtResource("10_7x5hx")]
+visible = false
 
 [node name="Floor" type="TextureRect" parent="." unique_id=1066346187]
 visible = false

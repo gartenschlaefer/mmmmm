@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://bmvqay3t0brlc"]
+
+[ext_resource type="Texture2D" uid="uid://debstykbwf3yn" path="res://art/notepadArt/notebookpage.png" id="1_2vjex"]
+[ext_resource type="Script" uid="uid://f3r7mfrqhe1l" path="res://scripts/notepage.gd" id="1_nqsnd"]
+[ext_resource type="Texture2D" uid="uid://cwjl2rqrh2pjo" path="res://art/notepadArt/arrow.png" id="2_nqsnd"]
+[ext_resource type="Texture2D" uid="uid://chrcxxy83ud1y" path="res://art/character_pictures/pic_mole.png" id="3_pluw0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2tca"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="notepage" type="Control" unique_id=123220286]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+script = ExtResource("1_nqsnd")
+
+[node name="notepadSprite" type="TextureRect" parent="." unique_id=548723781]
+layout_mode = 0
+offset_left = 21.0
+offset_top = -430.0
+offset_right = 341.0
+offset_bottom = 20.0
+scale = Vector2(1, 0.9088889)
+texture = ExtResource("1_2vjex")
+
+[node name="left_arrow" type="TextureRect" parent="." unique_id=1750002782]
+layout_mode = 0
+offset_left = 31.0
+offset_top = -78.0
+offset_right = 81.0
+offset_bottom = -55.0
+texture = ExtResource("2_nqsnd")
+flip_h = true
+
+[node name="Label" type="Label" parent="left_arrow" unique_id=269723872]
+top_level = true
+layout_mode = 0
+offset_left = 41.0
+offset_top = 742.0
+offset_right = 81.0
+offset_bottom = 765.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "J"
+horizontal_alignment = 1
+
+[node name="CharacterIconContainer" type="PanelContainer" parent="." unique_id=54293734]
+layout_mode = 0
+offset_left = 30.0
+offset_top = -350.0
+offset_right = 130.0
+offset_bottom = -278.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_t2tca")
+
+[node name="CharacterIconMarginContainer" type="MarginContainer" parent="CharacterIconContainer" unique_id=1672361258]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="IconTexture" type="TextureRect" parent="CharacterIconContainer/CharacterIconMarginContainer" unique_id=1499479796]
+layout_mode = 2
+texture = ExtResource("3_pluw0")
+expand_mode = 2
+
+[node name="Character_Descriptions" type="Control" parent="." unique_id=1953794538]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+
+[node name="MainDescription" type="Label" parent="Character_Descriptions" unique_id=1721731779]
+layout_mode = 0
+offset_left = 33.0
+offset_top = -273.0
+offset_right = 311.0
+offset_bottom = -88.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Er ist ein famoser Privatier der Stadt. So unerfüllt er sich im Privaten fühlt, so sehr befüllt er sein gesellschaftliches Leben: er hält den Vorsitz im Lions Club sowie Golfclub der Stadt. In seinem Anwesen veranstaltet er verschiedene Aktivitäten; (Masken-)Bälle, Benefiz-Ausstellungen, Musikkonzerte, Lesungen, Banquet etc. Zudem hält er wohlwollend einen Teil seines Parks als Außenbereich für den Kindergarten frei - weit weg von der Villa, unten am Bach. Insgeheim liebt er Herrn Maus."
+autowrap_mode = 2
+
+[node name="TopDescription" type="Label" parent="Character_Descriptions" unique_id=952005880]
+layout_mode = 0
+offset_left = 132.0
+offset_top = -346.0
+offset_right = 316.0
+offset_bottom = -286.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Mr. Mole"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="right_arrow" type="TextureRect" parent="Character_Descriptions" unique_id=1046965108]
+layout_mode = 0
+offset_left = 266.0
+offset_top = -79.0
+offset_right = 316.0
+offset_bottom = -56.0
+texture = ExtResource("2_nqsnd")
+
+[node name="Label" type="Label" parent="Character_Descriptions/right_arrow" unique_id=1388404117]
+top_level = true
+layout_mode = 0
+offset_left = 263.0
+offset_top = 741.0
+offset_right = 303.0
+offset_bottom = 764.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "K"
+horizontal_alignment = 1
