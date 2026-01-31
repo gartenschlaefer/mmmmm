@@ -1,0 +1,19 @@
+[gd_resource type="TileSet" format=3 uid="uid://cyffe4ui6ol81"]
+
+[ext_resource type="Texture2D" uid="uid://dsoeb3h3mx354" path="res://art/interior/parkett_tile.png" id="1_jmqrm"]
+[ext_resource type="Texture2D" uid="uid://dyn4sv8mt8t4r" path="res://art/interior/grass_tile.png" id="2_xdsmr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5x8ul"]
+texture = ExtResource("1_jmqrm")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_timwg"]
+texture = ExtResource("2_xdsmr")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_5x8ul")
+sources/1 = SubResource("TileSetAtlasSource_timwg")
