@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxark1dk65mir"
-path="res://.godot/imported/pendulum clock.png-55d29670a719143043931bd84b098b7d.ctex"
+path="res://.godot/imported/pendulum clock.png-484e1f9761b89f5c227022bccbcc90f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/pendulum clock.png"
-dest_files=["res://.godot/imported/pendulum clock.png-55d29670a719143043931bd84b098b7d.ctex"]
+source_file="res://art/interior/pendulum clock.png"
+dest_files=["res://.godot/imported/pendulum clock.png-484e1f9761b89f5c227022bccbcc90f8.ctex"]
 
 [params]
 
