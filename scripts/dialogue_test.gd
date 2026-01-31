@@ -1,7 +1,7 @@
-extends Control
+extends Node
 
 # refs
-@onready var dialogue_panel:DialoguePanel = $dialogue_panel
+@onready var dialogue_panel:DialoguePanel = $hud/dialogue_panel
 @export var actual_dialogue: Dialogue
 
 # vars
