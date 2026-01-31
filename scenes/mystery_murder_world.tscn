@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7thjt7rptns5"]
+
+[ext_resource type="Script" uid="uid://tw3w7ty80xya" path="res://scripts/mystery_murder_world.gd" id="1_qiau5"]
+
+[node name="MysteryMurderWorld" type="Node2D"]
+script = ExtResource("1_qiau5")
+
+[node name="hud" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="PanelContainer" parent="hud"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -87.5
+offset_right = 87.5
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="hud/Panel"]
+layout_mode = 2
+text = "Mystery Murder World"

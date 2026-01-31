@@ -1,6 +1,151 @@
-[gd_scene load_steps=2 format=3 uid="uid://c252o4kygyunh"]
+[gd_scene load_steps=6 format=3 uid="uid://c252o4kygyunh"]
 
 [ext_resource type="Script" uid="uid://couggljbw3ry4" path="res://scripts/mmmmm.gd" id="1_d1dor"]
+[ext_resource type="Script" uid="uid://c2wnhxen86yiv" path="res://scripts/win_canvas.gd" id="2_dx8pv"]
+[ext_resource type="LabelSettings" uid="uid://dftbsam24v8pt" path="res://themes/label_settings_canvas_header.tres" id="2_qx7hw"]
+[ext_resource type="Script" uid="uid://dd8lqcv6crk04" path="res://scripts/credits_canvas.gd" id="4_ey5gi"]
+[ext_resource type="Script" uid="uid://ceocf5h4dh25y" path="res://scripts/title_canvas.gd" id="5_g8ct3"]
 
 [node name="mmmmm" type="Node2D"]
 script = ExtResource("1_d1dor")
+
+[node name="world" type="Node" parent="."]
+
+[node name="win_canvas" type="CanvasLayer" parent="."]
+script = ExtResource("2_dx8pv")
+
+[node name="ColorRect" type="ColorRect" parent="win_canvas"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.46666667, 0.46666667, 0.7019608, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="win_canvas/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="win_canvas/ColorRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="win_canvas/ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "WIN"
+label_settings = ExtResource("2_qx7hw")
+
+[node name="MarginContainer" type="MarginContainer" parent="win_canvas/ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="buttons" type="VBoxContainer" parent="win_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="win_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons"]
+layout_mode = 2
+text = "Exit"
+
+[node name="credits_canvas" type="CanvasLayer" parent="."]
+visible = false
+script = ExtResource("4_ey5gi")
+
+[node name="ColorRect" type="ColorRect" parent="credits_canvas"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.46666667, 0.46666667, 0.7019608, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="credits_canvas/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="credits_canvas/ColorRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="credits_canvas/ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Credits
+"
+label_settings = ExtResource("2_qx7hw")
+
+[node name="MarginContainer" type="MarginContainer" parent="credits_canvas/ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="buttons" type="VBoxContainer" parent="credits_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="credits_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons"]
+layout_mode = 2
+text = "Exit"
+
+[node name="title_canvas" type="CanvasLayer" parent="."]
+script = ExtResource("5_g8ct3")
+
+[node name="ColorRect" type="ColorRect" parent="title_canvas"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.46666667, 0.46666667, 0.7019608, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="title_canvas/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="title_canvas/ColorRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MMMMM"
+label_settings = ExtResource("2_qx7hw")
+
+[node name="MarginContainer" type="MarginContainer" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 50
+
+[node name="buttons" type="VBoxContainer" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="start" type="Button" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons"]
+custom_minimum_size = Vector2(0, 69)
+layout_mode = 2
+text = "Start
+"
+
+[node name="credits" type="Button" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons"]
+layout_mode = 2
+text = "Credits"
+
+[node name="exit" type="Button" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons"]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="button_up" from="credits_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons/Button" to="credits_canvas" method="_on_exit_button_up"]
+[connection signal="button_up" from="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons/start" to="title_canvas" method="_on_start_button_up"]
+[connection signal="button_up" from="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons/credits" to="title_canvas" method="_on_credits_button_up"]
+[connection signal="button_up" from="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons/exit" to="title_canvas" method="_on_end_button_up"]
