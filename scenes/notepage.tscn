@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://bmvqay3t0brlc"]
+
+[ext_resource type="Texture2D" uid="uid://debstykbwf3yn" path="res://art/notepadArt/notebookpage.png" id="1_2vjex"]
+[ext_resource type="Script" uid="uid://f3r7mfrqhe1l" path="res://scripts/notepage.gd" id="1_nqsnd"]
+[ext_resource type="Texture2D" uid="uid://cwjl2rqrh2pjo" path="res://art/notepadArt/arrow.png" id="2_nqsnd"]
+[ext_resource type="Texture2D" uid="uid://chrcxxy83ud1y" path="res://art/character_pictures/pic_mole.png" id="3_pluw0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2tca"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="notepage" type="Node" unique_id=653591928]
+script = ExtResource("1_nqsnd")
+
+[node name="notepadSprite" type="Sprite2D" parent="." unique_id=1703736057]
+position = Vector2(316, 191.5)
+scale = Vector2(1, 0.9088889)
+texture = ExtResource("1_2vjex")
+
+[node name="right_arrow" type="TextureRect" parent="." unique_id=1046965108]
+offset_left = 401.0
+offset_top = 330.0
+offset_right = 451.0
+offset_bottom = 353.0
+texture = ExtResource("2_nqsnd")
+
+[node name="Label" type="Label" parent="right_arrow" unique_id=1388404117]
+top_level = true
+layout_mode = 0
+offset_left = 399.0
+offset_top = 351.0
+offset_right = 439.0
+offset_bottom = 374.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "K"
+horizontal_alignment = 1
+
+[node name="left_arrow" type="TextureRect" parent="." unique_id=1750002782]
+offset_left = 166.0
+offset_top = 331.0
+offset_right = 216.0
+offset_bottom = 354.0
+texture = ExtResource("2_nqsnd")
+flip_h = true
+
+[node name="Label" type="Label" parent="left_arrow" unique_id=269723872]
+top_level = true
+layout_mode = 0
+offset_left = 178.0
+offset_top = 350.0
+offset_right = 218.0
+offset_bottom = 373.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "J"
+horizontal_alignment = 1
+
+[node name="CharacterIconContainer" type="PanelContainer" parent="." unique_id=54293734]
+offset_left = 165.0
+offset_top = 59.0
+offset_right = 265.0
+offset_bottom = 131.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_t2tca")
+
+[node name="CharacterIconMarginContainer" type="MarginContainer" parent="CharacterIconContainer" unique_id=1672361258]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="IconTexture" type="TextureRect" parent="CharacterIconContainer/CharacterIconMarginContainer" unique_id=1499479796]
+layout_mode = 2
+texture = ExtResource("3_pluw0")
+expand_mode = 2
+
+[node name="Character_Descriptions" type="Node" parent="." unique_id=1620298504]
+
+[node name="MainDescription" type="Label" parent="Character_Descriptions" unique_id=1721731779]
+offset_left = 168.0
+offset_top = 136.0
+offset_right = 446.0
+offset_bottom = 321.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Er ist ein famoser Privatier der Stadt. So unerfüllt er sich im Privaten fühlt, so sehr befüllt er sein gesellschaftliches Leben: er hält den Vorsitz im Lions Club sowie Golfclub der Stadt. In seinem Anwesen veranstaltet er verschiedene Aktivitäten; (Masken-)Bälle, Benefiz-Ausstellungen, Musikkonzerte, Lesungen, Banquet etc. Zudem hält er wohlwollend einen Teil seines Parks als Außenbereich für den Kindergarten frei - weit weg von der Villa, unten am Bach. Insgeheim liebt er Herrn Maus."
+autowrap_mode = 2
+
+[node name="TopDescription" type="Label" parent="Character_Descriptions" unique_id=952005880]
+offset_left = 267.0
+offset_top = 63.0
+offset_right = 451.0
+offset_bottom = 123.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Mr. Mole"
+horizontal_alignment = 1
+vertical_alignment = 1
