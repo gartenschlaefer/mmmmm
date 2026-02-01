@@ -37,6 +37,10 @@ func disable():
 	rufzeichen.hide()
 
 
+func enable():
+	is_hint_active = true
+
+
 func get_hint_type(): return hint_type
 
 
