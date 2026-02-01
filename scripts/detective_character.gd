@@ -91,7 +91,7 @@ func on_area_entered(area: Area2D):
 
 		# get dialogue
 		active_dialogue = interaction_object.get_dialogue()
-		active_guest = guest.get_character();
+		active_guest = interaction_object.get_character();
 
 		# info
 		print("guest char: ", interaction_object.get_character())
