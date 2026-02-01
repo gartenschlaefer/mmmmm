@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dr0fuonbhijan"]
 
+[ext_resource type="Script" uid="uid://br40sx8s88hy7" path="res://scripts/boss_battle.gd" id="1_ogt0s"]
 [ext_resource type="Texture2D" uid="uid://clmsx741mk35w" path="res://art/character_pictures/pic_chamaleon.png" id="1_wkaxt"]
 [ext_resource type="Texture2D" uid="uid://dll2mqb8t1vvt" path="res://art/character_pictures/boss/boss_cutout.png" id="2_q8djn"]
 [ext_resource type="Texture2D" uid="uid://bwx17ajm0px8g" path="res://art/character_pictures/boss/boss_left_eye_bulge_background.png" id="3_7aai5"]
@@ -13,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cmg0dgg7rhn8" path="res://art/character_pictures/boss/boss_tears_end.png" id="11_s11w0"]
 
 [node name="BossBattle" type="Node2D" unique_id=810529075]
+script = ExtResource("1_ogt0s")
 
 [node name="BossBackground" type="Sprite2D" parent="." unique_id=679533225]
 z_index = -10
@@ -21,45 +23,56 @@ texture = ExtResource("1_wkaxt")
 [node name="BossCutout" type="Sprite2D" parent="." unique_id=1539629177]
 texture = ExtResource("2_q8djn")
 
-[node name="LeftEye" type="Node2D" parent="BossCutout" unique_id=1343620725]
+[node name="LeftEye" type="Node2D" parent="." unique_id=1343620725]
 
-[node name="BossLeftEyeSmall" type="Sprite2D" parent="BossCutout/LeftEye" unique_id=357272337]
+[node name="BossLeftEyeSmall" type="Sprite2D" parent="LeftEye" unique_id=357272337]
 z_index = -1
 texture = ExtResource("5_ogt0s")
 
-[node name="LeftEyeBulge" type="Node2D" parent="BossCutout/LeftEye" unique_id=33665409]
+[node name="LeftEyeBulge" type="Node2D" parent="LeftEye" unique_id=33665409]
 
-[node name="BossLeftEyeBulgeBackground" type="Sprite2D" parent="BossCutout/LeftEye/LeftEyeBulge" unique_id=645578659]
+[node name="BossLeftEyeBulgeBackground" type="Sprite2D" parent="LeftEye/LeftEyeBulge" unique_id=645578659]
 z_index = -1
 texture = ExtResource("3_7aai5")
 
-[node name="BossLeftEyeBulgeForeground" type="Sprite2D" parent="BossCutout/LeftEye/LeftEyeBulge" unique_id=1942921134]
+[node name="BossLeftEyeBulgeForeground" type="Sprite2D" parent="LeftEye/LeftEyeBulge" unique_id=1942921134]
 z_index = 1
 texture = ExtResource("4_is2b5")
 
-[node name="RightEye" type="Node2D" parent="BossCutout" unique_id=1656617153]
+[node name="RightEye" type="Node2D" parent="." unique_id=1656617153]
 
-[node name="BossRightEyeSmall" type="Sprite2D" parent="BossCutout/RightEye" unique_id=149935981]
+[node name="BossRightEyeSmall" type="Sprite2D" parent="RightEye" unique_id=149935981]
 z_index = -1
 texture = ExtResource("8_ao0wf")
 
-[node name="RightEyeBulge" type="Node2D" parent="BossCutout/RightEye" unique_id=1548855047]
+[node name="RightEyeBulge" type="Node2D" parent="RightEye" unique_id=1548855047]
 
-[node name="BossRightEyeBulgeBackground" type="Sprite2D" parent="BossCutout/RightEye/RightEyeBulge" unique_id=1301518474]
+[node name="BossRightEyeBulgeBackground" type="Sprite2D" parent="RightEye/RightEyeBulge" unique_id=1301518474]
 z_index = -1
 texture = ExtResource("6_s11w0")
 
-[node name="BossRightEyeBulgeForeground2" type="Sprite2D" parent="BossCutout/RightEye/RightEyeBulge" unique_id=1192096393]
+[node name="BossRightEyeBulgeForeground2" type="Sprite2D" parent="RightEye/RightEyeBulge" unique_id=1192096393]
 z_index = 1
 texture = ExtResource("7_qhp7y")
 
-[node name="Tears" type="Node2D" parent="BossCutout" unique_id=1337752797]
+[node name="Tears" type="Node2D" parent="." unique_id=1337752797]
 
-[node name="Sprite2D" type="Sprite2D" parent="BossCutout/Tears" unique_id=2080252193]
+[node name="Start" type="Sprite2D" parent="Tears" unique_id=2080252193]
 texture = ExtResource("9_is2b5")
 
-[node name="Sprite2D2" type="Sprite2D" parent="BossCutout/Tears" unique_id=411295399]
+[node name="Mid" type="Sprite2D" parent="Tears" unique_id=411295399]
 texture = ExtResource("10_ogt0s")
 
-[node name="Sprite2D3" type="Sprite2D" parent="BossCutout/Tears" unique_id=1154174867]
+[node name="End" type="Sprite2D" parent="Tears" unique_id=1154174867]
 texture = ExtResource("11_s11w0")
+
+[node name="TearsTimer" type="Timer" parent="Tears" unique_id=501342651]
+wait_time = 0.5
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=369421517]
+
+[node name="ShakeTimer" type="Timer" parent="." unique_id=1894704569]
+wait_time = 0.5
+
+[connection signal="timeout" from="Tears/TearsTimer" to="." method="_on_tears_timer_timeout"]
+[connection signal="timeout" from="ShakeTimer" to="." method="_on_shake_timer_timeout"]
