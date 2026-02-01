@@ -9,7 +9,25 @@ Bei der Maus findet er die EINLADUNG von Herrn Maulwurf. Vielleicht steht noch m
 
 **Herr Maulwurf befindet sich im Salon. Durch die Einladung wird Dialog ausgelöst:** <br>
 *Oh, wie kommen Sie zu dieser Einladung? Die war nur für Herrn Maus bestimmt … WAS SAGEN SIE? HERR MAUS IST TOT? Das kann nicht sein, ich habe ihn eben noch im SYMBOL=GARTEN getroffen, das ist noch nicht lange her. Ich kannte Ihn gut, ja er war mein engster Vertrauter. Na gut ich gestehe, wir hatten eine Liebesbeziehung, er war mein Geliebter. Wie machen Sie das nur, dass Sie einem die tiefsten Geheimnisse entlocken. Er war beliebt, alle mochten ihn. Nein, ich weiß von keinem der ihn nicht mochte. Außer der neue vielleicht … bei dem Blicke ich noch nicht so durch? Ja, er ist hilfsbereit, aber ganz traue ich ihm noch nicht. Vor allem nachdem er Frau Hase so angebrüllt hat. Die arme Frau Hase, das hat sie nicht verdient!*<br>
-MOLE: `Oh, how did you get this [b]invitation[\b]? This was only meant for [color=red]Mr. Mouse[\color]! [...] WHAT DO YOU SAY? MR. MOUSE IS DEAD? [...] That cannot be the truth, I just met him in the [img]art/symbols/spiral.png[\img]. That happend not long ago. [...] So sad - I knew him well, he was my closest confidant [...] Ok well, I will confess, we had a romantic relationship! Yes, [color=red]Mr. Mouse[\color] was my beloved, and I was his! [...] How do you make people tell you their deepest secrets, you know your stuff. [...] [color=red]Mr. Mouse[\color] was quite popular in our community - such a funny guy. May his soul rest in peace! [...] I cannot imaging one of the others not loving him. Wait - except one fellow [...] The new guy! Don't know what he is up to. Yes, okay, he is quite handy, but i don't trust him - especially after he yelled at [color=red]Mrs. Rabbit[\color]. Poor [color=red]Mrs. Rabbit[\color], she has not deserved this!`
+MOLE: `
+Oh, how did you get this [b]invitation[/b]? This was only meant for [color=red]Mr. Mouse[/color]!
+[...]
+WHAT DO YOU SAY? MR. MOUSE IS DEAD?
+[...]
+That cannot be the truth, I just met him in the [img]art/symbols/spiral.png[/img]. That happend not long ago.
+[...]
+So sad - I knew him well, he was my closest confidant
+[...]
+Ok well, I will confess, we had a romantic relationship! Yes, [color=red]Mr. Mouse[/color] was my beloved, and I was his!
+[...]
+How do you make people tell you their deepest secrets, you know your stuff. 
+[...]
+[color=red]Mr. Mouse[/color] was quite popular in our community - such a funny guy. May his soul rest in peace! 
+[...]
+I cannot imaging one of the others not loving him. Wait - except one fellow 
+[...]
+The new guy! Don't know what he is up to. Yes, okay, he is quite handy, but i don't trust him - especially after he yelled at [color=red]Mrs. Rabbit[/color]. Poor [color=red]Mrs. Rabbit[/color], she has not deserved this!
+`
 
 HINWEISE DER TIERE:
 - Der Mond ist heute wunderschön, von hier drin kann man ihn kaum erkennen. <br>
@@ -17,20 +35,35 @@ HINWEISE DER TIERE:
 - Ich habe einen Schatten vor dem Fenster vorbei huschen gesehen. <br>
   RABBIT: `I have seen a shadow scurring past the window.`
 - Sie fragen mich nach Herrn Maus? Dieser Wicht hat vorhin so viel Dreck im Tanzsaal verteilt, dass dieser kaum benutzbar war. Wo hat sich der nur rumgetrieben frag ich mich? <br>
-  SHRIMP: `You ask me about [color=red]Mr. Mouse[\color]? This little imp has spread dirt all over the dancefloor, not long ago. Where is he I wonder?!`
+  SHRIMP: `You ask me about [color=red]Mr. Mouse[/color]? This little imp has spread dirt all over the dancefloor, not long ago. Where is he I wonder?!`
 
 ### Szene 2:
 Im Garten findet man eine KAROTTE. 
 - HINWEISDIALOG: Frau Hase züchtet das beste Gemüse. <br>
-  OWL: `[color=red]Mrs. Rabbit[\color] grows the best vegetables in town.`
+  OWL: `[color=red]Mrs. Rabbit[/color] grows the best vegetables in town.`
 
 **Frau Hase befindet sich beim Buffet im Esszimmer. Durch die KAROTTE wird der Dialog ausgelöst:** <br>
 *Guten Tag, wer sind Sie? Wie ich sehe sind Sie ein Feinschmecker. Diese Karottensorte, die sie mit sich tragen, ist exquisit - woher ich das weiß? Das ist eine meiner, die wachsen in meinem Garten … Aber nicht alle hier erfreuen sich an meiner Arbeit, vor allem dieser Neue war gar nicht erfreut über mein Willkommensgeschenk … Ich kann mit Ihnen leider nicht lange plaudern. Ich muss weiter - mein Gemüse braucht mich. Könnten Sie mir einen Gefallen tun? Leider fehlt mir die Zeit das SYMBOL=BUCH zurückzubringen.* <br>
-RABBIT: `Good evening, may I ask who are you? [...] As far as I see you are a gourmet. This type of carrot, which you carry with you, is exquisit [...] Why I know this? Let me tell you, I grow them on my own in my beloved garden [...] Not everybody appreciates my work and effort, especially this new resident was not much delighted about my welcome present [...] I cannot longer chit chat with you. I have to go. My vegetables need me. [...] May I ask you for one little favor? Unfortunately, I do not have the time to give this [img]art/symbols/triangle.png[\img] back to its owner.`
+RABBIT: 
+`
+Good evening, may I ask who are you?
+[...]
+As far as I see you are a gourmet. This type of carrot, which you carry with you, is exquisit
+[...]
+Why I know this? Let me tell you, I grow them on my own in my beloved garden
+[...]
+Not everybody appreciates my work and effort, especially this new resident was not much delighted about my welcome present
+[...]
+I cannot longer chit chat with you. I have to go. My vegetables need me.
+[...]
+May I ask you for one little favor? Unfortunately, I do not have the time to give this [img]art/symbols/triangle.png[/img] back to its owner.
+`
 
 HINWEISE DER TIERE: 
 - Waren Sie schon mal im Kaminzimmer? Unglaublich was Herr Maulwurf alles an Besitztümern hat. <br>
-  CAT: `Have you been to the room with the fireplace? Unbelieveable what possessions [color=red]Mr. Mole[\color] can call his own.`
+  CAT: `
+Have you been to the room with the fireplace? Unbelieveable what possessions [color=red]Mr. Mole[/color] can call his own.
+`
 - Ich liebe Ordnung, aber im Bücherregal von Herrn Maulwurf finde ich kein System. <br>
   SHRIMP: `I love to keep things in order, but in the bookshelf I cannot see any.`
 - Diese Vase! Ist das eine echte Ming? <br>
@@ -39,11 +72,36 @@ HINWEISE DER TIERE:
 ### Szene 3:
 Im Kaminzimmer bei der Vase befindet sich das BUCH.
 - HINWEISDIALOG: Wenn Sie wissen wollen wie das „Ungeziefer-ABC“ einzusortieren ist, müssen Sie Frau Eule fragen. <br>
-  MOLE: `If you want to know how [b]The ABC of vermins[\b] should be put into the shelf, ask [color=red]Mrs. Owl[\color] for her advice.`
+  MOLE: 
+`
+If you want to know how [b]The ABC of vermins[/b] should be put into the shelf, ask [color=red]Mrs. Owl[/color] for her advice.
+`
 
 **Frau Eule befindet sich im Tanzsaal. Durch das BUCH wird der Dialog ausgelöst.** <br>
 *Ah, das habe ich schon vermisst, es sind bereits Mahngebühren fällig. Erhalte ich diese nun von Ihnen? … zzz … Huch, verzeihen Sie, Herr Maus ist tot sagen Sie? Na toll, da bleibe ich nun wohl oder übel auf den Schulden sitzen … zzz … Huch, verzeihen Sie, ja Schulden - aber ich bin nicht die einzige … zzz … Huch, verzeihen Sie, ja genau, Frau Chamäleon hat sich bei mir auch schon Rat gesucht wie sie die Schulden zurück bekommt, aber das haben Sie nicht von mir … zzz … Huch, verzeihen Sie, ja der arme Mann verlassen von der eigenen Frau … und erst die armen Kinder!!! Mit dem Einzug des neuen Dorfbewohners ist etwas Unruhe in unsere Gemeinschaft eingekehrt. Wer lässt so ein gefährliches SYMBOL=FUCHSSCHWANZ/WERKZEUG einfach so herumliegen? Hier sind doch Kinder!!!* <br>
-OWL: `Ah, I missed that already. Are you gonna pay the late fee? [...] Zzzzzzz [...] Ah, sorry this happens from time to time! So, [color=red]Mr. Mouse[\color] is dead you say? So, well I assume no one's gonna pay the depts [...] Zzzzzzz [...] Yikes, excuse me! Depts! Yes, depts. No, I am not the only one, whom [color=red]Mr. Mouse[\color] owes money. [...] Zzzzzzz [...] My dear son, I apologize! Yes, right! [color=red]Mrs. Chameleon[\color] asked for advice, how she could get the depts back from [color=red]Mr. Mouse[\color]. But you didn't get that from me. [...] Zzzzzzz [...] Sorry, again! [color=red]Mrs. Chameleon[\color] left this town, her poor husband [color=red]Mr. Chameleon[\color] and the children. These innocent little creatures! With the move in of the new villager the town was no longer that peaceful place we knew once. Unrest entered our community. [...] Zzzzzzz [...] By the way, who leaves such dangerous [img]art/symbols/star.png[\img] lying around here? There are children here.`
+OWL: 
+`
+Ah, I missed that already. Are you gonna pay the late fee? 
+[...]
+Zzzzzzz 
+[...]
+Ah, sorry this happens from time to time! So, [color=red]Mr. Mouse[/color] is dead you say? So, well I assume no one's gonna pay the depts 
+[...]
+Zzzzzzz 
+[...]
+Yikes, excuse me! Depts! Yes, depts. No, I am not the only one, whom [color=red]Mr. Mouse[/color] owes money. 
+[...]
+Zzzzzzz 
+[...]
+My dear son, I apologize! Yes, right! [color=red]Mrs. Chameleon[/color] asked for advice, how she could get the depts back from [color=red]Mr. Mouse[/color]. But you didn't get that from me. 
+[...]
+Zzzzzzz 
+[...]
+Sorry, again! [color=red]Mrs. Chameleon[/color] left this town, her poor husband [color=red]Mr. Chameleon[/color] and the children. These innocent little creatures! With the move in of the new villager the town was no longer that peaceful place we knew once. Unrest entered our community. 
+[...]
+Zzzzzzz 
+[...]
+By the way, who leaves such dangerous [img]art/symbols/star.png[/img] lying around here? There are children here.`
 
 HINWEISE DER TIERE:
 - Der Wintergarten rundet dieses Ambiente ab! <br>
@@ -58,7 +116,21 @@ Im Wintergarten befindet sich die Werkzeugkiste.
 
 **Nicht weit davon entfernt der Fuchs. Nachdem man aus der Werkzeugkiste ein Werkzeug geholt hat, wird beim Fuchs der Dialog ausgelöst:** <br>
 *Was wollen Sie? Ja, diese Rohrzange gehört mir, ich habe sie schon gesucht - aber warum da Blut dran klebt weiß ich nicht! WAS? Herr Maus ist tot? Und Sie beschuldigen mich? Ja, ich verstehe das mit der Mordwaffe ist schon verdächtig, aber ich sage Ihnen ich war es nicht! Wie kommen Sie darauf, dass ich es war? Die anderen Tiere haben etwas erwähnt? Diese Banausen! Ich bin so hilfsbereit, aber niemand weiß meine Hilfe und Hingabe am Ende zu schätzen. Natürlich war ich es nicht! Zum Tatzeitpunkt war ich im Gespräch mit Frau Katze und hab mich mit ihr über ihre defekte Toilette unterhalten. Ich bin nach dem Gespräch mit Frau Katze hierher in den Wintergarten und habe in meiner Werkzeugkiste nach meiner Rohrzange gesucht. Ich habe festgestellt diese ist weg. Das ist alles was ich ihnen sagen kann … Aber warten Sie eines fällt mir noch ein ich habe einen seltsamen Geruch vernommen als ich hier reinkam, es roch nach Terpentin, wird dies nicht im SYMBOL=KUNST Bereich verwendet, um Pinseln zu reinigen?* <br>
-FOX: `What do you want? Yes, that's my pipe wrench. Where did you find this, I was looking for it. But why is there blood on it? [...] WHAT? [color=red]Mr. Mouse[\color] is dead? And you are accusing me? [...] Yes, I understand, that with the murder weapon is quite suspicious, but I tell you it wasn't me. How did you come to the conclusion that it was me? [...] The other residants have accused me? These philistines! I am such a giving person, always helping if something needs to be fixed. [...] Of course it wasn't me, I couldn't do any harm to anyone! And by the way at the time of the crime I had a chat with [color=red]Mrs. Cat[\color] about her defect toilet. [...] After that talk, I went here to get my pipe wrench, but it wasn't inside the toolbox. That is all I can tell you. [...] but wait, as I came inside here - i smelled something strange, it was turpentine. Isn't this used in [img]art/symbols/wave.png[\img] to clean?`
+FOX: `
+What do you want? Yes, that's my pipe wrench. Where did you find this, I was looking for it. But why is there blood on it?
+[...]
+WHAT? [color=red]Mr. Mouse[/color] is dead? And you are accusing me?
+[...]
+Yes, I understand, that with the murder weapon is quite suspicious, but I tell you it wasn't me. How did you come to the conclusion that it was me?
+[...]
+The other residants have accused me? These philistines! I am such a giving person, always helping if something needs to be fixed.
+[...]
+Of course it wasn't me, I couldn't do any harm to anyone! And by the way at the time of the crime I had a chat with [color=red]Mrs. Cat[/color] about her defect toilet.
+[...]
+After that talk, I went here to get my pipe wrench, but it wasn't inside the toolbox. That is all I can tell you.
+[...]
+but wait, as I came inside here - i smelled something strange, it was turpentine. Isn't this used in [img]art/symbols/wave.png[/img] to clean?
+`
 
 HINWEISE DER TIERE:
 - Was für eine außergewöhnliche Darstellung unseres Dorfes - irgendwie schön, irgendwie surreal, irgendwie … ich weiß nicht?! <br>
@@ -66,15 +138,19 @@ HINWEISE DER TIERE:
 - Ich kenne mich ja nicht aus, aber so etwas in der Halle zu platzieren ist gewagt. Es verstört mich. <br>
   RABBIT: `I am not much of an expert, but putting something like that in a hall is daring. It is disturbing me!`
 - Was hat sich Herr Maulwurf dabei gedacht, ob es ihn viel gekostet hat? <br>
-  OWL: `What was [color= red]Mr. Mole[\color] thinking? I wonder if it was expensive.`
+  OWL: `What was [color= red]Mr. Mole[/color] thinking? I wonder if it was expensive.`
 - Herr Chamäleon ist doch Künstler?! Fragen Sie ihn nach der Bedeutung dieses Kunstwerks, der muss es doch wissen. <br>
-  CAT: `[color=red]Mr. Chameleon[\color] is an artist, isn't he? Ask him about a deeper meaning behind this piece of art.`
+  CAT: `[color=red]Mr. Chameleon[/color] is an artist, isn't he? Ask him about a deeper meaning behind this piece of art.`
 
 ### Szene 5:
 In der Halle hängt ein Gemälde.
 **Chamäleon taucht vor dem Gemälde auf - getriggert gleich nachdem man mit dem Fuchs gesprochen hat - Dialog:** <br>
 *Ja, das Gemälde ist von mir. Ich habe nichts mit Herrn Maus‘ Tod zu tun - das ist eine Beleidigung!* <br>
-CHAMELEON: `Yes, that marvelous art piece was made by me. [...] No, I have nothing to do with [color=red]Mr. Mouse[\color] dead - that's an insult!`
+CHAMELEON: `
+Yes, that marvelous art piece was made by me.
+[...] 
+No, I have nothing to do with [color=red]Mr. Mouse[/color] dead - that's an insult!
+`
 
 Ein Button taucht auf „Mit Beweisen erschlagen“<br>
 *Nein, ich war es nicht!*<br>

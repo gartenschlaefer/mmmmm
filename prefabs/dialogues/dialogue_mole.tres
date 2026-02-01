@@ -7,26 +7,60 @@
 
 [sub_resource type="Resource" id="Resource_7bfi6"]
 script = ExtResource("2_hlne0")
-text_piece = "Hi and welcome"
+text_piece = "Oh, how did you get this [b]invitation[/b]? This was only meant for [color=red]Mr. Mouse[/color]!"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_bd2m5"]
 script = ExtResource("2_hlne0")
-text_piece = "It is very nice to be here"
+text_piece = "WHAT DO YOU SAY? MR. MOUSE IS DEAD?"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_ay8uj"]
 script = ExtResource("2_hlne0")
-text_piece = "this is the last piece!"
+text_piece = "That cannot be the truth, I just met him in the [img]art/symbols/spiral.png[/img]. That happend not long ago."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_wbwcx"]
+script = ExtResource("2_hlne0")
+text_piece = "So sad - I knew him well, he was my closest confidant"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_1q0de"]
+script = ExtResource("2_hlne0")
+text_piece = "Ok well, I will confess, we had a romantic relationship! Yes, [color=red]Mr. Mouse[/color] was my beloved, and I was his!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_0yyct"]
+script = ExtResource("2_hlne0")
+text_piece = "How do you make people tell you their deepest secrets, you know your stuff."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_js2km"]
+script = ExtResource("2_hlne0")
+text_piece = "[color=red]Mr. Mouse[/color] was quite popular in our community - such a funny guy. May his soul rest in peace! "
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_2xg7a"]
+script = ExtResource("2_hlne0")
+text_piece = "I cannot imaging one of the others not loving him. Wait - except one fellow "
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_31eai"]
+script = ExtResource("2_hlne0")
+text_piece = "The new guy! Don't know what he is up to. Yes, okay, he is quite handy, but i don't trust him - especially after he yelled at [color=red]Mrs. Rabbit[/color]. Poor [color=red]Mrs. Rabbit[/color], she has not deserved this!"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_tqq1j"]
 script = ExtResource("1_dj7u0")
-dialogue_pieces = Array[ExtResource("2_hlne0")]([SubResource("Resource_7bfi6"), SubResource("Resource_bd2m5"), SubResource("Resource_ay8uj")])
+dialogue_pieces = Array[ExtResource("2_hlne0")]([SubResource("Resource_7bfi6"), SubResource("Resource_bd2m5"), SubResource("Resource_ay8uj"), SubResource("Resource_wbwcx"), SubResource("Resource_1q0de"), SubResource("Resource_0yyct"), SubResource("Resource_js2km"), SubResource("Resource_2xg7a"), SubResource("Resource_31eai")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_1bc8h"]
+script = ExtResource("1_dj7u0")
 metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [resource]
 script = ExtResource("2_p67qg")
-dialogue_state_pieces = Array[ExtResource("1_dj7u0")]([SubResource("Resource_tqq1j"), null, null, null, null])
+dialogue_state_pieces = Array[ExtResource("1_dj7u0")]([SubResource("Resource_tqq1j"), SubResource("Resource_1bc8h"), null, null])
 dialogue_picture = ExtResource("1_hlne0")
 metadata/_custom_type_script = "uid://dnv403tys4e44"

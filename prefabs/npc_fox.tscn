@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://485ul2anbyp2"]
+[gd_scene format=3 uid="uid://bjyin8attw32v"]
 
-[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_l0ssq"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_opw8q"]
-[ext_resource type="SpriteFrames" uid="uid://dprw7msp1rsjl" path="res://prefabs/character_frames/mole_frames.tres" id="3_k7xw6"]
-[ext_resource type="Texture2D" uid="uid://dx2t1w5kj6ewe" path="res://art/character/masks/mole.png" id="4_gojv5"]
-[ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_gojv5"]
+[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_ng3sq"]
+[ext_resource type="Resource" uid="uid://myh7wu3hxp3n" path="res://prefabs/dialogues/dialogue_fox.tres" id="2_ng3sq"]
+[ext_resource type="SpriteFrames" uid="uid://bbio2imehdy72" path="res://prefabs/character_frames/fox_frames.tres" id="3_ng3sq"]
+[ext_resource type="Texture2D" uid="uid://3x13m8kfwilx" path="res://art/character/masks/fox.png" id="4_mqw3i"]
+[ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_0hfsr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_opw8q"]
 size = Vector2(26, 13)
@@ -12,21 +12,21 @@ size = Vector2(26, 13)
 [sub_resource type="CircleShape2D" id="CircleShape2D_opw8q"]
 radius = 50.0
 
-[node name="npc_mole" type="CharacterBody2D" unique_id=2123288575]
-script = ExtResource("1_l0ssq")
-dialogue = ExtResource("2_opw8q")
+[node name="npc_fox" type="CharacterBody2D" unique_id=2123288575]
+script = ExtResource("1_ng3sq")
+dialogue = ExtResource("2_ng3sq")
 
 [node name="character_framess" type="AnimatedSprite2D" parent="." unique_id=1398371554]
 texture_filter = 1
 position = Vector2(0, -32)
-sprite_frames = ExtResource("3_k7xw6")
+sprite_frames = ExtResource("3_ng3sq")
 animation = &"idle"
 autoplay = "idle"
 
 [node name="mask" type="Sprite2D" parent="." unique_id=904042948]
 texture_filter = 1
 position = Vector2(0, -55)
-texture = ExtResource("4_gojv5")
+texture = ExtResource("4_mqw3i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=828608947]
 position = Vector2(0, -6.5)
@@ -43,4 +43,4 @@ shape = SubResource("CircleShape2D_opw8q")
 [node name="rufzeichen" type="Sprite2D" parent="." unique_id=1419467187]
 texture_filter = 1
 position = Vector2(0, -78)
-texture = ExtResource("5_gojv5")
+texture = ExtResource("5_0hfsr")

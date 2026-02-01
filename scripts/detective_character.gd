@@ -6,6 +6,7 @@ class_name DetectiveCharacter extends CharacterBody2D
 # signals
 signal detective_has_new_dialogue(dialogue: Dialogue, hint_state: int)
 signal detective_requests_next_dialogue_piece
+signal detective_leaves_conservation
 
 # refs
 @onready var detective_sprite : AnimatedSprite2D  = $AnimatedSprite2D
@@ -43,6 +44,7 @@ func _physics_process(_delta: float) -> void:
 			
 			idle_timer.stop()
 			detective_sprite.animation = "walk"
+			detective_sprite.frame = 1
 			detective_sprite.play()
 			
 			var flip = direction.x > 0
@@ -97,6 +99,9 @@ func on_area_exited(_area: Area2D):
 
 	# reset dialogue
 	active_dialogue = null
+
+	# leave conservation
+	detective_leaves_conservation.emit()
 
 
 func get_hint_state(): return actual_hint_state
