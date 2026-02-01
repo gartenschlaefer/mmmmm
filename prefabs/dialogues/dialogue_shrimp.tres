@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://12ixu8xcamc4"]
+
+[ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_ncq0b"]
+[ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_bwyh8"]
+[ext_resource type="Resource" uid="uid://xacfkxrsr6va" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="4_bwyh8"]
+[ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_dfifm"]
+[ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="4_ncq0b"]
+
+[sub_resource type="Resource" id="Resource_bwyh8"]
+script = ExtResource("4_ncq0b")
+text_piece = "You ask me about [color=red]Mr. Mouse[/color]? This little imp has spread dirt all over the dancefloor, not long ago. Where is he I wonder?!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_dfifm"]
+script = ExtResource("2_ncq0b")
+dialogue_pieces = Array[ExtResource("4_ncq0b")]([SubResource("Resource_bwyh8")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_ncq0b"]
+script = ExtResource("4_ncq0b")
+text_piece = "I love to keep things in order, but in the bookshelf I cannot see any."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_elplm"]
+script = ExtResource("2_ncq0b")
+dialogue_pieces = Array[ExtResource("4_ncq0b")]([SubResource("Resource_ncq0b")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_4r11j"]
+script = ExtResource("4_ncq0b")
+text_piece = "There might be something broken in the wintergarden. [color=red]Mr. Fox[/color] is already there."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_b3x6j"]
+script = ExtResource("2_ncq0b")
+dialogue_pieces = Array[ExtResource("4_ncq0b")]([SubResource("Resource_4r11j")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_w4r6g"]
+script = ExtResource("4_ncq0b")
+text_piece = "What an unusual representation of our town - somehow beautiful, somehow strange, somehow ... I am not quite sure."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_6t3c4"]
+script = ExtResource("2_ncq0b")
+dialogue_pieces = Array[ExtResource("4_ncq0b")]([SubResource("Resource_w4r6g")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[resource]
+script = ExtResource("4_dfifm")
+dialogue_state_pieces = Array[ExtResource("2_ncq0b")]([ExtResource("3_bwyh8"), SubResource("Resource_dfifm"), SubResource("Resource_elplm"), SubResource("Resource_b3x6j"), SubResource("Resource_6t3c4"), ExtResource("4_bwyh8")])
+metadata/_custom_type_script = "uid://dnv403tys4e44"
