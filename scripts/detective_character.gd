@@ -1,4 +1,11 @@
-extends CharacterBody2D
+# --
+# detective character
+
+class_name DetectiveCharacter extends CharacterBody2D
+
+# signals
+signal detective_has_new_dialogue(dialogue: Dialogue, hint_state: int)
+signal detective_requests_next_dialogue_piece
 
 # refs
 @onready var detective_sprite : AnimatedSprite2D  = $AnimatedSprite2D
@@ -8,6 +15,8 @@ extends CharacterBody2D
 
 # var
 var old_direction  : Vector2
+var active_dialogue: Dialogue = null
+var actual_hint_state: int = 0
 
 # const
 const SPEED = 300.0
@@ -50,6 +59,16 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 
 
+func _input(_event):
+
+	# skip
+	if active_dialogue == null: return
+
+	# update dialogue
+	if Input.is_action_just_pressed("interact"): 
+		detective_requests_next_dialogue_piece.emit()
+
+
 func _on_idle_timer_timeout() -> void:
 	detective_sprite.animation = "idle"
 	detective_sprite.play()
@@ -69,8 +88,17 @@ func on_area_entered(area: Area2D):
 	# get dialogue
 	print(guest.get_dialogue())
 
+	# get dialogue
+	active_dialogue = guest.get_dialogue()
+
+	# new dialogue
+	detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
+
 
 func on_area_exited(_area: Area2D):
 
 	print("exited")
 	pass
+
+	# reset dialogue
+	active_dialogue = null
