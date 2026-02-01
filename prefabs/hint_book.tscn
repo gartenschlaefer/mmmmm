@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://byprniyry2kfv" path="res://art/collectables/book.png" id="3_n06rl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gd6v5"]
-radius = 50.0
+radius = 25.0
 
 [node name="hint_book" type="Node2D" unique_id=2070377787]
 script = ExtResource("1_n06rl")

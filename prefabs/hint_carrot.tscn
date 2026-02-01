@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="3_gt1hv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gd6v5"]
-radius = 50.0
+radius = 25.0
 
 [node name="hint_carrot" type="Node2D" unique_id=2070377787]
 script = ExtResource("1_xluu2")
