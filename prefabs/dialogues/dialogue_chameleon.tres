@@ -73,6 +73,6 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [resource]
 script = ExtResource("7_j3ff3")
-dialogue_state_pieces = Array[ExtResource("2_r4pvv")]([ExtResource("3_e3x60"), SubResource("Resource_r4pvv"), SubResource("Resource_sxm2a"), SubResource("Resource_w7phi"), ExtResource("3_e3x60"), SubResource("Resource_of0pc")])
+dialogue_state_pieces = Array[ExtResource("2_r4pvv")]([ExtResource("3_e3x60"), SubResource("Resource_r4pvv"), SubResource("Resource_sxm2a"), SubResource("Resource_w7phi"), SubResource("Resource_of0pc")])
 dialogue_picture = ExtResource("1_v10vq")
 metadata/_custom_type_script = "uid://dnv403tys4e44"

@@ -3,12 +3,7 @@
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="1_dg8sw"]
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_rrmcw"]
 
-[sub_resource type="Resource" id="Resource_343iw"]
-script = ExtResource("1_dg8sw")
-text_piece = "Go away! Leave!"
-metadata/_custom_type_script = "uid://ceboagsql2avx"
-
 [resource]
 script = ExtResource("2_rrmcw")
-dialogue_pieces = Array[ExtResource("1_dg8sw")]([SubResource("Resource_343iw")])
+dialogue_pieces = Array[ExtResource("1_dg8sw")]([null])
 metadata/_custom_type_script = "uid://cinbncgo4xpfj"
