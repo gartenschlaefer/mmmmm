@@ -87,6 +87,8 @@ func on_area_entered(area: Area2D):
 	# get dialogue
 	active_dialogue = guest.get_dialogue()
 
+	print("guest char: ", guest.get_character())
+
 	# new dialogue
 	detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
 

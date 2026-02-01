@@ -5,6 +5,7 @@ class_name GuestCharacter extends Node2D
 
 # resources
 @export var dialogue: Dialogue
+@export var character: Character_Enum.Characters
 
 # refs
 @onready var interaction_area: Area2D = $interaction_area
@@ -22,6 +23,7 @@ func _ready():
 
 
 func get_dialogue() -> Dialogue: return dialogue
+func get_character(): return character
 
 
 func on_area_entered(_area: Area2D):
