@@ -8,7 +8,6 @@
 [ext_resource type="TileSet" uid="uid://daog56ui4pwhc" path="res://art/interior/walls_tile_set.tres" id="5_tffub"]
 [ext_resource type="Texture2D" uid="uid://djtrvafapyrec" path="res://art/interior/soil.png" id="7_sy5t6"]
 [ext_resource type="PackedScene" uid="uid://b51xaou4ahnyb" path="res://scenes/stove.tscn" id="9_8elfp"]
-[ext_resource type="Texture2D" uid="uid://c2p7tlobnvc7n" path="res://art/character/gentleman.png" id="9_schnp"]
 [ext_resource type="Texture2D" uid="uid://c2iqkl062evyc" path="res://art/interior/carpet2.png" id="10_schnp"]
 [ext_resource type="Texture2D" uid="uid://ycpebkk5dip8" path="res://art/interior/carpet.png" id="11_sy5t6"]
 [ext_resource type="Texture2D" uid="uid://c5y2qt5t4pnl2" path="res://art/interior/hallstadt.png" id="16_kg8af"]
@@ -31,6 +30,12 @@
 [ext_resource type="Texture2D" uid="uid://7e58rpmb07fc" path="res://art/interior/desk_90.png" id="29_d22pk"]
 [ext_resource type="Texture2D" uid="uid://dey48b3mc8yb1" path="res://art/interior/desk_wine.png" id="30_d22pk"]
 [ext_resource type="Texture2D" uid="uid://c7apdoxplkanl" path="res://art/interior/sofa.png" id="31_fxpt7"]
+[ext_resource type="PackedScene" uid="uid://d1egntrdxqk80" path="res://prefabs/dead_mouse.tscn" id="32_w78an"]
+[ext_resource type="PackedScene" path="res://prefabs/npc_chameleon.tscn" id="33_6mgta"]
+[ext_resource type="PackedScene" path="res://prefabs/npc_fox.tscn" id="34_hpsgn"]
+[ext_resource type="PackedScene" path="res://prefabs/npc_owl.tscn" id="35_ntk4m"]
+[ext_resource type="PackedScene" path="res://prefabs/npc_rabbit.tscn" id="36_1qhsd"]
+[ext_resource type="PackedScene" path="res://prefabs/npc_shrimp.tscn" id="37_6ff46"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ghuc2"]
 texture = ExtResource("7_sy5t6")
@@ -86,10 +91,6 @@ texture = ExtResource("2_eoph2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=897869830]
 position = Vector2(542, 128)
 shape = SubResource("RectangleShape2D_5x8ul")
-
-[node name="Gentleman" type="Sprite2D" parent="." unique_id=1441712601]
-position = Vector2(421, 171)
-texture = ExtResource("9_schnp")
 
 [node name="AboveTiles" type="TileMapLayer" parent="." unique_id=699847910]
 position = Vector2(1, -1)
@@ -184,7 +185,7 @@ position = Vector2(679, 572)
 texture = ExtResource("23_k8ae5")
 
 [node name="npc_mole" parent="." unique_id=2123288575 instance=ExtResource("23_lss6i")]
-position = Vector2(-30, 686)
+position = Vector2(24, 681)
 
 [node name="npc_cat" parent="." unique_id=748677046 instance=ExtResource("24_k8ae5")]
 position = Vector2(336, 347)
@@ -237,3 +238,25 @@ texture = ExtResource("23_k8ae5")
 [node name="Sofa" type="Sprite2D" parent="." unique_id=406034568]
 position = Vector2(7, 80)
 texture = ExtResource("31_fxpt7")
+
+[node name="DeadMouse" parent="." unique_id=652999964 instance=ExtResource("32_w78an")]
+position = Vector2(-51, 751)
+
+[node name="npc_chameleon" parent="." unique_id=641944768 instance=ExtResource("33_6mgta")]
+position = Vector2(529, 635)
+character = 6
+
+[node name="npc_fox" parent="." unique_id=183191855 instance=ExtResource("34_hpsgn")]
+position = Vector2(1036, 179)
+character = 1
+
+[node name="npc_owl" parent="." unique_id=1120696256 instance=ExtResource("35_ntk4m")]
+position = Vector2(792, 629)
+character = 3
+
+[node name="npc_rabbit" parent="." unique_id=1984632015 instance=ExtResource("36_1qhsd")]
+position = Vector2(42, 411)
+
+[node name="npc_shrimp" parent="." unique_id=517967459 instance=ExtResource("37_6ff46")]
+position = Vector2(689, 167)
+character = 5
