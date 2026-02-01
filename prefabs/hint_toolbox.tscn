@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://p0unc358yrti"]
+
+[ext_resource type="Script" uid="uid://dkst08uoae0as" path="res://scripts/hint.gd" id="1_1huu7"]
+[ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="2_4yn3o"]
+[ext_resource type="Texture2D" uid="uid://cxw6n21lj0g70" path="res://art/interior/toolbox.png" id="3_1huu7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gd6v5"]
+radius = 50.0
+
+[node name="hint_toolbox" type="Node2D" unique_id=2070377787]
+script = ExtResource("1_1huu7")
+hint_type = 3
+
+[node name="interaction_area" type="Area2D" parent="." unique_id=1460726037]
+collision_layer = 32
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area" unique_id=1779489037]
+shape = SubResource("CircleShape2D_gd6v5")
+
+[node name="rufzeichen" type="Sprite2D" parent="." unique_id=705882976]
+texture_filter = 1
+position = Vector2(0, -51)
+texture = ExtResource("2_4yn3o")
+
+[node name="hint_sprite" type="Sprite2D" parent="." unique_id=1498547002]
+texture = ExtResource("3_1huu7")
