@@ -37,12 +37,14 @@ func get_hint_type(): return hint_type
 func on_area_entered(_area: Area2D):
 
 	# rufzeichen
+	hint_sprite.show()
 	rufzeichen.show()
 
 
 func on_area_exited(_area: Area2D):
 
 	# rufzeichen
+	hint_sprite.hide()
 	rufzeichen.hide()
 
 

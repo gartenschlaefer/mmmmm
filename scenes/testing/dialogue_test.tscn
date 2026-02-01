@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bwca8koy6albo" path="res://scripts/dialogue_test.gd" id="1_5qoin"]
 [ext_resource type="PackedScene" uid="uid://b5yj51vcuu083" path="res://prefabs/hint_carrot.tscn" id="3_dkoys"]
+[ext_resource type="PackedScene" uid="uid://p0unc358yrti" path="res://prefabs/hint_toolbox.tscn" id="4_4rg8y"]
+[ext_resource type="PackedScene" uid="uid://bx8jnebs20gx4" path="res://prefabs/hint_invitation.tscn" id="5_pifdo"]
+[ext_resource type="PackedScene" uid="uid://dittrcjtbo3sk" path="res://prefabs/hint_book.tscn" id="6_83adw"]
 [ext_resource type="PackedScene" uid="uid://b7thjt7rptns5" path="res://scenes/mystery_murder_world.tscn" id="22_x657h"]
 
 [node name="DialogueTest" type="Node" unique_id=1354464837]
@@ -25,5 +28,14 @@ text = "increase state"
 
 [node name="hint_carrot" parent="." unique_id=2070377787 instance=ExtResource("3_dkoys")]
 position = Vector2(202, 349)
+
+[node name="hint_toolbox" parent="." unique_id=370676729 instance=ExtResource("4_4rg8y")]
+position = Vector2(179, 151)
+
+[node name="hint_invitation" parent="." unique_id=128404611 instance=ExtResource("5_pifdo")]
+position = Vector2(301, 163)
+
+[node name="hint_book" parent="." unique_id=1989345679 instance=ExtResource("6_83adw")]
+position = Vector2(437, 160)
 
 [connection signal="button_up" from="Control/Button" to="." method="_on_button_button_up"]
