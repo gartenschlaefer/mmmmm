@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" path="res://prefabs/npc_mole.tscn" id="23_lss6i"]
 [ext_resource type="Texture2D" uid="uid://dd8blxu14h1yt" path="res://art/trees/painted_evergreen02t.png" id="24_hn7bi"]
 [ext_resource type="PackedScene" path="res://prefabs/npc_cat.tscn" id="24_k8ae5"]
+[ext_resource type="Texture2D" uid="uid://bm1p8pkxsppl2" path="res://art/interior/vase.png" id="25_hn7bi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ghuc2"]
 texture = ExtResource("7_sy5t6")
@@ -60,7 +61,8 @@ tile_map_data = PackedByteArray("AAAYAAsAAAABAAAAAAAXAAkAAAABAAAAAAAYAAcAAAABAAA
 tile_set = SubResource("TileSet_xemsr")
 
 [node name="Carpet2" type="Sprite2D" parent="." unique_id=779393032]
-position = Vector2(707, 634)
+position = Vector2(732, 659)
+rotation = 1.5707964
 texture = ExtResource("10_schnp")
 
 [node name="Carpet" type="Sprite2D" parent="." unique_id=708837550]
@@ -165,19 +167,19 @@ position = Vector2(642, 464)
 texture = ExtResource("19_vjwos")
 
 [node name="Chair0" type="Sprite2D" parent="." unique_id=638391631]
-position = Vector2(761, 598)
+position = Vector2(789, 571)
 texture = ExtResource("20_cshx0")
 
 [node name="Chair90" type="Sprite2D" parent="." unique_id=1262164526]
-position = Vector2(757, 671)
+position = Vector2(795, 660)
 texture = ExtResource("21_lss6i")
 
 [node name="Chair180" type="Sprite2D" parent="." unique_id=1176609280]
-position = Vector2(647, 665)
+position = Vector2(674, 666)
 texture = ExtResource("22_hn7bi")
 
 [node name="Chair270" type="Sprite2D" parent="." unique_id=410123713]
-position = Vector2(648, 594)
+position = Vector2(679, 572)
 texture = ExtResource("23_k8ae5")
 
 [node name="npc_mole" parent="." unique_id=2123288575 instance=ExtResource("23_lss6i")]
@@ -185,3 +187,7 @@ position = Vector2(-30, 686)
 
 [node name="npc_cat" parent="." unique_id=748677046 instance=ExtResource("24_k8ae5")]
 position = Vector2(336, 347)
+
+[node name="Vase" type="Sprite2D" parent="." unique_id=791181386]
+position = Vector2(601, 560)
+texture = ExtResource("25_hn7bi")
