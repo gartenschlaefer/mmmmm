@@ -1,12 +1,12 @@
-[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://myh7wu3hxp3n"]
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b51w40sohx48c"]
 
 [ext_resource type="Texture2D" uid="uid://ch32gjy6c866b" path="res://art/character_pictures/pic_fox.png" id="1_3wpex"]
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_3wpex"]
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_uba2g"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_7albm"]
-[ext_resource type="Resource" uid="uid://bjxjyq5lp02g6" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_carrot_rabbit.tres" id="4_my0md"]
+[ext_resource type="Resource" uid="uid://fqw8o1jkifkh" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_carrot_rabbit.tres" id="4_my0md"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="4_naiyi"]
-[ext_resource type="Resource" uid="uid://xacfkxrsr6va" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="6_7albm"]
+[ext_resource type="Resource" uid="uid://bsvs8lvvymgpp" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="6_7albm"]
 
 [sub_resource type="Resource" id="Resource_cfjri"]
 script = ExtResource("4_naiyi")

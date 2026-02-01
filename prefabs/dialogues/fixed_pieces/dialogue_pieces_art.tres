@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueStatePieces" format=3 uid="uid://xacfkxrsr6va"]
+[gd_resource type="Resource" script_class="DialogueStatePieces" format=3 uid="uid://bsvs8lvvymgpp"]
 
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="1_wdkvi"]
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_hahg4"]

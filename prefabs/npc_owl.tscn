@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://buu3yyq3fryw0"]
+[gd_scene format=3 uid="uid://dbgbjvdxg1uyd"]
 
-[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_b26l8"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_yi2nc"]
+[ext_resource type="Script" uid="uid://cruy3wohl7714" path="res://scripts/guest_character.gd" id="1_b26l8"]
+[ext_resource type="Resource" path="res://prefabs/dialogues/dialogue_owl.tres" id="2_b26l8"]
 [ext_resource type="SpriteFrames" uid="uid://dxr24xs7muu3h" path="res://prefabs/character_frames/owl_frames.tres" id="3_b26l8"]
 [ext_resource type="Texture2D" uid="uid://omgqxey4bm6v" path="res://art/character/masks/owl.png" id="4_yi2nc"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_nm878"]
@@ -14,7 +14,8 @@ radius = 50.0
 
 [node name="npc_owl" type="CharacterBody2D" unique_id=2123288575]
 script = ExtResource("1_b26l8")
-dialogue = ExtResource("2_yi2nc")
+dialogue = ExtResource("2_b26l8")
+character = 3
 
 [node name="character_frames" type="AnimatedSprite2D" parent="." unique_id=1398371554]
 texture_filter = 1

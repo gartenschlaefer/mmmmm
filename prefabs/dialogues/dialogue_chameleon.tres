@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://bb51wc8asptla"]
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b3rqs57yida5q"]
 
 [ext_resource type="Texture2D" uid="uid://clmsx741mk35w" path="res://art/character_pictures/pic_chamaleon.png" id="1_v10vq"]
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_r4pvv"]
-[ext_resource type="Resource" uid="uid://bdgw5erkgaodr" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_go_away.tres" id="3_e3x60"]
+[ext_resource type="Resource" uid="uid://caau4pths00l3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_go_away.tres" id="3_e3x60"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="5_2iivk"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="7_j3ff3"]
 

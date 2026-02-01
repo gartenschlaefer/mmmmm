@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://bxmt07lanmkn2"]
+[gd_scene format=3 uid="uid://jlrolyoja1lp"]
 
-[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_634s6"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_vjjwj"]
+[ext_resource type="Script" uid="uid://cruy3wohl7714" path="res://scripts/guest_character.gd" id="1_634s6"]
+[ext_resource type="Resource" uid="uid://b1twtos8a42mn" path="res://prefabs/dialogues/dialogue_shrimp.tres" id="2_634s6"]
 [ext_resource type="SpriteFrames" uid="uid://2vq20xxbf4mb" path="res://prefabs/character_frames/peacock_shrimp_frames.tres" id="3_634s6"]
 [ext_resource type="Texture2D" uid="uid://c767wrns47nah" path="res://art/character/masks/peacock_shrimp.png" id="4_vjjwj"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_tm6il"]
@@ -14,7 +14,8 @@ radius = 50.0
 
 [node name="npc_shrimp" type="CharacterBody2D" unique_id=2123288575]
 script = ExtResource("1_634s6")
-dialogue = ExtResource("2_vjjwj")
+dialogue = ExtResource("2_634s6")
+character = 5
 
 [node name="character_frames" type="AnimatedSprite2D" parent="." unique_id=1398371554]
 texture_filter = 1

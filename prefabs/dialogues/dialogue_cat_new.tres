@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://bnhu2ythc5xl0"]
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://c5bnt0dgh7qnv"]
 
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="1_80u5d"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="2_1sir4"]
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="2_fgvty"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="2_fw77h"]
-[ext_resource type="Resource" uid="uid://xacfkxrsr6va" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="4_fgvty"]
+[ext_resource type="Resource" uid="uid://bsvs8lvvymgpp" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="4_fgvty"]
 
 [sub_resource type="Resource" id="Resource_1sir4"]
 script = ExtResource("2_1sir4")

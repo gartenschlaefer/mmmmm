@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://12ixu8xcamc4"]
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b1twtos8a42mn"]
 
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_ncq0b"]
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_bwyh8"]
-[ext_resource type="Resource" uid="uid://xacfkxrsr6va" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="4_bwyh8"]
+[ext_resource type="Resource" uid="uid://bsvs8lvvymgpp" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="4_bwyh8"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_dfifm"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="4_ncq0b"]
 

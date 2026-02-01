@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c71err83gaih0"]
 
-[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_qw0r0"]
-[ext_resource type="Resource" uid="uid://u0rkhe47ky0i" path="res://prefabs/dialogues/dialogue_cat.tres" id="2_r76vh"]
-[ext_resource type="SpriteFrames" uid="uid://bglwfykms85ll" path="res://prefabs/character_frames/cat_frames.tres" id="3_r76vh"]
+[ext_resource type="Script" uid="uid://cruy3wohl7714" path="res://scripts/guest_character.gd" id="1_qw0r0"]
+[ext_resource type="Resource" uid="uid://c5bnt0dgh7qnv" path="res://prefabs/dialogues/dialogue_cat_new.tres" id="2_r76vh"]
+[ext_resource type="SpriteFrames" uid="uid://c86xd0vvm5144" path="res://prefabs/character_frames/cat_frames.tres" id="3_r76vh"]
 [ext_resource type="Texture2D" uid="uid://c8vf6bm5kfil5" path="res://art/character/masks/cat.png" id="4_q63po"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_6451o"]
 
@@ -15,6 +15,7 @@ radius = 50.0
 [node name="npc_cat" type="CharacterBody2D" unique_id=2123288575]
 script = ExtResource("1_qw0r0")
 dialogue = ExtResource("2_r76vh")
+character = 8
 
 [node name="character_framess" type="AnimatedSprite2D" parent="." unique_id=649970924]
 position = Vector2(0, -32)
