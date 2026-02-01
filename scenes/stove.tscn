@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b51xaou4ahnyb"]
 
-[ext_resource type="SpriteFrames" uid="uid://dvfjvmgt38rtq" path="res://art/interior/flame_sprite_frames.tres" id="1_54o2j"]
+[ext_resource type="SpriteFrames" uid="uid://busmxpbadkljy" path="res://art/interior/flame_sprite_frames.tres" id="1_54o2j"]
 [ext_resource type="Texture2D" uid="uid://boo65sqml5s3b" path="res://art/interior/stove.png" id="2_ieqif"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ghuc2"]
@@ -20,7 +20,6 @@ position = Vector2(-1, -7)
 scale = Vector2(0.55, 0.718)
 sprite_frames = ExtResource("1_54o2j")
 autoplay = "default"
-frame_progress = 0.044305965
 speed_scale = 2.0
 
 [node name="Stove" type="Sprite2D" parent="." unique_id=473247950]

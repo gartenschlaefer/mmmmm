@@ -10,6 +10,12 @@ class_name DialogueStatePieces extends Resource
 var actual_piece: int = -1
 
 
+# func _init(target_dialogue_piceses: Array[DialoguePiece]):
+
+# 	# settings
+# 	dialogue_pieces = target_dialogue_piceses
+
+
 func get_next_dialogue_piece():
 	
 	# finished dialogue
@@ -22,3 +28,6 @@ func get_next_dialogue_piece():
 
 	# return actual piece
 	return dialogue_pieces[actual_piece]
+
+
+func set_dialogue_pieces(target_pieces: Array[DialoguePiece]): dialogue_pieces = target_pieces
