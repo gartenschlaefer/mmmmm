@@ -55,7 +55,6 @@ layout_mode = 2
 text = "Exit"
 
 [node name="credits_canvas" type="CanvasLayer" parent="." unique_id=371110039]
-visible = false
 script = ExtResource("4_ey5gi")
 
 [node name="ColorRect" type="TextureRect" parent="credits_canvas" unique_id=2107878341]
@@ -92,6 +91,7 @@ layout_mode = 2
 text = "Exit"
 
 [node name="title_canvas" type="CanvasLayer" parent="." unique_id=1062149007]
+visible = false
 script = ExtResource("5_g8ct3")
 
 [node name="TextRect" type="TextureRect" parent="title_canvas" unique_id=1593646425]

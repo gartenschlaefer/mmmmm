@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://u0rkhe47ky0i"]
 
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="1_80u5d"]
+[ext_resource type="Texture2D" uid="uid://b4smrja4gfmsh" path="res://art/character_pictures/pic_cat.png" id="1_fgvty"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="2_1sir4"]
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="2_fgvty"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="2_fw77h"]
@@ -18,4 +19,5 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 [resource]
 script = ExtResource("2_fw77h")
 dialogue_state_pieces = Array[ExtResource("1_80u5d")]([ExtResource("2_fgvty"), SubResource("Resource_l6jhc"), null, null])
+dialogue_picture = ExtResource("1_fgvty")
 metadata/_custom_type_script = "uid://dnv403tys4e44"
