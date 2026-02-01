@@ -6,6 +6,7 @@ class_name DialoguePanel extends Panel
 # exports
 @export var actual_text: RichTextLabel
 @export var actual_dialogue_picture_rect: TextureRect
+@onready var boss_battle: Node2D = $BossBattle
 
 # vars
 var actual_dialogue = 0
@@ -56,3 +57,4 @@ func leave_dialogue():
 	
 	# hide
 	self.hide()
+	boss_battle.hide()
