@@ -8,17 +8,17 @@ size = Vector2(22, 14)
 
 [node name="Lady" type="CharacterBody2D" unique_id=2025800013]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=543434898]
-position = Vector2(0, -7)
-shape = SubResource("RectangleShape2D_m0x5s")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1499160050]
+[node name="lady_frames" type="AnimatedSprite2D" parent="." unique_id=1499160050]
 position = Vector2(0, -32)
 sprite_frames = ExtResource("1_wmvcs")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.019455615
 
-[node name="Mask" type="Sprite2D" parent="." unique_id=1044955136]
+[node name="mask" type="Sprite2D" parent="." unique_id=1044955136]
 position = Vector2(0, -54)
 texture = ExtResource("2_85512")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=543434898]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_m0x5s")

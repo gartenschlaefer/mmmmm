@@ -82,12 +82,6 @@ func on_area_entered(area: Area2D):
 	# guest character
 	if not guest is GuestCharacter: return
 
-	# get active dialogue
-	print("is guest")
-
-	# get dialogue
-	print(guest.get_dialogue())
-
 	# get dialogue
 	active_dialogue = guest.get_dialogue()
 
@@ -96,9 +90,6 @@ func on_area_entered(area: Area2D):
 
 
 func on_area_exited(_area: Area2D):
-
-	print("exited")
-	pass
 
 	# reset dialogue
 	active_dialogue = null

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c71err83gaih0"]
+
+[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_qw0r0"]
+[ext_resource type="Resource" uid="uid://u0rkhe47ky0i" path="res://prefabs/dialogues/dialogue_cat.tres" id="2_r76vh"]
+[ext_resource type="SpriteFrames" uid="uid://cl8mv3d5v28ch" path="res://prefabs/lady_frames.tres" id="3_qw0r0"]
+[ext_resource type="Texture2D" uid="uid://c8vf6bm5kfil5" path="res://art/character/masks/cat.png" id="4_q63po"]
+[ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_6451o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_opw8q"]
+size = Vector2(26, 13)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_opw8q"]
+radius = 50.0
+
+[node name="npc_cat" type="CharacterBody2D" unique_id=2123288575]
+script = ExtResource("1_qw0r0")
+dialogue = ExtResource("2_r76vh")
+
+[node name="lady_frames" type="AnimatedSprite2D" parent="." unique_id=649970924]
+position = Vector2(0, -32)
+sprite_frames = ExtResource("3_qw0r0")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.019455615
+
+[node name="mask" type="Sprite2D" parent="." unique_id=904042948]
+texture_filter = 1
+position = Vector2(0, -55)
+texture = ExtResource("4_q63po")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=828608947]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_opw8q")
+
+[node name="interaction_area" type="Area2D" parent="." unique_id=862306716]
+position = Vector2(0, -17)
+collision_layer = 16
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area" unique_id=701197299]
+shape = SubResource("CircleShape2D_opw8q")
+
+[node name="rufzeichen" type="Sprite2D" parent="." unique_id=1419467187]
+texture_filter = 1
+position = Vector2(0, -78)
+texture = ExtResource("5_6451o")
