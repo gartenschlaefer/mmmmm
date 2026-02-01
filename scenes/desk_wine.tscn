@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bt1q2nahgdymx"]
+
+[ext_resource type="Texture2D" uid="uid://dey48b3mc8yb1" path="res://art/interior/desk_wine.png" id="1_yn15r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yn15r"]
+size = Vector2(108.5, 47)
+
+[node name="DeskWine" type="Sprite2D" unique_id=266036131]
+texture = ExtResource("1_yn15r")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1057492354]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=337943266]
+position = Vector2(-1.25, -13.5)
+shape = SubResource("RectangleShape2D_yn15r")

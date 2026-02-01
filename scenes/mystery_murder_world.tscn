@@ -9,27 +9,27 @@
 [ext_resource type="Texture2D" uid="uid://djtrvafapyrec" path="res://art/interior/soil.png" id="7_sy5t6"]
 [ext_resource type="PackedScene" uid="uid://b51xaou4ahnyb" path="res://scenes/stove.tscn" id="9_8elfp"]
 [ext_resource type="Texture2D" uid="uid://c2iqkl062evyc" path="res://art/interior/carpet2.png" id="10_schnp"]
+[ext_resource type="PackedScene" uid="uid://be8ktkr2p4wh2" path="res://scenes/chair_90.tscn" id="11_1qhsd"]
 [ext_resource type="Texture2D" uid="uid://ycpebkk5dip8" path="res://art/interior/carpet.png" id="11_sy5t6"]
+[ext_resource type="PackedScene" uid="uid://c87haqsu5yqi7" path="res://scenes/chair_180.tscn" id="12_6ff46"]
+[ext_resource type="PackedScene" uid="uid://85qtyj74nvai" path="res://scenes/chair_270.tscn" id="13_115nd"]
+[ext_resource type="PackedScene" uid="uid://c32lrgd7v77x5" path="res://scenes/vase.tscn" id="14_btxhe"]
 [ext_resource type="Texture2D" uid="uid://c5y2qt5t4pnl2" path="res://art/interior/hallstadt.png" id="16_kg8af"]
+[ext_resource type="PackedScene" uid="uid://fi2owrpj4uxb" path="res://scenes/chair_0.tscn" id="17_6ff46"]
+[ext_resource type="PackedScene" uid="uid://cvb78ivgy48sk" path="res://scenes/chandelier.tscn" id="17_o4ikc"]
+[ext_resource type="PackedScene" uid="uid://b78a74258rama" path="res://scenes/desk_vertical.tscn" id="18_umac2"]
+[ext_resource type="PackedScene" uid="uid://cwp31ugt6n4id" path="res://scenes/desk_horizontal.tscn" id="19_caisn"]
 [ext_resource type="Texture2D" uid="uid://cedwfrihbmavs" path="res://art/trees/painted_summer14t.png" id="19_tffub"]
-[ext_resource type="Texture2D" uid="uid://bxvk4717bd5cy" path="res://art/interior/chair_0.png" id="20_cshx0"]
+[ext_resource type="PackedScene" uid="uid://bt1q2nahgdymx" path="res://scenes/desk_wine.tscn" id="20_fqba2"]
 [ext_resource type="Texture2D" uid="uid://dfaay2knhtrrr" path="res://art/trees/painted_summer16t.png" id="20_vjwos"]
-[ext_resource type="Texture2D" uid="uid://ggjgv7y1mbdf" path="res://art/interior/chair_90.png" id="21_lss6i"]
+[ext_resource type="PackedScene" uid="uid://cgbtk37wno6df" path="res://scenes/sofa.tscn" id="21_6eat7"]
 [ext_resource type="Texture2D" uid="uid://ywhsvvshb2ct" path="res://art/trees/painted_summer06t.png" id="21_vjwos"]
-[ext_resource type="Texture2D" uid="uid://cwkn07uxkomls" path="res://art/interior/chair_180.png" id="22_hn7bi"]
 [ext_resource type="Texture2D" uid="uid://d2gbgwtlc78fq" path="res://art/trees/photo_grass13t.png" id="22_n474a"]
-[ext_resource type="Texture2D" uid="uid://bhbvrmwu77n8h" path="res://art/interior/chair_270.png" id="23_k8ae5"]
 [ext_resource type="PackedScene" uid="uid://485ul2anbyp2" path="res://prefabs/npc_mole.tscn" id="23_lss6i"]
 [ext_resource type="Texture2D" uid="uid://dd8blxu14h1yt" path="res://art/trees/painted_evergreen02t.png" id="24_hn7bi"]
 [ext_resource type="PackedScene" uid="uid://c71err83gaih0" path="res://prefabs/npc_cat.tscn" id="24_k8ae5"]
-[ext_resource type="Texture2D" uid="uid://bm1p8pkxsppl2" path="res://art/interior/vase.png" id="25_hn7bi"]
 [ext_resource type="Texture2D" uid="uid://bljuhnq8kid1c" path="res://art/interior/plant2.png" id="26_yk1iy"]
 [ext_resource type="Texture2D" uid="uid://ch1ee0xq1v5tq" path="res://art/interior/plant.png" id="27_50vwu"]
-[ext_resource type="Texture2D" uid="uid://0m00gi76o36c" path="res://art/interior/chandelier.png" id="28_50vwu"]
-[ext_resource type="Texture2D" uid="uid://dgj8cpbriauvy" path="res://art/interior/desk.png" id="29_0c0qe"]
-[ext_resource type="Texture2D" uid="uid://7e58rpmb07fc" path="res://art/interior/desk_90.png" id="29_d22pk"]
-[ext_resource type="Texture2D" uid="uid://dey48b3mc8yb1" path="res://art/interior/desk_wine.png" id="30_d22pk"]
-[ext_resource type="Texture2D" uid="uid://c7apdoxplkanl" path="res://art/interior/sofa.png" id="31_fxpt7"]
 [ext_resource type="PackedScene" uid="uid://d1egntrdxqk80" path="res://prefabs/dead_mouse.tscn" id="32_w78an"]
 [ext_resource type="PackedScene" uid="uid://3yd6o3dyyibt" path="res://prefabs/npc_chameleon.tscn" id="33_6mgta"]
 [ext_resource type="PackedScene" uid="uid://bm57hft14owj4" path="res://prefabs/npc_fox.tscn" id="34_hpsgn"]
@@ -95,6 +95,56 @@ texture = ExtResource("2_eoph2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=897869830]
 position = Vector2(542, 128)
 shape = SubResource("RectangleShape2D_5x8ul")
+
+[node name="Chair0" parent="." unique_id=2142873947 instance=ExtResource("17_6ff46")]
+position = Vector2(789, 571)
+
+[node name="Chair90" parent="." unique_id=1704034696 instance=ExtResource("11_1qhsd")]
+position = Vector2(795, 660)
+
+[node name="Chair180" parent="." unique_id=327524928 instance=ExtResource("12_6ff46")]
+position = Vector2(674, 666)
+
+[node name="Chair270" parent="." unique_id=967606575 instance=ExtResource("13_115nd")]
+position = Vector2(679, 572)
+
+[node name="Chair1" parent="." unique_id=1152692291 instance=ExtResource("17_6ff46")]
+position = Vector2(77, 128)
+
+[node name="Chair91" parent="." unique_id=1753926161 instance=ExtResource("11_1qhsd")]
+position = Vector2(37, 239)
+
+[node name="Chair181" parent="." unique_id=602826864 instance=ExtResource("12_6ff46")]
+position = Vector2(-121, 235)
+
+[node name="Chair271" parent="." unique_id=1292919132 instance=ExtResource("13_115nd")]
+position = Vector2(-107, 147)
+
+[node name="Vase" parent="." unique_id=864895782 instance=ExtResource("14_btxhe")]
+position = Vector2(601, 560)
+
+[node name="Plant2" type="Sprite2D" parent="." unique_id=857155028]
+position = Vector2(1096, 143)
+texture = ExtResource("26_yk1iy")
+
+[node name="Plant" type="Sprite2D" parent="." unique_id=791435851]
+position = Vector2(896, 148)
+texture = ExtResource("27_50vwu")
+
+[node name="Chandelier" parent="." unique_id=114745430 instance=ExtResource("17_o4ikc")]
+position = Vector2(1006, 257)
+
+[node name="Desk" parent="." unique_id=1736322693 instance=ExtResource("18_umac2")]
+position = Vector2(-150, 696)
+
+[node name="Desk90" parent="." unique_id=884942798 instance=ExtResource("19_caisn")]
+position = Vector2(-120, 89)
+
+[node name="DeskWine" parent="." unique_id=266036131 instance=ExtResource("20_fqba2")]
+position = Vector2(17, 371)
+
+[node name="Sofa" parent="." unique_id=1748912851 instance=ExtResource("21_6eat7")]
+position = Vector2(7, 80)
 
 [node name="AboveTiles" type="TileMapLayer" parent="." unique_id=699847910]
 visible = false
@@ -172,75 +222,19 @@ texture = ExtResource("22_n474a")
 position = Vector2(979, 448)
 texture = ExtResource("24_hn7bi")
 
-[node name="Chair0" type="Sprite2D" parent="." unique_id=638391631]
-position = Vector2(789, 571)
-texture = ExtResource("20_cshx0")
+[node name="PaintedEvergreen02t2" type="Sprite2D" parent="." unique_id=1759750013]
+position = Vector2(140, 925)
+texture = ExtResource("24_hn7bi")
 
-[node name="Chair90" type="Sprite2D" parent="." unique_id=1262164526]
-position = Vector2(795, 660)
-texture = ExtResource("21_lss6i")
-
-[node name="Chair180" type="Sprite2D" parent="." unique_id=1176609280]
-position = Vector2(674, 666)
-texture = ExtResource("22_hn7bi")
-
-[node name="Chair270" type="Sprite2D" parent="." unique_id=410123713]
-position = Vector2(679, 572)
-texture = ExtResource("23_k8ae5")
+[node name="PaintedEvergreen02t3" type="Sprite2D" parent="." unique_id=897277256]
+position = Vector2(511, 923)
+texture = ExtResource("24_hn7bi")
 
 [node name="npc_mole" parent="." unique_id=2123288575 instance=ExtResource("23_lss6i")]
 position = Vector2(24, 681)
 
 [node name="npc_cat" parent="." unique_id=748677046 instance=ExtResource("24_k8ae5")]
 position = Vector2(336, 347)
-
-[node name="Vase" type="Sprite2D" parent="." unique_id=791181386]
-position = Vector2(601, 560)
-texture = ExtResource("25_hn7bi")
-
-[node name="Plant2" type="Sprite2D" parent="." unique_id=857155028]
-position = Vector2(1096, 143)
-texture = ExtResource("26_yk1iy")
-
-[node name="Plant" type="Sprite2D" parent="." unique_id=791435851]
-position = Vector2(896, 148)
-texture = ExtResource("27_50vwu")
-
-[node name="Chandelier" type="Sprite2D" parent="." unique_id=14726716]
-position = Vector2(1006, 257)
-texture = ExtResource("28_50vwu")
-
-[node name="Desk" type="Sprite2D" parent="." unique_id=219864615]
-position = Vector2(-150, 696)
-texture = ExtResource("29_0c0qe")
-
-[node name="Desk90" type="Sprite2D" parent="." unique_id=1812836818]
-position = Vector2(-120, 89)
-texture = ExtResource("29_d22pk")
-
-[node name="DeskWine" type="Sprite2D" parent="." unique_id=712787106]
-position = Vector2(17, 371)
-texture = ExtResource("30_d22pk")
-
-[node name="Chair1" type="Sprite2D" parent="." unique_id=1923242752]
-position = Vector2(3, 154)
-texture = ExtResource("20_cshx0")
-
-[node name="Chair91" type="Sprite2D" parent="." unique_id=99220398]
-position = Vector2(3, 236)
-texture = ExtResource("21_lss6i")
-
-[node name="Chair181" type="Sprite2D" parent="." unique_id=1532610820]
-position = Vector2(-101, 228)
-texture = ExtResource("22_hn7bi")
-
-[node name="Chair271" type="Sprite2D" parent="." unique_id=1798418373]
-position = Vector2(-104, 149)
-texture = ExtResource("23_k8ae5")
-
-[node name="Sofa" type="Sprite2D" parent="." unique_id=406034568]
-position = Vector2(7, 80)
-texture = ExtResource("31_fxpt7")
 
 [node name="DeadMouse" parent="." unique_id=652999964 instance=ExtResource("32_w78an")]
 position = Vector2(-51, 751)
