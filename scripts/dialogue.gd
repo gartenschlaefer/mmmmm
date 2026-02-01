@@ -6,6 +6,7 @@ class_name Dialogue extends Resource
 # exports
 @export var dialogue_state_pieces: Array[DialogueStatePieces]
 @export var dialogue_picture: Texture2D
+@export var character: Character_Enum.Characters
 
 # vars
 var actual_dialogue_state

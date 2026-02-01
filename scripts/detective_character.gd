@@ -9,6 +9,7 @@ signal detective_requests_next_dialogue_piece
 signal detective_leaves_conservation
 signal detective_talks_to_npc(character: Character_Enum.Characters)
 signal detective_has_collected_hint(hint: Character_Enum.Hints)
+signal detective_changed_hint_state(hint_state: int)
 
 # refs
 @onready var detective_sprite : AnimatedSprite2D  = $AnimatedSprite2D
@@ -71,7 +72,7 @@ func _input(_event):
 	# only interact input
 	if not Input.is_action_just_pressed("interact"): return
 
-	# skip
+	# dialogue
 	if not active_dialogue == null:
 
 		# update dialogue
@@ -93,6 +94,95 @@ func _input(_event):
 func _on_idle_timer_timeout() -> void:
 	detective_sprite.animation = "idle"
 	detective_sprite.play()
+
+
+func end_dialogue_effects():
+
+	# state effect invitation
+	if actual_hint_state == 0:
+
+		# check has invitation
+		if not self.has_invitation(): return
+
+		# mole -> invitation
+		if active_guest != Character_Enum.Characters.MOLE: return
+
+		# increase hint state
+		self.increase_the_hint_state()
+		return
+
+
+	# state effect invitation
+	if actual_hint_state == 1:
+
+		# mole -> invitation
+		if active_guest != Character_Enum.Characters.BUNNY: return
+
+		# check has carrot
+		if not self.has_carrot(): return
+
+		# increase hint state
+		self.increase_the_hint_state()
+		return
+
+
+	# state effect invitation
+	if actual_hint_state == 2:
+
+		# mole -> invitation
+		if active_guest != Character_Enum.Characters.OWL: return
+
+		# check has book
+		if not self.has_book(): return
+
+		# increase hint state
+		self.increase_the_hint_state()
+		return
+
+	# state effect invitation
+	if actual_hint_state == 3:
+
+		# mole -> invitation
+		if active_guest != Character_Enum.Characters.FOX: return
+
+		# check has toolbox
+		if not self.has_toolbox(): return
+
+		# increase hint state
+		self.increase_the_hint_state()
+		return
+
+
+func has_invitation():
+
+	# hint check
+	for hint_id in collected_hints:
+		if hint_id == Character_Enum.Hints.Invitation: return true
+	return false
+
+
+func has_carrot():
+
+	# hint check
+	for hint_id in collected_hints:
+		if hint_id == Character_Enum.Hints.Carrot: return true
+	return false
+
+
+func has_book():
+
+	# hint check
+	for hint_id in collected_hints:
+		if hint_id == Character_Enum.Hints.Book: return true
+	return false
+
+
+func has_toolbox():
+
+	# hint check
+	for hint_id in collected_hints:
+		if hint_id == Character_Enum.Hints.Toolbox: return true
+	return false
 
 
 func on_area_entered(area: Area2D):
@@ -133,8 +223,12 @@ func on_area_entered(area: Area2D):
 
 
 func increase_the_hint_state():
+
+	# hint state increase
 	actual_hint_state += 1
 
+	# emit signal
+	detective_changed_hint_state.emit(actual_hint_state)
 
 func on_area_exited(area: Area2D):
 

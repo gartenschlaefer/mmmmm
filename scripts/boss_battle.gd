@@ -1,5 +1,7 @@
 extends Node2D
 
+signal win_the_game
+
 @onready var left_eye : Node2D = $LeftEye
 @onready var right_eye : Node2D = $RightEye
 @onready var tears_start : Node2D = $Tears/Start
@@ -32,9 +34,11 @@ func _ready() -> void:
 	reset()
 
 
-'func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("interact"):
-		give_clue()'
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("next_page"):
+		give_clue()
+	elif event.is_action_pressed("prev_page"):
+		reset()
 
 func _process(delta: float) -> void:
 	if not shake_timer.is_stopped():
@@ -62,7 +66,7 @@ func reset():
 	curr_round = 0
 
 func give_clue():
-	if has_cue_left():
+	if has_clue_left():
 		curr_round += 1
 		shake_timer.start()
 		match curr_round:
@@ -114,12 +118,15 @@ func start_eye_shaking(eyes: Node2D):
 	elif eyes == right_eye:
 		right_eye_shake = true
 
-func has_cue_left() -> bool:
+func has_clue_left() -> bool:
+	if curr_round == 4:
+		win_the_game.emit()
 	return true
 
 func _on_tears_timer_timeout() -> void:
 	tears_mid.hide()
 	tears_end.show()
+	tears_timer.stop()
 
 func _on_shake_timer_timeout() -> void:
 	boss_shake_time = 0.0
