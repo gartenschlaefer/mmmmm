@@ -36,10 +36,10 @@
 [ext_resource type="PackedScene" uid="uid://dbgbjvdxg1uyd" path="res://prefabs/npc_owl.tscn" id="35_ntk4m"]
 [ext_resource type="PackedScene" uid="uid://hv8vrxk7t1kb" path="res://prefabs/npc_rabbit.tscn" id="36_1qhsd"]
 [ext_resource type="PackedScene" uid="uid://jlrolyoja1lp" path="res://prefabs/npc_shrimp.tscn" id="37_6ff46"]
-[ext_resource type="PackedScene" path="res://prefabs/hint_carrot.tscn" id="37_6mgta"]
-[ext_resource type="PackedScene" path="res://prefabs/hint_invitation.tscn" id="38_hpsgn"]
-[ext_resource type="PackedScene" path="res://prefabs/hint_book.tscn" id="39_ntk4m"]
-[ext_resource type="PackedScene" path="res://prefabs/hint_toolbox.tscn" id="40_1qhsd"]
+[ext_resource type="PackedScene" uid="uid://b5yj51vcuu083" path="res://prefabs/hint_carrot.tscn" id="37_6mgta"]
+[ext_resource type="PackedScene" uid="uid://bx8jnebs20gx4" path="res://prefabs/hint_invitation.tscn" id="38_hpsgn"]
+[ext_resource type="PackedScene" uid="uid://dittrcjtbo3sk" path="res://prefabs/hint_book.tscn" id="39_ntk4m"]
+[ext_resource type="PackedScene" uid="uid://p0unc358yrti" path="res://prefabs/hint_toolbox.tscn" id="40_1qhsd"]
 [ext_resource type="Texture2D" uid="uid://cuv6hlds08op2" path="res://art/interior/telephone.png" id="41_1qhsd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ghuc2"]
@@ -89,11 +89,11 @@ position = Vector2(805, 500)
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=756982858]
 
 [node name="PendulumClock" type="Sprite2D" parent="StaticBody2D" unique_id=694327934]
-position = Vector2(542, 106)
+position = Vector2(545, 48)
 texture = ExtResource("2_eoph2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=897869830]
-position = Vector2(542, 128)
+position = Vector2(545, 70)
 shape = SubResource("RectangleShape2D_5x8ul")
 
 [node name="Chair0" parent="." unique_id=2142873947 instance=ExtResource("17_6ff46")]
