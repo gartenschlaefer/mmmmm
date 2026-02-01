@@ -9,7 +9,6 @@
 [ext_resource type="TileSet" uid="uid://daog56ui4pwhc" path="res://art/interior/walls_tile_set.tres" id="5_tffub"]
 [ext_resource type="Texture2D" uid="uid://djtrvafapyrec" path="res://art/interior/soil.png" id="7_sy5t6"]
 [ext_resource type="Texture2D" uid="uid://c2p7tlobnvc7n" path="res://art/character/gentleman.png" id="9_schnp"]
-[ext_resource type="Texture2D" uid="uid://04h7j82dmpqy" path="res://art/trees/fence_05t.png" id="10_lss6i"]
 [ext_resource type="Texture2D" uid="uid://c2iqkl062evyc" path="res://art/interior/carpet2.png" id="10_schnp"]
 [ext_resource type="Texture2D" uid="uid://ycpebkk5dip8" path="res://art/interior/carpet.png" id="11_sy5t6"]
 [ext_resource type="SpriteFrames" uid="uid://dvfjvmgt38rtq" path="res://art/interior/flame_sprite_frames.tres" id="13_ghuc2"]
@@ -29,16 +28,9 @@ texture_region_size = Vector2i(64, 64)
 2:0/0 = 0
 3:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yk1iy"]
-texture = ExtResource("10_lss6i")
-texture_region_size = Vector2i(64, 64)
-0:0/0 = 0
-1:0/0 = 0
-
 [sub_resource type="TileSet" id="TileSet_xemsr"]
 tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_ghuc2")
-sources/1 = SubResource("TileSetAtlasSource_yk1iy")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ghuc2"]
 size = Vector2(56, 65)
