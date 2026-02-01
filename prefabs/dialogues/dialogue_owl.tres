@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://d0e1c0gvi4lko"]
+
+[ext_resource type="Texture2D" uid="uid://bbheemlaj8bc8" path="res://art/character_pictures/pic_owl.png" id="1_23sc5"]
+[ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_4mx0e"]
+[ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_cyl8i"]
+[ext_resource type="Resource" uid="uid://boc0mu72u4ji0" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_carrot_rabbit.tres" id="4_4mx0e"]
+[ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_cxdab"]
+[ext_resource type="Resource" uid="uid://dval8eie3hihx" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_book.tres" id="5_cyl8i"]
+[ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="6_cxdab"]
+[ext_resource type="Resource" uid="uid://bx76bsibc12kv" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="7_23sc5"]
+
+[sub_resource type="Resource" id="Resource_23sc5"]
+script = ExtResource("6_cxdab")
+text_piece = "Ah, I missed that already. Are you gonna pay the late fee? "
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_kfjjv"]
+script = ExtResource("6_cxdab")
+text_piece = "Zzzzzzz"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_2tvwo"]
+script = ExtResource("6_cxdab")
+text_piece = "Ah, sorry this happens from time to time! So, [color=red]Mr. Mouse[/color] is dead you say? So, well I assume no one's gonna pay the depts "
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_em8ao"]
+script = ExtResource("6_cxdab")
+text_piece = "Zzzzzzz"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_wj8ik"]
+script = ExtResource("6_cxdab")
+text_piece = "Yikes, excuse me! Depts! Yes, depts. No, I am not the only one, whom [color=red]Mr. Mouse[/color] owes money. "
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_2qxkk"]
+script = ExtResource("6_cxdab")
+text_piece = "Zzzzzzz"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_82d1a"]
+script = ExtResource("6_cxdab")
+text_piece = "My dear son, I apologize! Yes, right! [color=red]Mrs. Chameleon[/color] asked for advice, how she could get the depts back from [color=red]Mr. Mouse[/color]. But you didn't get that from me."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_kdibn"]
+script = ExtResource("6_cxdab")
+text_piece = "Zzzzzzz"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_cjpmr"]
+script = ExtResource("6_cxdab")
+text_piece = "Sorry, again! [color=red]Mrs. Chameleon[/color] left this town, her poor husband [color=red]Mr. Chameleon[/color] and the children. These innocent little creatures! With the move in of the new villager the town was no longer that peaceful place we knew once. Unrest entered our community."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_dt6am"]
+script = ExtResource("6_cxdab")
+text_piece = "Zzzzzzz"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_xpuvv"]
+script = ExtResource("6_cxdab")
+text_piece = "By the way, who leaves such dangerous [img]art/symbols/star.png[/img] lying around here? There are children here."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_bu556"]
+script = ExtResource("2_4mx0e")
+dialogue_pieces = Array[ExtResource("6_cxdab")]([SubResource("Resource_23sc5"), SubResource("Resource_kfjjv"), SubResource("Resource_2tvwo"), SubResource("Resource_em8ao"), SubResource("Resource_wj8ik"), SubResource("Resource_2qxkk"), SubResource("Resource_82d1a"), SubResource("Resource_kdibn"), SubResource("Resource_cjpmr"), SubResource("Resource_dt6am"), SubResource("Resource_xpuvv")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_cxdab"]
+script = ExtResource("6_cxdab")
+text_piece = "What was [color= red]Mr. Mole[/color] thinking? I wonder if it was expensive."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_di5fj"]
+script = ExtResource("2_4mx0e")
+dialogue_pieces = Array[ExtResource("6_cxdab")]([SubResource("Resource_cxdab")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[resource]
+script = ExtResource("4_cxdab")
+dialogue_state_pieces = Array[ExtResource("2_4mx0e")]([ExtResource("3_cyl8i"), ExtResource("4_4mx0e"), ExtResource("5_cyl8i"), SubResource("Resource_bu556"), SubResource("Resource_di5fj"), ExtResource("7_23sc5")])
+dialogue_picture = ExtResource("1_23sc5")
+metadata/_custom_type_script = "uid://dnv403tys4e44"

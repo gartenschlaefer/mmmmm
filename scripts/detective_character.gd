@@ -8,6 +8,7 @@ signal detective_has_new_dialogue(dialogue: Dialogue, hint_state: int)
 signal detective_requests_next_dialogue_piece
 signal detective_leaves_conservation
 signal detective_talks_to_npc(character: Character_Enum.Characters)
+signal detective_has_collected_hint(hint: Character_Enum.Hints)
 
 # refs
 @onready var detective_sprite : AnimatedSprite2D  = $AnimatedSprite2D
@@ -18,6 +19,7 @@ signal detective_talks_to_npc(character: Character_Enum.Characters)
 # var
 var old_direction  : Vector2
 var active_dialogue: Dialogue = null
+var active_hint: Hint = null
 var actual_hint_state: int = 0
 var active_guest : Character_Enum.Characters = Character_Enum.Characters.NONE;
 var collected_hints: Array[int]
@@ -66,14 +68,26 @@ func _physics_process(_delta: float) -> void:
 
 func _input(_event):
 
-	# skip
-	if active_dialogue == null: return
+	# only interact input
+	if not Input.is_action_just_pressed("interact"): return
 
-	# update dialogue
-	if Input.is_action_just_pressed("interact"): 
+	# skip
+	if not active_dialogue == null:
+
+		# update dialogue
 		detective_requests_next_dialogue_piece.emit()
 		if(active_guest != Character_Enum.Characters.NONE):
 			detective_talks_to_npc.emit(active_guest);
+
+	# there is an active hint
+	if active_hint != null:
+
+		# add to collected hints
+		collected_hints.append(active_hint.get_hint_type())
+		detective_has_collected_hint.emit(active_hint.get_hint_type())
+		active_hint.disable()
+		print("collected hints: ", collected_hints)
+		active_hint = null
 
 
 func _on_idle_timer_timeout() -> void:
@@ -84,33 +98,68 @@ func _on_idle_timer_timeout() -> void:
 func on_area_entered(area: Area2D):
 
 	# get parent
-	var guest = area.get_parent()
+	var interaction_object = area.get_parent()
 
-	# guest character
-	if not guest is GuestCharacter: return
+	# guest interaction
+	if interaction_object is GuestCharacter:
 
-	# get dialogue
-	active_dialogue = guest.get_dialogue()
+		# get dialogue
+		active_dialogue = interaction_object.get_dialogue()
+		active_guest = interaction_object.get_character();
 
-	active_guest = guest.get_character();
+		# info
+		print("guest char: ", interaction_object.get_character())
 
-	# new dialogue
-	detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
+		# new dialogue
+		detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
+
+		# end
+		return
+
+	# hint interaction
+	if interaction_object is Hint:
+
+		# is active hint
+		if not interaction_object.get_is_hint_active(): return
+
+		# do something with the hint
+		print("hint: ", interaction_object.get_hint_type())
+
+		# active hint
+		active_hint = interaction_object
+
+		# end
+		return
 
 
 func increase_the_hint_state():
 	actual_hint_state += 1
 
 
-func on_area_exited(_area: Area2D):
+func on_area_exited(area: Area2D):
 
-	# reset dialogue
-	active_dialogue = null
-	
-	active_guest = Character_Enum.Characters.NONE
+	# get parent
+	var interaction_object = area.get_parent()
 
-	# leave conservation
-	detective_leaves_conservation.emit()
+	# guest character
+	if interaction_object is GuestCharacter: 
 
+		# reset dialogue
+		active_dialogue = null
+		active_guest = Character_Enum.Characters.NONE
+
+		# leave conservation
+		detective_leaves_conservation.emit()
+
+		return
+
+	# hint
+	if interaction_object is Hint: 
+
+		# active hint disable
+		active_hint = null
+
+		return
+		
 
 func get_hint_state(): return actual_hint_state

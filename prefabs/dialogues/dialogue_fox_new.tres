@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dgxrs7im0pst3"]
+
+[ext_resource type="Texture2D" uid="uid://ch32gjy6c866b" path="res://art/character_pictures/pic_fox.png" id="1_3wpex"]
+[ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_3wpex"]
+[ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_uba2g"]
+[ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_7albm"]
+[ext_resource type="Resource" uid="uid://boc0mu72u4ji0" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_carrot_rabbit.tres" id="4_my0md"]
+[ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="4_naiyi"]
+[ext_resource type="Resource" uid="uid://bx76bsibc12kv" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="6_7albm"]
+
+[sub_resource type="Resource" id="Resource_cfjri"]
+script = ExtResource("4_naiyi")
+text_piece = "Have you seen this vase? Do you think it is a real Ming?"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_l8csx"]
+script = ExtResource("2_3wpex")
+dialogue_pieces = Array[ExtResource("4_naiyi")]([SubResource("Resource_cfjri")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_eq56d"]
+script = ExtResource("4_naiyi")
+text_piece = "Life is like a toolbox, all pieces help you to move forward!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_aska5"]
+script = ExtResource("2_3wpex")
+dialogue_pieces = Array[ExtResource("4_naiyi")]([SubResource("Resource_eq56d")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_rdq42"]
+script = ExtResource("4_naiyi")
+text_piece = "What do you want? Yes, that's my pipe wrench. Where did you find this, I was looking for it. But why is there blood on it?"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_727py"]
+script = ExtResource("4_naiyi")
+text_piece = "WHAT? [color=red]Mr. Mouse[/color] is dead? And you are accusing me?"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_df4hq"]
+script = ExtResource("4_naiyi")
+text_piece = "Yes, I understand, that with the murder weapon is quite suspicious, but I tell you it wasn't me. How did you come to the conclusion that it was me?"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_i6pgi"]
+script = ExtResource("4_naiyi")
+text_piece = "The other residants have accused me? These philistines! I am such a giving person, always helping if something needs to be fixed."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_046t8"]
+script = ExtResource("4_naiyi")
+text_piece = "Of course it wasn't me, I couldn't do any harm to anyone! And by the way at the time of the crime I had a chat with [color=red]Mrs. Cat[/color] about her defect toilet."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_fbk4y"]
+script = ExtResource("4_naiyi")
+text_piece = "After that talk, I went here to get my pipe wrench, but it wasn't inside the toolbox. That is all I can tell you."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_mm6nc"]
+script = ExtResource("4_naiyi")
+text_piece = "but wait, as I came inside here - i smelled something strange, it was turpentine. Isn't this used in [img]art/symbols/wave.png[/img] to clean?"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_8x1e6"]
+script = ExtResource("2_3wpex")
+dialogue_pieces = Array[ExtResource("4_naiyi")]([SubResource("Resource_rdq42"), SubResource("Resource_727py"), SubResource("Resource_df4hq"), SubResource("Resource_i6pgi"), SubResource("Resource_046t8"), SubResource("Resource_fbk4y"), SubResource("Resource_mm6nc")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[resource]
+script = ExtResource("4_7albm")
+dialogue_state_pieces = Array[ExtResource("2_3wpex")]([ExtResource("3_uba2g"), ExtResource("4_my0md"), SubResource("Resource_l8csx"), SubResource("Resource_aska5"), SubResource("Resource_8x1e6"), ExtResource("6_7albm")])
+dialogue_picture = ExtResource("1_3wpex")
+metadata/_custom_type_script = "uid://dnv403tys4e44"

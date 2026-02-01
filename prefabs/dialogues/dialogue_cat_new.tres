@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cyc3xo5bl1kci"]
+
+[ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="1_80u5d"]
+[ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="2_1sir4"]
+[ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="2_fgvty"]
+[ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="2_fw77h"]
+[ext_resource type="Resource" uid="uid://bx76bsibc12kv" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="4_fgvty"]
+
+[sub_resource type="Resource" id="Resource_1sir4"]
+script = ExtResource("2_1sir4")
+text_piece = "The moon is beautiful tonight, but from inside someone can hardly see."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_fgvty"]
+script = ExtResource("1_80u5d")
+dialogue_pieces = Array[ExtResource("2_1sir4")]([SubResource("Resource_1sir4")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_l6jhc"]
+script = ExtResource("2_1sir4")
+text_piece = "Have you been to the room with the fireplace? Unbelieveable what possessions [color=red]Mr. Mole[/color] can call his own."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_1ewqe"]
+script = ExtResource("1_80u5d")
+dialogue_pieces = Array[ExtResource("2_1sir4")]([SubResource("Resource_l6jhc")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_chnpy"]
+script = ExtResource("2_1sir4")
+text_piece = "The winter garden completes the ambient!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_cmdgh"]
+script = ExtResource("1_80u5d")
+dialogue_pieces = Array[ExtResource("2_1sir4")]([SubResource("Resource_chnpy")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_0xmma"]
+script = ExtResource("2_1sir4")
+text_piece = "[color=red]Mr. Chameleon[/color] is an artist, isn't he? Ask him about a deeper meaning behind this piece of art."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_84qmd"]
+script = ExtResource("1_80u5d")
+dialogue_pieces = Array[ExtResource("2_1sir4")]([SubResource("Resource_0xmma")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[resource]
+script = ExtResource("2_fw77h")
+dialogue_state_pieces = Array[ExtResource("1_80u5d")]([ExtResource("2_fgvty"), SubResource("Resource_fgvty"), SubResource("Resource_1ewqe"), SubResource("Resource_cmdgh"), SubResource("Resource_84qmd"), ExtResource("4_fgvty")])
+metadata/_custom_type_script = "uid://dnv403tys4e44"

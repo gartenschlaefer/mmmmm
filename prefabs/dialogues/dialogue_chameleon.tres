@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://boaxf4dqd2aqk"]
+
+[ext_resource type="Texture2D" uid="uid://clmsx741mk35w" path="res://art/character_pictures/pic_chamaleon.png" id="1_v10vq"]
+[ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_r4pvv"]
+[ext_resource type="Resource" uid="uid://rksbo4xp7l8n" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_go_away.tres" id="3_e3x60"]
+[ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="5_2iivk"]
+[ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="7_j3ff3"]
+
+[sub_resource type="Resource" id="Resource_e3x60"]
+script = ExtResource("5_2iivk")
+text_piece = "Ah, I see you have met [color= red]Mr. Mouse[/color]. Is this his invitation? "
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_xdj7m"]
+script = ExtResource("5_2iivk")
+text_piece = "He is such a funny guy!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_v10vq"]
+script = ExtResource("5_2iivk")
+text_piece = "I wonder where he is? Haven't seen him tonight, since I arrived late"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_r4pvv"]
+script = ExtResource("2_r4pvv")
+dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_e3x60"), SubResource("Resource_xdj7m"), SubResource("Resource_v10vq")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_vg18a"]
+script = ExtResource("5_2iivk")
+text_piece = "Hm, a carrot! What do you want with this?"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_2iivk"]
+script = ExtResource("5_2iivk")
+text_piece = "Did you heard about the fight between [color= red]Mrs. Rabbit[/color] and [color= red]Mr. Fox[/color]?"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_4ogfl"]
+script = ExtResource("5_2iivk")
+text_piece = "Suspicious guy, this [color= red]Mr. Fox[/color] if you ask me!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_sxm2a"]
+script = ExtResource("2_r4pvv")
+dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_vg18a"), SubResource("Resource_2iivk"), SubResource("Resource_4ogfl")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_j3ff3"]
+script = ExtResource("5_2iivk")
+text_piece = "What should I do with this book? "
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_856wr"]
+script = ExtResource("5_2iivk")
+text_piece = "Have never seen this before, I have never been to the wintergarden!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_w7phi"]
+script = ExtResource("2_r4pvv")
+dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_j3ff3"), SubResource("Resource_856wr")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[sub_resource type="Resource" id="Resource_eycoo"]
+script = ExtResource("5_2iivk")
+text_piece = "OK - fine! I confess, it was me! Yes, I did it! You got me!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_of0pc"]
+script = ExtResource("2_r4pvv")
+dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_eycoo")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
+
+[resource]
+script = ExtResource("7_j3ff3")
+dialogue_state_pieces = Array[ExtResource("2_r4pvv")]([ExtResource("3_e3x60"), SubResource("Resource_r4pvv"), SubResource("Resource_sxm2a"), SubResource("Resource_w7phi"), ExtResource("3_e3x60"), SubResource("Resource_of0pc")])
+dialogue_picture = ExtResource("1_v10vq")
+metadata/_custom_type_script = "uid://dnv403tys4e44"
