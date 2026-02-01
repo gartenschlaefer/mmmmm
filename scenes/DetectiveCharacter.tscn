@@ -1,27 +1,43 @@
 [gd_scene format=3 uid="uid://df8xv1nmmg3vu"]
 
 [ext_resource type="Script" uid="uid://2b8pe8le5lrd" path="res://scripts/detective_character.gd" id="1_uv6sp"]
-[ext_resource type="SpriteFrames" uid="uid://2vq20xxbf4mb" path="res://prefabs/gentle_frames.tres" id="2_fah66"]
+[ext_resource type="SpriteFrames" uid="uid://ctcxdyjpc8dxu" path="res://prefabs/character_frames/penguin_frames.tres" id="2_fah66"]
 [ext_resource type="Texture2D" uid="uid://c4gqfpnkur0yk" path="res://art/character/masks/penguin.png" id="3_uv8th"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5eaa"]
-size = Vector2(26, 14.25)
+size = Vector2(32, 12)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fah66"]
+radius = 25.0
 
 [node name="detective_character" type="CharacterBody2D" unique_id=1062132348]
 script = ExtResource("1_uv6sp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1277098450]
-position = Vector2(0, 7.125)
+position = Vector2(0, -6)
 shape = SubResource("RectangleShape2D_f5eaa")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=885842856]
 zoom = Vector2(3, 3)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1167257412]
+position = Vector2(0, -32)
 sprite_frames = ExtResource("2_fah66")
 animation = &"walk"
-frame_progress = 0.6657442
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1760037274]
-position = Vector2(0, -23)
+position = Vector2(0, -55)
 texture = ExtResource("3_uv8th")
+
+[node name="IdleTimer" type="Timer" parent="." unique_id=604313753]
+wait_time = 3.0
+
+[node name="interaction_area" type="Area2D" parent="." unique_id=898353260]
+collision_layer = 8
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area" unique_id=51631549]
+position = Vector2(0, -25)
+shape = SubResource("CircleShape2D_fah66")
+
+[connection signal="timeout" from="IdleTimer" to="." method="_on_idle_timer_timeout"]

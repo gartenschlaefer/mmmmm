@@ -25,14 +25,19 @@ func load_dialogue(target_dialogue: Dialogue, dialogue_state: int):
 	# set state
 	target_dialogue.set_dialogue_state(dialogue_state)
 
+	# show
+	#self.show()
 	# first piece
-	self.next_dialogue_piece()
+	#self.next_dialogue_piece()
 
 
 func next_dialogue_piece():
 	
 	# next piece of the dialogue
 	var target_dialogue_piece: DialoguePiece = actual_dialogue.get_next_dialogue_piece()
+
+	# make visible
+	if not visible: self.show()
 
 	# if null -> last piece reached
 	if target_dialogue_piece == null:

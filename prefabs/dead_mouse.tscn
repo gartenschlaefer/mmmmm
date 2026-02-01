@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d1egntrdxqk80"]
+
+[ext_resource type="SpriteFrames" path="res://prefabs/character_frames/mouse_frames.tres" id="1_7hoyi"]
+[ext_resource type="Texture2D" uid="uid://cicow3ecryqj0" path="res://art/character/masks/mouse.png" id="2_u3tkb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8i5m"]
+size = Vector2(59, 23)
+
+[node name="DeadMouse" type="CharacterBody2D" unique_id=652999964]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1110121107]
+position = Vector2(0, -32)
+sprite_frames = ExtResource("1_7hoyi")
+animation = &"dead_mouse"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2018710432]
+position = Vector2(25, -9.999999)
+rotation = 1.8325957
+texture = ExtResource("2_u3tkb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=546777075]
+position = Vector2(-0.5, -11.5)
+shape = SubResource("RectangleShape2D_i8i5m")

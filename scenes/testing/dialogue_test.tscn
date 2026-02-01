@@ -1,63 +1,25 @@
 [gd_scene format=3 uid="uid://bforrb0hnfufa"]
 
 [ext_resource type="Script" uid="uid://bwca8koy6albo" path="res://scripts/dialogue_test.gd" id="1_5qoin"]
-[ext_resource type="Script" uid="uid://ckj1cwipmhiwh" path="res://scripts/dialogue_panel.gd" id="2_dkoys"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogue_mole.tres" id="2_gru6b"]
-[ext_resource type="Texture2D" uid="uid://chrcxxy83ud1y" path="res://art/character_pictures/pic_mole.png" id="3_dkoys"]
-[ext_resource type="PackedScene" uid="uid://b7thjt7rptns5" path="res://scenes/mystery_murder_world.tscn" id="5_pb7im"]
+[ext_resource type="PackedScene" uid="uid://b7thjt7rptns5" path="res://scenes/mystery_murder_world.tscn" id="22_x657h"]
 
 [node name="DialogueTest" type="Node" unique_id=1354464837]
 script = ExtResource("1_5qoin")
-actual_dialogue = ExtResource("2_gru6b")
 
-[node name="MysteryMurderWorld" parent="." unique_id=1122988744 instance=ExtResource("5_pb7im")]
+[node name="mystery_murder_world" parent="." unique_id=1122988744 instance=ExtResource("22_x657h")]
 
-[node name="hud" type="CanvasLayer" parent="." unique_id=236139749]
+[node name="Control" type="Control" parent="." unique_id=1263371710]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="dialogue_panel" type="Panel" parent="hud" unique_id=1353536842 node_paths=PackedStringArray("actual_text", "actual_dialogue_picture_rect")]
-offset_right = 601.0
-offset_bottom = 200.0
-script = ExtResource("2_dkoys")
-actual_text = NodePath("HBoxContainer/dialogue/RichTextLabel")
-actual_dialogue_picture_rect = NodePath("HBoxContainer/MarginContainer/TextureRect")
+[node name="Button" type="Button" parent="Control" unique_id=487075494]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 495.0
+offset_right = 245.0
+offset_bottom = 526.0
+text = "increase state"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="hud/dialogue_panel" unique_id=1554563094]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -325.0
-offset_right = 2.0
-offset_bottom = 325.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="hud/dialogue_panel/HBoxContainer" unique_id=564887774]
-custom_minimum_size = Vector2(200, 200)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
-
-[node name="TextureRect" type="TextureRect" parent="hud/dialogue_panel/HBoxContainer/MarginContainer" unique_id=1486069585]
-layout_mode = 2
-texture = ExtResource("3_dkoys")
-expand_mode = 2
-
-[node name="dialogue" type="MarginContainer" parent="hud/dialogue_panel/HBoxContainer" unique_id=1769778565]
-custom_minimum_size = Vector2(0, 200)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 30
-theme_override_constants/margin_bottom = 10
-
-[node name="RichTextLabel" type="RichTextLabel" parent="hud/dialogue_panel/HBoxContainer/dialogue" unique_id=172100576]
-layout_mode = 2
-bbcode_enabled = true
-text = "Hi, welcome to the [b]mansion[/b] of [color=red] mr. mole[/color], wahaha [img=50]art/icon.svg[/img] this isfakkj soo great and i will write this text to get a line break"
+[connection signal="button_up" from="Control/Button" to="." method="_on_button_button_up"]

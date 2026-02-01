@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di2t8fy1fp0q4"
-path="res://.godot/imported/lady_anim.png-a87fe21acd4b599557e1b226430a318b.ctex"
+uid="uid://b4yvg2aa1mv31"
+path="res://.godot/imported/rufzeichen.png-f07ffd9afd49f98579b380d59ac26169.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/lady_anim.png"
-dest_files=["res://.godot/imported/lady_anim.png-a87fe21acd4b599557e1b226430a318b.ctex"]
+source_file="res://art/character/rufzeichen.png"
+dest_files=["res://.godot/imported/rufzeichen.png-f07ffd9afd49f98579b380d59ac26169.ctex"]
 
 [params]
 
