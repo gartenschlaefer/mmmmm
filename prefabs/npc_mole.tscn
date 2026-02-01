@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://485ul2anbyp2"]
 
-[ext_resource type="Script" uid="uid://cruy3wohl7714" path="res://scripts/guest_character.gd" id="1_l0ssq"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogue_mole.tres" id="2_opw8q"]
+[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_l0ssq"]
+[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_opw8q"]
 [ext_resource type="SpriteFrames" uid="uid://2vq20xxbf4mb" path="res://prefabs/gentle_frames.tres" id="3_opw8q"]
 [ext_resource type="Texture2D" uid="uid://dx2t1w5kj6ewe" path="res://art/character/masks/mole.png" id="4_gojv5"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_gojv5"]
@@ -12,7 +12,7 @@ size = Vector2(26, 13)
 [sub_resource type="CircleShape2D" id="CircleShape2D_opw8q"]
 radius = 50.0
 
-[node name="Mole" type="CharacterBody2D" unique_id=2123288575]
+[node name="npc_mole" type="CharacterBody2D" unique_id=2123288575]
 script = ExtResource("1_l0ssq")
 dialogue = ExtResource("2_opw8q")
 

@@ -8,13 +8,13 @@ size = Vector2(26, 13)
 
 [node name="NpcGentleman" type="CharacterBody2D" unique_id=2147337711]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=496219492]
+[node name="gentleman_frames" type="AnimatedSprite2D" parent="." unique_id=496219492]
 position = Vector2(0, -32)
 sprite_frames = ExtResource("1_noifd")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1585675582]
+[node name="mask" type="Sprite2D" parent="." unique_id=1585675582]
 position = Vector2(0, -55)
 texture = ExtResource("2_e2xwk")
 

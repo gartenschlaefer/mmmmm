@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://bforrb0hnfufa"]
 
 [ext_resource type="Script" uid="uid://bwca8koy6albo" path="res://scripts/dialogue_test.gd" id="1_5qoin"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogue_mole.tres" id="2_gru6b"]
-[ext_resource type="PackedScene" uid="uid://485ul2anbyp2" path="res://prefabs/mole.tscn" id="4_4rg8y"]
+[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_gru6b"]
+[ext_resource type="PackedScene" uid="uid://485ul2anbyp2" path="res://prefabs/npc_mole.tscn" id="4_4rg8y"]
 [ext_resource type="TileSet" uid="uid://cyffe4ui6ol81" path="res://art/interior/floor_tilemap.tres" id="4_8w3hn"]
 [ext_resource type="TileSet" uid="uid://daog56ui4pwhc" path="res://art/interior/walls_tile_set.tres" id="5_02shy"]
 [ext_resource type="Texture2D" uid="uid://djtrvafapyrec" path="res://art/interior/soil.png" id="6_x657h"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://d2gbgwtlc78fq" path="res://art/trees/photo_grass13t.png" id="19_wmf51"]
 [ext_resource type="Texture2D" uid="uid://dd8blxu14h1yt" path="res://art/trees/painted_evergreen02t.png" id="20_md4ev"]
 [ext_resource type="PackedScene" uid="uid://6thoyevkxer4" path="res://prefabs/hud.tscn" id="21_3hv87"]
+[ext_resource type="PackedScene" uid="uid://c71err83gaih0" path="res://prefabs/npc_cat.tscn" id="22_02shy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_10k25"]
 texture = ExtResource("6_x657h")
@@ -189,7 +190,10 @@ texture = ExtResource("19_wmf51")
 position = Vector2(979, 448)
 texture = ExtResource("20_md4ev")
 
-[node name="Mole" parent="." unique_id=183870878 instance=ExtResource("4_4rg8y")]
+[node name="npc_mole" parent="." unique_id=183870878 instance=ExtResource("4_4rg8y")]
 position = Vector2(400, 395)
+
+[node name="npc_cat" parent="." unique_id=2123288575 instance=ExtResource("22_02shy")]
+position = Vector2(222, 406)
 
 [node name="hud" parent="." unique_id=961846994 instance=ExtResource("21_3hv87")]
