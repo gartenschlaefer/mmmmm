@@ -11,3 +11,10 @@ enum Characters {
 	CAT,
 	NONE
 }
+
+enum Hints {
+	Invitation,
+	Carrot,
+	Book,
+	Toolbox,
+}
