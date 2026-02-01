@@ -241,7 +241,7 @@ position = Vector2(511, 923)
 texture = ExtResource("24_hn7bi")
 
 [node name="npc_mole" parent="." unique_id=2123288575 instance=ExtResource("23_lss6i")]
-position = Vector2(24, 681)
+position = Vector2(22, 134)
 
 [node name="npc_cat" parent="." unique_id=748677046 instance=ExtResource("24_k8ae5")]
 position = Vector2(336, 347)
