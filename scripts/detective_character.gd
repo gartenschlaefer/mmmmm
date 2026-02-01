@@ -89,7 +89,14 @@ func on_area_entered(area: Area2D):
 	detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
 
 
+func increase_the_hint_state():
+	actual_hint_state += 1
+
+
 func on_area_exited(_area: Area2D):
 
 	# reset dialogue
 	active_dialogue = null
+
+
+func get_hint_state(): return actual_hint_state

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_l0ssq"]
 [ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_opw8q"]
-[ext_resource type="SpriteFrames" uid="uid://2vq20xxbf4mb" path="res://prefabs/gentle_frames.tres" id="3_opw8q"]
+[ext_resource type="SpriteFrames" uid="uid://dprw7msp1rsjl" path="res://prefabs/character_frames/mole_frames.tres" id="3_k7xw6"]
 [ext_resource type="Texture2D" uid="uid://dx2t1w5kj6ewe" path="res://art/character/masks/mole.png" id="4_gojv5"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_gojv5"]
 
@@ -19,10 +19,9 @@ dialogue = ExtResource("2_opw8q")
 [node name="gentleman" type="AnimatedSprite2D" parent="." unique_id=1398371554]
 texture_filter = 1
 position = Vector2(0, -32)
-sprite_frames = ExtResource("3_opw8q")
+sprite_frames = ExtResource("3_k7xw6")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.1220202
 
 [node name="mask" type="Sprite2D" parent="." unique_id=904042948]
 texture_filter = 1
