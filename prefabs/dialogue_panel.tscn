@@ -61,7 +61,7 @@ theme_override_constants/margin_bottom = 10
 
 [node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/dialogue" unique_id=483377295]
 layout_mode = 2
-theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
 text = "Hi, welcome to the [b]mansion[/b] of [color=red] mr. mole[/color], wahaha [img=50]art/icon.svg[/img] this isfakkj soo great and i will write this text to get a line break"
 
