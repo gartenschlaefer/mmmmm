@@ -3,13 +3,16 @@
 
 class_name DialoguePanel extends Panel
 
+# signal
+signal end_of_dialogue_reached
+
 # exports
 @export var actual_text: RichTextLabel
 @export var actual_dialogue_picture_rect: TextureRect
 @onready var boss_battle: Node2D = $BossBattle
 
 # vars
-var actual_dialogue = 0
+var actual_dialogue = null
 
 
 func load_dialogue(target_dialogue: Dialogue, dialogue_state: int):
@@ -43,6 +46,8 @@ func next_dialogue_piece():
 	# if null -> last piece reached
 	if target_dialogue_piece == null:
 
+		# signal
+		end_of_dialogue_reached.emit()
 		self.hide()
 		return
 
@@ -54,7 +59,7 @@ func leave_dialogue():
 
 	# reset dialogue
 	actual_dialogue.reset()
-	
+
 	# hide
 	self.hide()
 	boss_battle.hide()
