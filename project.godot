@@ -91,6 +91,7 @@ toggle_notes={
 2d_physics/layer_3="npc"
 2d_physics/layer_4="player_interaction"
 2d_physics/layer_5="npc_interaction"
+2d_physics/layer_6="hint_interaction"
 
 [rendering]
 

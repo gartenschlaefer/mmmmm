@@ -34,7 +34,7 @@ wait_time = 3.0
 
 [node name="interaction_area" type="Area2D" parent="." unique_id=898353260]
 collision_layer = 8
-collision_mask = 16
+collision_mask = 48
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area" unique_id=51631549]
 position = Vector2(0, -25)

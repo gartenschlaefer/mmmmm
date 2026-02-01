@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b27ph7c4mgy7j"]
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dsv1mn5l55trv"]
 
 [ext_resource type="Texture2D" uid="uid://ckm3vba2p8t7h" path="res://art/character_pictures/pic_bunny.png" id="1_j8yq7"]
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_1yy28"]
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_j8yq7"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_0grvd"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="4_1yy28"]
-[ext_resource type="Resource" uid="uid://xacfkxrsr6va" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="5_j8yq7"]
+[ext_resource type="Resource" uid="uid://bsvs8lvvymgpp" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="5_j8yq7"]
 
 [sub_resource type="Resource" id="Resource_j8yq7"]
 script = ExtResource("4_1yy28")

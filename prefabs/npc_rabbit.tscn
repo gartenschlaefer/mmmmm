@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://dm6puh6v4rnf5"]
+[gd_scene format=3 uid="uid://hv8vrxk7t1kb"]
 
 [ext_resource type="Script" uid="uid://cruy3wohl7714" path="res://scripts/guest_character.gd" id="1_bhsfg"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_vykq8"]
+[ext_resource type="Resource" path="res://prefabs/dialogues/dialogue_rabbit.tres" id="2_bhsfg"]
 [ext_resource type="SpriteFrames" uid="uid://cl8mv3d5v28ch" path="res://prefabs/character_frames/bunny_frames.tres" id="3_bhsfg"]
 [ext_resource type="Texture2D" uid="uid://dmb3plid3mbdu" path="res://art/character/masks/bunny.png" id="4_vykq8"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_st7v1"]
@@ -14,7 +14,7 @@ radius = 50.0
 
 [node name="npc_rabbit" type="CharacterBody2D" unique_id=2123288575]
 script = ExtResource("1_bhsfg")
-dialogue = ExtResource("2_vykq8")
+dialogue = ExtResource("2_bhsfg")
 character = 2
 
 [node name="character_frames" type="AnimatedSprite2D" parent="." unique_id=1398371554]

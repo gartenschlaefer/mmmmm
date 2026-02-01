@@ -11,12 +11,8 @@ radius = 50.0
 script = ExtResource("1_xluu2")
 hint_type = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1498547002]
-texture = ExtResource("2_gt1hv")
-
 [node name="interaction_area" type="Area2D" parent="." unique_id=1460726037]
-position = Vector2(0, -17)
-collision_layer = 16
+collision_layer = 32
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area" unique_id=1779489037]
@@ -24,5 +20,8 @@ shape = SubResource("CircleShape2D_gd6v5")
 
 [node name="rufzeichen" type="Sprite2D" parent="." unique_id=705882976]
 texture_filter = 1
-position = Vector2(0, -78)
+position = Vector2(0, -51)
 texture = ExtResource("3_gt1hv")
+
+[node name="hint_sprite" type="Sprite2D" parent="." unique_id=1498547002]
+texture = ExtResource("2_gt1hv")

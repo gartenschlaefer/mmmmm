@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://brx6wewak1654"]
+[gd_scene format=3 uid="uid://3yd6o3dyyibt"]
 
-[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_xjnfm"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_grldp"]
-[ext_resource type="SpriteFrames" uid="uid://dv5tqjq11mhpu" path="res://prefabs/character_frames/chameleon_frames.tres" id="3_xjnfm"]
+[ext_resource type="Script" uid="uid://cruy3wohl7714" path="res://scripts/guest_character.gd" id="1_xjnfm"]
+[ext_resource type="Resource" uid="uid://b3rqs57yida5q" path="res://prefabs/dialogues/dialogue_chameleon.tres" id="2_xjnfm"]
+[ext_resource type="SpriteFrames" uid="uid://cjypnjpwaaw2f" path="res://prefabs/character_frames/chameleon_frames.tres" id="3_xjnfm"]
 [ext_resource type="Texture2D" uid="uid://bcgfrr7a6e7c2" path="res://art/character/masks/chamaleon.png" id="4_grldp"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_e5uxw"]
 
@@ -14,7 +14,8 @@ radius = 50.0
 
 [node name="npc_chameleon" type="CharacterBody2D" unique_id=2123288575]
 script = ExtResource("1_xjnfm")
-dialogue = ExtResource("2_grldp")
+dialogue = ExtResource("2_xjnfm")
+character = 6
 
 [node name="character_frames" type="AnimatedSprite2D" parent="." unique_id=1398371554]
 texture_filter = 1

@@ -84,33 +84,65 @@ func _on_idle_timer_timeout() -> void:
 func on_area_entered(area: Area2D):
 
 	# get parent
-	var guest = area.get_parent()
+	var interaction_object = area.get_parent()
 
-	# guest character
-	if not guest is GuestCharacter: return
+	# guest interaction
+	if interaction_object is GuestCharacter:
 
-	# get dialogue
-	active_dialogue = guest.get_dialogue()
+		# get dialogue
+		active_dialogue = interaction_object.get_dialogue()
+		active_guest = interaction_object.get_character();
 
-	active_guest = guest.get_character();
+		# info
+		print("guest char: ", interaction_object.get_character())
 
-	# new dialogue
-	detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
+		# new dialogue
+		detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
+
+		# end
+		return
+
+	# hint interaction
+	if interaction_object is Hint:
+
+		# do something with the hint
+		print("hint: ", interaction_object.get_hint_type())
+
+		# is active hint
+		if not interaction_object.get_is_hint_active(): return
+
+		# end
+		return
 
 
 func increase_the_hint_state():
 	actual_hint_state += 1
 
 
-func on_area_exited(_area: Area2D):
+func on_area_exited(area: Area2D):
 
-	# reset dialogue
-	active_dialogue = null
-	
-	active_guest = Character_Enum.Characters.NONE
+	# get parent
+	var interaction_object = area.get_parent()
 
-	# leave conservation
-	detective_leaves_conservation.emit()
+	# guest character
+	if interaction_object is GuestCharacter: 
 
+		# reset dialogue
+		active_dialogue = null
+		active_guest = Character_Enum.Characters.NONE
+
+		# leave conservation
+		detective_leaves_conservation.emit()
+
+		return
+
+	# hint
+	if interaction_object is Hint: 
+
+		# todo:
+		pass
+
+		return
+		
 
 func get_hint_state(): return actual_hint_state

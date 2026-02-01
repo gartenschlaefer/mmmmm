@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://485ul2anbyp2"]
 
-[ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_l0ssq"]
-[ext_resource type="Resource" uid="uid://dlob34f5cn2uq" path="res://prefabs/dialogues/dialogue_mole.tres" id="2_opw8q"]
+[ext_resource type="Script" uid="uid://cruy3wohl7714" path="res://scripts/guest_character.gd" id="1_l0ssq"]
+[ext_resource type="Resource" path="res://prefabs/dialogues/dialogue_mole_new.tres" id="2_k7xw6"]
 [ext_resource type="SpriteFrames" uid="uid://dprw7msp1rsjl" path="res://prefabs/character_frames/mole_frames.tres" id="3_k7xw6"]
 [ext_resource type="Texture2D" uid="uid://dx2t1w5kj6ewe" path="res://art/character/masks/mole.png" id="4_gojv5"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_gojv5"]
@@ -14,7 +14,7 @@ radius = 50.0
 
 [node name="npc_mole" type="CharacterBody2D" unique_id=2123288575]
 script = ExtResource("1_l0ssq")
-dialogue = ExtResource("2_opw8q")
+dialogue = ExtResource("2_k7xw6")
 
 [node name="character_framess" type="AnimatedSprite2D" parent="." unique_id=1398371554]
 texture_filter = 1
