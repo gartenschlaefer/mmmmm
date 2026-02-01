@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cvb78ivgy48sk"]
+
+[ext_resource type="Texture2D" uid="uid://0m00gi76o36c" path="res://art/interior/chandelier.png" id="1_6iikm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iikm"]
+size = Vector2(66, 54)
+
+[node name="Chandelier" type="Sprite2D" unique_id=114745430]
+texture = ExtResource("1_6iikm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=241061102]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=381795300]
+position = Vector2(11, -6)
+shape = SubResource("RectangleShape2D_6iikm")

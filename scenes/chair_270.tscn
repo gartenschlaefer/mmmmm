@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://85qtyj74nvai"]
+
+[ext_resource type="Texture2D" uid="uid://bhbvrmwu77n8h" path="res://art/interior/chair_270.png" id="1_uhla1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uhla1"]
+size = Vector2(31, 32)
+
+[node name="Chair270" type="Sprite2D" unique_id=967606575]
+texture = ExtResource("1_uhla1")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1379106232]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1056611551]
+position = Vector2(-2, -11)
+shape = SubResource("RectangleShape2D_uhla1")

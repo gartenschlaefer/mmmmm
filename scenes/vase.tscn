@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c32lrgd7v77x5"]
+
+[ext_resource type="Texture2D" uid="uid://bm1p8pkxsppl2" path="res://art/interior/vase.png" id="1_ohygo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ohygo"]
+size = Vector2(31, 32)
+
+[node name="Vase" type="Sprite2D" unique_id=864895782]
+texture = ExtResource("1_ohygo")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1832144247]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=863237400]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_ohygo")
