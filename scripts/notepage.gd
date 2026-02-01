@@ -63,7 +63,7 @@ func getCharDescription(char: Character_Enum.Characters):
 		Character_Enum.Characters.PENGUIN:
 			return NotePageDetails.new(preload("uid://c4gqfpnkur0yk"),"Detective Penguin", ' You are Mr. Penguin, a famous detective. The police called you as soon as they received a weird call from Mr. Mouse right before his murder. His last words were "Mr. Mouse speaking. Come fast to Mole\'s Mansion someone tries to ..." ending apruptly with a smash noise and afterwards the phone tooting. Dutifully you jumped into your sledge and drove to Mole\'s Mansion. As soon as you arrived this is what you found in the study room ...');
 		Character_Enum.Characters.SHRIMP:
-			return NotePageDetails.new(preload("uid://c767wrns47nah"),"Mr. Shrimp","Mr. Shrimp loves cleaning and keeping everything in order. No broom or rag is safe from him. He even cleans other people's houses just for fun");
+			return NotePageDetails.new(preload("uid://bl1gshhjr41xi"),"Mr. Shrimp","Mr. Shrimp loves cleaning and keeping everything in order. No broom or rag is safe from him. He even cleans other people's houses just for fun");
 		Character_Enum.Characters.CHAMELEON:
 			return NotePageDetails.new(preload("uid://clmsx741mk35w"),"Mr. Chameleon","Mr. Chameleon is creative and also a little weird. He has the potential to become an famous artist one day. After his wife left he tried to overcome the pain in his paintings. Not all of the villagers appretiate his work. Anyway Mr. Mole is a big fan and calls himself Mr. Chameleons patron.")
 		Character_Enum.Characters.MOUSE:
