@@ -189,6 +189,7 @@ position = Vector2(-30, 686)
 
 [node name="npc_cat" parent="." unique_id=748677046 instance=ExtResource("24_k8ae5")]
 position = Vector2(336, 347)
+character = 8
 
 [node name="Vase" type="Sprite2D" parent="." unique_id=791181386]
 position = Vector2(601, 560)

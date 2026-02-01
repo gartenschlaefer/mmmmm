@@ -7,6 +7,7 @@ class_name DetectiveCharacter extends CharacterBody2D
 signal detective_has_new_dialogue(dialogue: Dialogue, hint_state: int)
 signal detective_requests_next_dialogue_piece
 signal detective_leaves_conservation
+signal detective_talks_to_npc(character: Character_Enum.Characters)
 
 # refs
 @onready var detective_sprite : AnimatedSprite2D  = $AnimatedSprite2D
@@ -18,6 +19,7 @@ signal detective_leaves_conservation
 var old_direction  : Vector2
 var active_dialogue: Dialogue = null
 var actual_hint_state: int = 0
+var active_guest : Character_Enum.Characters = Character_Enum.Characters.NONE;
 
 # const
 const SPEED = 300.0
@@ -69,6 +71,8 @@ func _input(_event):
 	# update dialogue
 	if Input.is_action_just_pressed("interact"): 
 		detective_requests_next_dialogue_piece.emit()
+		if(active_guest != Character_Enum.Characters.NONE):
+			detective_talks_to_npc.emit(active_guest);
 
 
 func _on_idle_timer_timeout() -> void:
@@ -87,7 +91,7 @@ func on_area_entered(area: Area2D):
 	# get dialogue
 	active_dialogue = guest.get_dialogue()
 
-	print("guest char: ", guest.get_character())
+	active_guest = guest.get_character();
 
 	# new dialogue
 	detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
@@ -101,6 +105,8 @@ func on_area_exited(_area: Area2D):
 
 	# reset dialogue
 	active_dialogue = null
+	
+	active_guest = Character_Enum.Characters.NONE
 
 	# leave conservation
 	detective_leaves_conservation.emit()

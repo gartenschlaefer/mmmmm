@@ -8,5 +8,6 @@ enum Characters {
 	SHRIMP,
 	CHAMELEON,
 	MOUSE,
-	CAT
+	CAT,
+	NONE
 }
