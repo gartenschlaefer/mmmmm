@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b51xaou4ahnyb"]
+
+[ext_resource type="SpriteFrames" uid="uid://dvfjvmgt38rtq" path="res://art/interior/flame_sprite_frames.tres" id="1_54o2j"]
+[ext_resource type="Texture2D" uid="uid://boo65sqml5s3b" path="res://art/interior/stove.png" id="2_ieqif"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghuc2"]
+size = Vector2(56, 65)
+
+[node name="Stove" type="StaticBody2D" unique_id=303454426]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1367254549]
+offset_left = -27.0
+offset_top = -36.0
+offset_right = 23.0
+offset_bottom = 24.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=556821005]
+position = Vector2(-1, -7)
+scale = Vector2(0.55, 0.718)
+sprite_frames = ExtResource("1_54o2j")
+autoplay = "default"
+frame_progress = 0.044305965
+speed_scale = 2.0
+
+[node name="Stove" type="Sprite2D" parent="." unique_id=473247950]
+position = Vector2(-3, -37)
+texture = ExtResource("2_ieqif")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=414897790]
+position = Vector2(-1, -6.5)
+shape = SubResource("RectangleShape2D_ghuc2")
