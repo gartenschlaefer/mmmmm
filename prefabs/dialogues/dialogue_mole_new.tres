@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dlob34f5cn2uq"]
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dto1t0vb7pshx"]
 
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="1_dj7u0"]
 [ext_resource type="Texture2D" uid="uid://chrcxxy83ud1y" path="res://art/character_pictures/pic_mole.png" id="1_hlne0"]
