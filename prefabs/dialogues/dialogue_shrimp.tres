@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://6f4v207u3hap"]
 
+[ext_resource type="Texture2D" uid="uid://bl1gshhjr41xi" path="res://art/character_pictures/pic_shrimp.png" id="1_bwyh8"]
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_ncq0b"]
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_bwyh8"]
 [ext_resource type="Resource" uid="uid://bx76bsibc12kv" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="4_bwyh8"]
@@ -49,4 +50,5 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 [resource]
 script = ExtResource("4_dfifm")
 dialogue_state_pieces = Array[ExtResource("2_ncq0b")]([ExtResource("3_bwyh8"), SubResource("Resource_dfifm"), SubResource("Resource_elplm"), SubResource("Resource_b3x6j"), SubResource("Resource_6t3c4"), ExtResource("4_bwyh8")])
+dialogue_picture = ExtResource("1_bwyh8")
 metadata/_custom_type_script = "uid://dnv403tys4e44"
