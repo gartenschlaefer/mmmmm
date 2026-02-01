@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://dr0fuonbhijan"]
+
+[ext_resource type="Texture2D" uid="uid://clmsx741mk35w" path="res://art/character_pictures/pic_chamaleon.png" id="1_wkaxt"]
+[ext_resource type="Texture2D" uid="uid://dll2mqb8t1vvt" path="res://art/character_pictures/boss/boss_cutout.png" id="2_q8djn"]
+[ext_resource type="Texture2D" uid="uid://bwx17ajm0px8g" path="res://art/character_pictures/boss/boss_left_eye_bulge_background.png" id="3_7aai5"]
+[ext_resource type="Texture2D" uid="uid://douj01d4jkac5" path="res://art/character_pictures/boss/boss_left_eye_bulge.png" id="4_is2b5"]
+[ext_resource type="Texture2D" uid="uid://bksdhrx38avq8" path="res://art/character_pictures/boss/boss_left_eye_small.png" id="5_ogt0s"]
+[ext_resource type="Texture2D" uid="uid://bodjuy2onov1j" path="res://art/character_pictures/boss/boss_right_eye_bulge_background.png" id="6_s11w0"]
+[ext_resource type="Texture2D" uid="uid://dy0rr1yr8r6jg" path="res://art/character_pictures/boss/boss_right_eye_bulge.png" id="7_qhp7y"]
+[ext_resource type="Texture2D" uid="uid://be53pkrse0w0q" path="res://art/character_pictures/boss/boss_right_eye_small.png" id="8_ao0wf"]
+[ext_resource type="Texture2D" uid="uid://blxayhb2ysywh" path="res://art/character_pictures/boss/boss_tears_start.png" id="9_is2b5"]
+[ext_resource type="Texture2D" uid="uid://hxb38i5qoo0i" path="res://art/character_pictures/boss/boss_tears_mid.png" id="10_ogt0s"]
+[ext_resource type="Texture2D" uid="uid://cmg0dgg7rhn8" path="res://art/character_pictures/boss/boss_tears_end.png" id="11_s11w0"]
+
+[node name="BossBattle" type="Node2D" unique_id=810529075]
+
+[node name="BossBackground" type="Sprite2D" parent="." unique_id=679533225]
+z_index = -10
+texture = ExtResource("1_wkaxt")
+
+[node name="BossCutout" type="Sprite2D" parent="." unique_id=1539629177]
+texture = ExtResource("2_q8djn")
+
+[node name="LeftEye" type="Node2D" parent="BossCutout" unique_id=1343620725]
+
+[node name="BossLeftEyeSmall" type="Sprite2D" parent="BossCutout/LeftEye" unique_id=357272337]
+z_index = -1
+texture = ExtResource("5_ogt0s")
+
+[node name="LeftEyeBulge" type="Node2D" parent="BossCutout/LeftEye" unique_id=33665409]
+
+[node name="BossLeftEyeBulgeBackground" type="Sprite2D" parent="BossCutout/LeftEye/LeftEyeBulge" unique_id=645578659]
+z_index = -1
+texture = ExtResource("3_7aai5")
+
+[node name="BossLeftEyeBulgeForeground" type="Sprite2D" parent="BossCutout/LeftEye/LeftEyeBulge" unique_id=1942921134]
+z_index = 1
+texture = ExtResource("4_is2b5")
+
+[node name="RightEye" type="Node2D" parent="BossCutout" unique_id=1656617153]
+
+[node name="BossRightEyeSmall" type="Sprite2D" parent="BossCutout/RightEye" unique_id=149935981]
+z_index = -1
+texture = ExtResource("8_ao0wf")
+
+[node name="RightEyeBulge" type="Node2D" parent="BossCutout/RightEye" unique_id=1548855047]
+
+[node name="BossRightEyeBulgeBackground" type="Sprite2D" parent="BossCutout/RightEye/RightEyeBulge" unique_id=1301518474]
+z_index = -1
+texture = ExtResource("6_s11w0")
+
+[node name="BossRightEyeBulgeForeground2" type="Sprite2D" parent="BossCutout/RightEye/RightEyeBulge" unique_id=1192096393]
+z_index = 1
+texture = ExtResource("7_qhp7y")
+
+[node name="Tears" type="Node2D" parent="BossCutout" unique_id=1337752797]
+
+[node name="Sprite2D" type="Sprite2D" parent="BossCutout/Tears" unique_id=2080252193]
+texture = ExtResource("9_is2b5")
+
+[node name="Sprite2D2" type="Sprite2D" parent="BossCutout/Tears" unique_id=411295399]
+texture = ExtResource("10_ogt0s")
+
+[node name="Sprite2D3" type="Sprite2D" parent="BossCutout/Tears" unique_id=1154174867]
+texture = ExtResource("11_s11w0")
