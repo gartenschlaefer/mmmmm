@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di2t8fy1fp0q4"
-path="res://.godot/imported/lady_anim.png-a87fe21acd4b599557e1b226430a318b.ctex"
+uid="uid://cvfu8c1deofr8"
+path="res://.godot/imported/chameleon_lady_palette.png-ea2a752282c4f37d50fe9d21da05dedd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/lady_anim.png"
-dest_files=["res://.godot/imported/lady_anim.png-a87fe21acd4b599557e1b226430a318b.ctex"]
+source_file="res://art/character/palettes/chameleon_lady_palette.png"
+dest_files=["res://.godot/imported/chameleon_lady_palette.png-ea2a752282c4f37d50fe9d21da05dedd.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d1egntrdxqk80"]
 
-[ext_resource type="SpriteFrames" uid="uid://2vq20xxbf4mb" path="res://prefabs/gentle_frames.tres" id="1_7hoyi"]
+[ext_resource type="SpriteFrames" path="res://prefabs/character_frames/mouse_frames.tres" id="1_7hoyi"]
 [ext_resource type="Texture2D" uid="uid://cicow3ecryqj0" path="res://art/character/masks/mouse.png" id="2_u3tkb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i8i5m"]

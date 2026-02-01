@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpxmer3ma2pkm"
-path="res://.godot/imported/gentleman_anim.png-1ddd1b7e30d9fd3e0884d4c23831a6b7.ctex"
+uid="uid://bd1hlc6w3c0gi"
+path="res://.godot/imported/fox_palette.png-e6180be746c517a11443c3aa20ee3175.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/gentleman_anim.png"
-dest_files=["res://.godot/imported/gentleman_anim.png-1ddd1b7e30d9fd3e0884d4c23831a6b7.ctex"]
+source_file="res://art/character/palettes/fox_palette.png"
+dest_files=["res://.godot/imported/fox_palette.png-e6180be746c517a11443c3aa20ee3175.ctex"]
 
 [params]
 

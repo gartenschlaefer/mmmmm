@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://df8xv1nmmg3vu"]
 
 [ext_resource type="Script" uid="uid://2b8pe8le5lrd" path="res://scripts/detective_character.gd" id="1_uv6sp"]
-[ext_resource type="SpriteFrames" uid="uid://2vq20xxbf4mb" path="res://prefabs/gentle_frames.tres" id="2_fah66"]
+[ext_resource type="SpriteFrames" uid="uid://ctcxdyjpc8dxu" path="res://prefabs/character_frames/penguin_frames.tres" id="2_fah66"]
 [ext_resource type="Texture2D" uid="uid://c4gqfpnkur0yk" path="res://art/character/masks/penguin.png" id="3_uv8th"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5eaa"]
@@ -24,7 +24,6 @@ zoom = Vector2(3, 3)
 position = Vector2(0, -32)
 sprite_frames = ExtResource("2_fah66")
 animation = &"walk"
-frame_progress = 0.6657442
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1760037274]
 position = Vector2(0, -55)

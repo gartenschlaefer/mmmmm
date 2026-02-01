@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b8wj2vua6qjrj"]
 
-[ext_resource type="SpriteFrames" uid="uid://2vq20xxbf4mb" path="res://prefabs/gentle_frames.tres" id="1_noifd"]
+[ext_resource type="SpriteFrames" path="res://prefabs/character_frames/mole_frames.tres" id="1_noifd"]
 [ext_resource type="Texture2D" uid="uid://dx2t1w5kj6ewe" path="res://art/character/masks/mole.png" id="2_e2xwk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_db38t"]
@@ -13,7 +13,6 @@ position = Vector2(0, -32)
 sprite_frames = ExtResource("1_noifd")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.1220202
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1585675582]
 position = Vector2(0, -55)

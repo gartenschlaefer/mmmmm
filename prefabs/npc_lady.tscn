@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dlgl3qabvhmwf"]
 
-[ext_resource type="SpriteFrames" uid="uid://cl8mv3d5v28ch" path="res://prefabs/lady_frames.tres" id="1_wmvcs"]
+[ext_resource type="SpriteFrames" uid="uid://dxr24xs7muu3h" path="res://prefabs/character_frames/owl_frames.tres" id="1_wmvcs"]
 [ext_resource type="Texture2D" uid="uid://omgqxey4bm6v" path="res://art/character/masks/owl.png" id="2_85512"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m0x5s"]
@@ -17,7 +17,6 @@ position = Vector2(0, -32)
 sprite_frames = ExtResource("1_wmvcs")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.019455615
 
 [node name="Mask" type="Sprite2D" parent="." unique_id=1044955136]
 position = Vector2(0, -54)
