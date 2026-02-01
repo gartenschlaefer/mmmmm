@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/guest_character.gd" id="1_qw0r0"]
 [ext_resource type="Resource" uid="uid://u0rkhe47ky0i" path="res://prefabs/dialogues/dialogue_cat.tres" id="2_r76vh"]
-[ext_resource type="SpriteFrames" uid="uid://cl8mv3d5v28ch" path="res://prefabs/lady_frames.tres" id="3_qw0r0"]
+[ext_resource type="SpriteFrames" path="res://prefabs/character_frames/cat_frames.tres" id="3_r76vh"]
 [ext_resource type="Texture2D" uid="uid://c8vf6bm5kfil5" path="res://art/character/masks/cat.png" id="4_q63po"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_6451o"]
 
@@ -18,10 +18,9 @@ dialogue = ExtResource("2_r76vh")
 
 [node name="lady_frames" type="AnimatedSprite2D" parent="." unique_id=649970924]
 position = Vector2(0, -32)
-sprite_frames = ExtResource("3_qw0r0")
+sprite_frames = ExtResource("3_r76vh")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.019455615
 
 [node name="mask" type="Sprite2D" parent="." unique_id=904042948]
 texture_filter = 1
