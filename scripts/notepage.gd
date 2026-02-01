@@ -7,6 +7,10 @@ var charactersFound : Array[Character_Enum.Characters] = [];
 @onready var icon_texture: TextureRect = $CharacterIconContainer/CharacterIconMarginContainer/IconTexture
 @onready var left_arrow: TextureRect = $left_arrow
 @onready var right_arrow: TextureRect = $right_arrow
+@onready var collective_1: Sprite2D = $Collective_1
+@onready var collective_2: Sprite2D = $Collective_2
+@onready var collective_3: Sprite2D = $Collective_3
+@onready var collective_4: Sprite2D = $Collective_4
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -65,3 +69,14 @@ func getCharDescription(char: Character_Enum.Characters):
 			return NotePageDetails.new(preload("uid://cicow3ecryqj0"),"Mr.Mouse","He died at the beginning of this mysterious murder case. Mr. Mouse was a beloved fellow. Everybody will miss him. So why would someone murder him? Was he just collateral damage or is there something more behind this allegedly white vested little creature? Questions over questions, gladly you are here to bring some light into the dark.");
 		Character_Enum.Characters.CAT:
 			return NotePageDetails.new(preload("uid://c8vf6bm5kfil5"),"Mrs. Cat","Mrs. Cat is the femme fatal of the community. As smooth and cuddly as she may seem, she is actually rather a loner. She loves beautiful things and appreciates an asthetically pleasing environment");
+
+func hintFound(hint: Character_Enum.Hints):
+	match hint :
+		Character_Enum.Hints.Invitation:
+			collective_1.texture=preload("uid://d2j81gqoeykhn");
+		Character_Enum.Hints.Carrot:
+			collective_2.texture=preload("uid://d1n2ntswp0y6i");
+		Character_Enum.Hints.Book:
+			collective_3.texture=preload("uid://byprniyry2kfv");
+		Character_Enum.Hints.Toolbox:
+			collective_4.texture=preload("uid://bggf6apdoli85");

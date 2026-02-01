@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://debstykbwf3yn" path="res://art/notepadArt/notebookpage.png" id="1_2vjex"]
 [ext_resource type="Script" uid="uid://f3r7mfrqhe1l" path="res://scripts/notepage.gd" id="1_nqsnd"]
 [ext_resource type="Texture2D" uid="uid://cwjl2rqrh2pjo" path="res://art/notepadArt/arrow.png" id="2_nqsnd"]
+[ext_resource type="Texture2D" uid="uid://338ewe0impej" path="res://art/collectables/QuestionMark.png" id="4_nqsnd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2tca"]
 bg_color = Color(1, 1, 1, 1)
@@ -102,11 +103,31 @@ autowrap_mode = 2
 
 [node name="TopDescription" type="Label" parent="Character_Descriptions" unique_id=952005880]
 layout_mode = 0
-offset_left = 594.0
-offset_top = -616.0
-offset_right = 778.0
-offset_bottom = -556.0
+offset_left = 596.0
+offset_top = -587.0
+offset_right = 806.0
+offset_bottom = -527.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Collective_1" type="Sprite2D" parent="." unique_id=131388876]
+position = Vector2(593, -648)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_nqsnd")
+
+[node name="Collective_2" type="Sprite2D" parent="." unique_id=1603249552]
+position = Vector2(673, -648)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_nqsnd")
+
+[node name="Collective_3" type="Sprite2D" parent="." unique_id=603675652]
+position = Vector2(753, -648)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_nqsnd")
+
+[node name="Collective_4" type="Sprite2D" parent="." unique_id=1142667076]
+position = Vector2(833, -648)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_nqsnd")
