@@ -8,6 +8,7 @@ signal detective_has_new_dialogue(dialogue: Dialogue, hint_state: int)
 signal detective_requests_next_dialogue_piece
 signal detective_leaves_conservation
 signal detective_talks_to_npc(character: Character_Enum.Characters)
+signal detective_has_collected_hint(hint: Character_Enum.Hints)
 
 # refs
 @onready var detective_sprite : AnimatedSprite2D  = $AnimatedSprite2D
@@ -83,7 +84,9 @@ func _input(_event):
 
 		# add to collected hints
 		collected_hints.append(active_hint.get_hint_type())
+		detective_has_collected_hint.emit(active_hint.get_hint_type())
 		active_hint.disable()
+		print("collected hints: ", collected_hints)
 		active_hint = null
 
 
