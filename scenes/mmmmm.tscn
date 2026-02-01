@@ -5,6 +5,7 @@
 [ext_resource type="LabelSettings" uid="uid://dftbsam24v8pt" path="res://themes/label_settings_canvas_header.tres" id="2_qx7hw"]
 [ext_resource type="Script" uid="uid://dd8lqcv6crk04" path="res://scripts/credits_canvas.gd" id="4_ey5gi"]
 [ext_resource type="Script" uid="uid://ceocf5h4dh25y" path="res://scripts/title_canvas.gd" id="5_g8ct3"]
+[ext_resource type="Texture2D" uid="uid://bgg55wt0dfhr6" path="res://art/titlescreen.png" id="6_g8ct3"]
 
 [node name="mmmmm" type="Node2D" unique_id=1792399627]
 script = ExtResource("1_d1dor")
@@ -12,6 +13,7 @@ script = ExtResource("1_d1dor")
 [node name="world" type="Node" parent="." unique_id=1453462322]
 
 [node name="win_canvas" type="CanvasLayer" parent="." unique_id=1722518719]
+visible = false
 script = ExtResource("2_dx8pv")
 
 [node name="ColorRect" type="ColorRect" parent="win_canvas" unique_id=409901608]
@@ -96,56 +98,58 @@ text = "Exit"
 [node name="title_canvas" type="CanvasLayer" parent="." unique_id=1062149007]
 script = ExtResource("5_g8ct3")
 
-[node name="ColorRect" type="ColorRect" parent="title_canvas" unique_id=1519202474]
+[node name="TextRect" type="TextureRect" parent="title_canvas" unique_id=1593646425]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.46666667, 0.46666667, 0.7019608, 1)
+texture = ExtResource("6_g8ct3")
 
-[node name="MarginContainer" type="MarginContainer" parent="title_canvas/ColorRect" unique_id=707536551]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 40.0
-grow_horizontal = 2
-theme_override_constants/margin_top = 30
-
-[node name="VBoxContainer" type="VBoxContainer" parent="title_canvas/ColorRect/MarginContainer" unique_id=78199226]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer" unique_id=259791895]
-layout_mode = 2
-text = "MMMMM"
-label_settings = ExtResource("2_qx7hw")
-
-[node name="MarginContainer" type="MarginContainer" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer" unique_id=14239257]
-layout_mode = 2
-theme_override_constants/margin_top = 50
-
-[node name="buttons" type="VBoxContainer" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer" unique_id=956220202]
-layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="start" type="Button" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons" unique_id=1816580993]
+[node name="start" type="Button" parent="title_canvas/TextRect" unique_id=1816580993]
+modulate = Color(0, 0, 0, 0)
+self_modulate = Color(0, 0, 0, 0)
 custom_minimum_size = Vector2(0, 69)
-layout_mode = 2
-text = "Start
+layout_mode = 0
+offset_left = 626.5
+offset_top = 614.0
+offset_right = 693.5
+offset_bottom = 683.0
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
+text = "
 "
 
-[node name="credits" type="Button" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons" unique_id=4938269]
-layout_mode = 2
-text = "Credits"
+[node name="credits" type="Button" parent="title_canvas/TextRect" unique_id=4938269]
+modulate = Color(0, 0, 0, 0)
+self_modulate = Color(0, 0, 0, 0)
+layout_mode = 0
+offset_left = 595.5
+offset_top = 688.0
+offset_right = 734.5
+offset_bottom = 735.0
 
-[node name="exit" type="Button" parent="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons" unique_id=1384509466]
-layout_mode = 2
-text = "Exit"
+[node name="exit" type="Button" parent="title_canvas/TextRect" unique_id=1384509466]
+modulate = Color(0, 0, 0, 0)
+self_modulate = Color(0, 0, 0, 0)
+layout_mode = 0
+offset_left = 477.5
+offset_top = 701.0
+offset_right = 570.5
+offset_bottom = 736.0
 
 [connection signal="button_up" from="credits_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons/Button" to="credits_canvas" method="_on_exit_button_up"]
-[connection signal="button_up" from="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons/start" to="title_canvas" method="_on_start_button_up"]
-[connection signal="button_up" from="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons/credits" to="title_canvas" method="_on_credits_button_up"]
-[connection signal="button_up" from="title_canvas/ColorRect/MarginContainer/VBoxContainer/MarginContainer/buttons/exit" to="title_canvas" method="_on_end_button_up"]
+[connection signal="button_up" from="title_canvas/TextRect/start" to="title_canvas" method="_on_start_button_up"]
+[connection signal="button_up" from="title_canvas/TextRect/credits" to="title_canvas" method="_on_credits_button_up"]
+[connection signal="button_up" from="title_canvas/TextRect/exit" to="title_canvas" method="_on_end_button_up"]
