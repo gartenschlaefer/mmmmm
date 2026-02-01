@@ -43,6 +43,7 @@ func characterFound(char:Character_Enum.Characters):
 	if(!charactersFound.has(char)):
 		charactersFound.push_back(char);
 		notePageDetails.push_back(getCharDescription(char));
+		updatePageDescription()
 	
 func getCharDescription(char: Character_Enum.Characters):
 	match char:
@@ -59,7 +60,7 @@ func getCharDescription(char: Character_Enum.Characters):
 		Character_Enum.Characters.SHRIMP:
 			return NotePageDetails.new(preload("uid://c767wrns47nah"),"Mr. Shrimp","Mr. Shrimp loves cleaning and keeping everything in order. No broom or rag is safe from him. He even cleans other people's houses just for fun");
 		Character_Enum.Characters.CHAMELEON:
-			return NotePageDetails.new(preload("uid://bcgfrr7a6e7c2"),"Mr. Chameleon","Mr. Chameleon is creative and also a little weird. He has the potential to become an famous artist one day. After his wife left he tried to overcome the pain in his paintings. Not all of the villagers appretiate his work. Anyway Mr. Mole is a big fan and calls himself Mr. Chameleons patron.")
+			return NotePageDetails.new(preload("uid://clmsx741mk35w"),"Mr. Chameleon","Mr. Chameleon is creative and also a little weird. He has the potential to become an famous artist one day. After his wife left he tried to overcome the pain in his paintings. Not all of the villagers appretiate his work. Anyway Mr. Mole is a big fan and calls himself Mr. Chameleons patron.")
 		Character_Enum.Characters.MOUSE:
 			return NotePageDetails.new(preload("uid://cicow3ecryqj0"),"Mr.Mouse","He died at the beginning of this mysterious murder case. Mr. Mouse was a beloved fellow. Everybody will miss him. So why would someone murder him? Was he just collateral damage or is there something more behind this allegedly white vested little creature? Questions over questions, gladly you are here to bring some light into the dark.");
 		Character_Enum.Characters.CAT:

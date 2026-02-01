@@ -8,5 +8,13 @@ enum Characters {
 	SHRIMP,
 	CHAMELEON,
 	MOUSE,
-	CAT
+	CAT,
+	NONE
+}
+
+enum Hints {
+	Invitation,
+	Carrot,
+	Book,
+	Toolbox,
 }

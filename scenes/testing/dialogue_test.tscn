@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bforrb0hnfufa"]
 
 [ext_resource type="Script" uid="uid://bwca8koy6albo" path="res://scripts/dialogue_test.gd" id="1_5qoin"]
+[ext_resource type="PackedScene" uid="uid://b5yj51vcuu083" path="res://prefabs/hint_carrot.tscn" id="3_dkoys"]
 [ext_resource type="PackedScene" uid="uid://b7thjt7rptns5" path="res://scenes/mystery_murder_world.tscn" id="22_x657h"]
 
 [node name="DialogueTest" type="Node" unique_id=1354464837]
@@ -23,5 +24,8 @@ offset_top = 495.0
 offset_right = 245.0
 offset_bottom = 526.0
 text = "increase state"
+
+[node name="hint_carrot" parent="." unique_id=2070377787 instance=ExtResource("3_dkoys")]
+position = Vector2(202, 349)
 
 [connection signal="button_up" from="Control/Button" to="." method="_on_button_button_up"]

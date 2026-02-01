@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueStatePieces" format=3 uid="uid://bjxjyq5lp02g6"]
+
+[ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="1_xaek7"]
+[ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_b2s1w"]
+
+[sub_resource type="Resource" id="Resource_343iw"]
+script = ExtResource("1_xaek7")
+text_piece = "[color=red]Mrs. Rabbit[/color] grows the best vegetables in town."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[resource]
+script = ExtResource("2_b2s1w")
+dialogue_pieces = Array[ExtResource("1_xaek7")]([SubResource("Resource_343iw")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
