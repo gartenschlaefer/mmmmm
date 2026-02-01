@@ -10,3 +10,10 @@ enum Characters {
 	MOUSE,
 	CAT
 }
+
+enum Hints {
+	Invitation,
+	Carrot,
+	Book,
+	Toolbox,
+}

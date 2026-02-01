@@ -18,6 +18,7 @@ signal detective_leaves_conservation
 var old_direction  : Vector2
 var active_dialogue: Dialogue = null
 var actual_hint_state: int = 0
+var collected_hints: Array[int]
 
 # const
 const SPEED = 300.0
