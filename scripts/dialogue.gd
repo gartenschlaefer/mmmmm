@@ -17,8 +17,12 @@ func _ready():
 
 func reset():
 
-	# reset dialogue
-	pass
+	# null safety
+	if actual_dialogue_state >= len(dialogue_state_pieces): return
+	if dialogue_state_pieces[actual_dialogue_state] == null: return
+
+	# reset actual state
+	dialogue_state_pieces[actual_dialogue_state].reset()
 
 
 func get_next_dialogue_piece() -> DialoguePiece: 

@@ -16,7 +16,7 @@ radius = 50.0
 script = ExtResource("1_qw0r0")
 dialogue = ExtResource("2_r76vh")
 
-[node name="lady_frames" type="AnimatedSprite2D" parent="." unique_id=649970924]
+[node name="character_framess" type="AnimatedSprite2D" parent="." unique_id=649970924]
 position = Vector2(0, -32)
 sprite_frames = ExtResource("3_r76vh")
 animation = &"idle"

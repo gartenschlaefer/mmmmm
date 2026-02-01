@@ -47,3 +47,12 @@ func next_dialogue_piece():
 
 	# text update
 	actual_text.set_text(target_dialogue_piece.get_text_piece())
+
+
+func leave_dialogue():
+
+	# reset dialogue
+	actual_dialogue.reset()
+	
+	# hide
+	self.hide()

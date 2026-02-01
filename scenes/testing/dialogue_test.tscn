@@ -8,6 +8,8 @@ script = ExtResource("1_5qoin")
 
 [node name="mystery_murder_world" parent="." unique_id=1122988744 instance=ExtResource("22_x657h")]
 
+[node name="mystery_murder_world2" parent="." unique_id=1294013124 instance=ExtResource("22_x657h")]
+
 [node name="Control" type="Control" parent="." unique_id=1263371710]
 layout_mode = 3
 anchors_preset = 0

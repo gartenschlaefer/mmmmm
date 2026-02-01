@@ -16,6 +16,12 @@ var actual_piece: int = -1
 # 	dialogue_pieces = target_dialogue_piceses
 
 
+func reset():
+
+	# reset actual piece
+	actual_piece = -1
+
+
 func get_next_dialogue_piece():
 	
 	# finished dialogue

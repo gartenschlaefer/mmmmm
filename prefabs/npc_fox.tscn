@@ -16,7 +16,7 @@ radius = 50.0
 script = ExtResource("1_ng3sq")
 dialogue = ExtResource("2_ng3sq")
 
-[node name="gentleman" type="AnimatedSprite2D" parent="." unique_id=1398371554]
+[node name="character_framess" type="AnimatedSprite2D" parent="." unique_id=1398371554]
 texture_filter = 1
 position = Vector2(0, -32)
 sprite_frames = ExtResource("3_ng3sq")
