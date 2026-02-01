@@ -34,11 +34,11 @@ func _ready() -> void:
 	reset()
 
 
-func _input(event: InputEvent) -> void:
+'func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("next_page"):
 		give_clue()
 	elif event.is_action_pressed("prev_page"):
-		reset()
+		reset()'
 
 func _process(delta: float) -> void:
 	if not shake_timer.is_stopped():
