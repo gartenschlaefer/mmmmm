@@ -18,6 +18,7 @@ signal detective_talks_to_npc(character: Character_Enum.Characters)
 # var
 var old_direction  : Vector2
 var active_dialogue: Dialogue = null
+var active_hint: Hint = null
 var actual_hint_state: int = 0
 var active_guest : Character_Enum.Characters = Character_Enum.Characters.NONE;
 var collected_hints: Array[int]
@@ -66,14 +67,24 @@ func _physics_process(_delta: float) -> void:
 
 func _input(_event):
 
-	# skip
-	if active_dialogue == null: return
+	# only interact input
+	if not Input.is_action_just_pressed("interact"): return
 
-	# update dialogue
-	if Input.is_action_just_pressed("interact"): 
+	# skip
+	if not active_dialogue == null:
+
+		# update dialogue
 		detective_requests_next_dialogue_piece.emit()
 		if(active_guest != Character_Enum.Characters.NONE):
 			detective_talks_to_npc.emit(active_guest);
+
+	# there is an active hint
+	if active_hint != null:
+
+		# add to collected hints
+		collected_hints.append(active_hint.get_hint_type())
+		active_hint.disable()
+		active_hint = null
 
 
 func _on_idle_timer_timeout() -> void:
@@ -105,11 +116,14 @@ func on_area_entered(area: Area2D):
 	# hint interaction
 	if interaction_object is Hint:
 
+		# is active hint
+		if not interaction_object.get_is_hint_active(): return
+
 		# do something with the hint
 		print("hint: ", interaction_object.get_hint_type())
 
-		# is active hint
-		if not interaction_object.get_is_hint_active(): return
+		# active hint
+		active_hint = interaction_object
 
 		# end
 		return
@@ -139,8 +153,8 @@ func on_area_exited(area: Area2D):
 	# hint
 	if interaction_object is Hint: 
 
-		# todo:
-		pass
+		# active hint disable
+		active_hint = null
 
 		return
 		

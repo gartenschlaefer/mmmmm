@@ -19,7 +19,7 @@ var is_hint_collected = false
 func _ready():
 
 	# var settings
-	is_hint_active = false
+	is_hint_active = true
 	is_hint_collected = false
 
 	# signal connection
@@ -31,10 +31,19 @@ func _ready():
 	rufzeichen.hide()
 
 
+func disable():
+	is_hint_active = false
+	hint_sprite.hide()
+	rufzeichen.hide()
+
+
 func get_hint_type(): return hint_type
 
 
 func on_area_entered(_area: Area2D):
+
+	# do not show
+	if not is_hint_active: return
 
 	# rufzeichen
 	hint_sprite.show()
