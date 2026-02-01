@@ -69,7 +69,7 @@ func getCharDescription(char: Character_Enum.Characters):
 		Character_Enum.Characters.MOUSE:
 			return NotePageDetails.new(preload("uid://cicow3ecryqj0"),"Mr.Mouse","He died at the beginning of this mysterious murder case. Mr. Mouse was a beloved fellow. Everybody will miss him. So why would someone murder him? Was he just collateral damage or is there something more behind this allegedly white vested little creature? Questions over questions, gladly you are here to bring some light into the dark.");
 		Character_Enum.Characters.CAT:
-			return NotePageDetails.new(preload("uid://c8vf6bm5kfil5"),"Mrs. Cat","Mrs. Cat is the femme fatal of the community. As smooth and cuddly as she may seem, she is actually rather a loner. She loves beautiful things and appreciates an asthetically pleasing environment");
+			return NotePageDetails.new(preload("uid://b4smrja4gfmsh"),"Mrs. Cat","Mrs. Cat is the femme fatal of the community. As smooth and cuddly as she may seem, she is actually rather a loner. She loves beautiful things and appreciates an asthetically pleasing environment");
 
 func hintFound(hint: Character_Enum.Hints):
 	match hint :
