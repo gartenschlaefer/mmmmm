@@ -22,7 +22,7 @@ func _ready():
 	detective_character.detective_has_new_dialogue.connect(dialogue_panel.load_dialogue)
 	detective_character.detective_requests_next_dialogue_piece.connect(dialogue_panel.next_dialogue_piece)
 	detective_character.detective_leaves_conservation.connect(dialogue_panel.leave_dialogue)
-
+	detective_character.detective_talks_to_npc.connect(notepage.characterFound)
 
 func _process(_delta: float) -> void:
 	if(Input.is_action_just_pressed("toggle_notes")):
