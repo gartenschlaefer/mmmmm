@@ -43,6 +43,7 @@ func _physics_process(_delta: float) -> void:
 			
 			idle_timer.stop()
 			detective_sprite.animation = "walk"
+			detective_sprite.frame = 1
 			detective_sprite.play()
 			
 			var flip = direction.x > 0
