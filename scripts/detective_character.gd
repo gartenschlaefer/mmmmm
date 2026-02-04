@@ -87,7 +87,6 @@ func _input(_event):
 		collected_hints.append(active_hint.get_hint_type())
 		detective_has_collected_hint.emit(active_hint.get_hint_type())
 		active_hint.disable()
-		print("collected hints: ", collected_hints)
 		active_hint = null
 
 
@@ -96,7 +95,7 @@ func _on_idle_timer_timeout() -> void:
 	detective_sprite.play()
 
 
-func end_dialogue_effects():
+func start_dialogue_effects():
 
 	# state effect invitation
 	if actual_hint_state == 0:
@@ -110,7 +109,6 @@ func end_dialogue_effects():
 		# increase hint state
 		self.increase_the_hint_state()
 		return
-
 
 	# state effect invitation
 	if actual_hint_state == 1:
@@ -197,9 +195,6 @@ func on_area_entered(area: Area2D):
 		active_dialogue = interaction_object.get_dialogue()
 		active_guest = interaction_object.get_character();
 
-		# info
-		print("guest char: ", interaction_object.get_character())
-
 		# new dialogue
 		detective_has_new_dialogue.emit(active_dialogue, actual_hint_state)
 
@@ -211,9 +206,6 @@ func on_area_entered(area: Area2D):
 
 		# is active hint
 		if not interaction_object.get_is_hint_active(): return
-
-		# do something with the hint
-		print("hint: ", interaction_object.get_hint_type())
 
 		# active hint
 		active_hint = interaction_object
@@ -229,6 +221,7 @@ func increase_the_hint_state():
 
 	# emit signal
 	detective_changed_hint_state.emit(actual_hint_state)
+
 
 func on_area_exited(area: Area2D):
 

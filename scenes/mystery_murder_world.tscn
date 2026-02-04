@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://tw3w7ty80xya" path="res://scripts/mystery_murder_world.gd" id="1_qiau5"]
 [ext_resource type="Texture2D" uid="uid://dxark1dk65mir" path="res://art/interior/pendulum clock.png" id="2_eoph2"]
-[ext_resource type="PackedScene" uid="uid://df8xv1nmmg3vu" path="res://scenes/DetectiveCharacter.tscn" id="2_lka24"]
+[ext_resource type="PackedScene" uid="uid://df8xv1nmmg3vu" path="res://prefabs/detective_character.tscn" id="2_lka24"]
 [ext_resource type="PackedScene" uid="uid://6thoyevkxer4" path="res://prefabs/hud.tscn" id="2_tffub"]
 [ext_resource type="TileSet" uid="uid://cyffe4ui6ol81" path="res://art/interior/floor_tilemap.tres" id="5_m2k0q"]
 [ext_resource type="TileSet" uid="uid://daog56ui4pwhc" path="res://art/interior/walls_tile_set.tres" id="5_tffub"]

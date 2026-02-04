@@ -22,15 +22,17 @@ func _ready():
 	# connect
 	dialogue_panel = hud.get_dialogue_panel()
 
-	# make connections
+	# detective connections
 	detective_character.detective_has_new_dialogue.connect(dialogue_panel.load_dialogue)
 	detective_character.detective_requests_next_dialogue_piece.connect(dialogue_panel.next_dialogue_piece)
 	detective_character.detective_leaves_conservation.connect(dialogue_panel.leave_dialogue)
+	detective_character.detective_changed_hint_state.connect(dialogue_panel.update_dialogue_state)
 	detective_character.detective_talks_to_npc.connect(notepage.characterFound)
 	detective_character.detective_has_collected_hint.connect(notepage.hintFound)
 	detective_character.detective_changed_hint_state.connect(self.world_hint_update)
 
-	dialogue_panel.end_of_dialogue_reached.connect(detective_character.end_dialogue_effects)
+	# dialogue connections
+	dialogue_panel.start_of_dialogue.connect(detective_character.start_dialogue_effects)
 
 	# disable all hints except invitation
 	hint_invitation.enable()
@@ -51,12 +53,9 @@ func world_hint_update(hint: Character_Enum.Hints):
 	elif hint == 2: hint_book.enable()
 	elif hint == 3: hint_toolbox.enable()
 
+	# info
 	print("character changed hint state: ", hint)
 
-# func _input(_event):
-
-# 	# escape
-# 	if Input.is_action_just_pressed("escape"): get_tree().quit()
 
 
 func check_win_condtion():

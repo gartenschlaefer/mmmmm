@@ -44,7 +44,7 @@ func _ready() -> void:
 	#self.load_title_world()
 
 
-func load_mytery_murder_world():
+func load_mystery_murder_world():
 
 	# clean
 	clean_world()
@@ -93,8 +93,8 @@ func _process(_delta: float) -> void:
 
 func start_new_game():
 
-	# load donutworld
-	self.load_mytery_murder_world()
+	# load
+	self.load_mystery_murder_world()
 
 	# title
 	title_canvas.hide()

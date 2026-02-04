@@ -5,6 +5,7 @@ class_name DialoguePanel extends Panel
 
 # signal
 signal end_of_dialogue_reached
+signal start_of_dialogue
 
 # exports
 @export var actual_text: RichTextLabel
@@ -13,6 +14,7 @@ signal end_of_dialogue_reached
 
 # vars
 var actual_dialogue = null
+var is_dialogue_init_state = false
 
 
 func load_dialogue(target_dialogue: Dialogue, dialogue_state: int):
@@ -29,14 +31,27 @@ func load_dialogue(target_dialogue: Dialogue, dialogue_state: int):
 	# set state
 	target_dialogue.set_dialogue_state(dialogue_state)
 
-	# show
-	#self.show()
-	# first piece
-	#self.next_dialogue_piece()
+	# dialogue init
+	is_dialogue_init_state = true
+
+
+func update_dialogue_state(target_dialogue_state: int):
+
+	# update dialogue state
+	actual_dialogue.set_dialogue_state(target_dialogue_state)
 
 
 func next_dialogue_piece():
-	
+		
+	# init
+	if is_dialogue_init_state: 
+
+		# emit signal
+		start_of_dialogue.emit()
+
+		# reset state
+		is_dialogue_init_state = false
+
 	# next piece of the dialogue
 	var target_dialogue_piece: DialoguePiece = actual_dialogue.get_next_dialogue_piece()
 
@@ -63,3 +78,6 @@ func leave_dialogue():
 	# hide
 	self.hide()
 	boss_battle.hide()
+
+
+func get_is_dialogue_init_state(): return is_dialogue_init_state

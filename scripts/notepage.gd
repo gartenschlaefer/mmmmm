@@ -44,14 +44,14 @@ func updatePageDescription() -> void:
 	right_arrow.visible = false if current_description == notePageDetails.size()-1 else true;
 	
 	
-func characterFound(char:Character_Enum.Characters):
-	if(!charactersFound.has(char)):
-		charactersFound.push_back(char);
-		notePageDetails.push_back(getCharDescription(char));
+func characterFound(character:Character_Enum.Characters):
+	if(!charactersFound.has(character)):
+		charactersFound.push_back(character);
+		notePageDetails.push_back(getCharDescription(character));
 		updatePageDescription()
 	
-func getCharDescription(char: Character_Enum.Characters):
-	match char:
+func getCharDescription(character: Character_Enum.Characters):
+	match character:
 		Character_Enum.Characters.MOLE:
 			return NotePageDetails.new(preload("uid://chrcxxy83ud1y"),"Mr. Mole", "Mr. Mole is the splendid and generous privatier of the town. As unfullfilled as he feels in his private, he fills his social life to the brim: he is president of the Lions Club and the towns Golf Club. In his Mansion he holds different glorious parties - mask balls, benefit events, classic concerts, readings, banquets etc. Furthermore, he generously reserves a part of his park as outdoor area for the towns kindergarden. He is in a romantic relationship with Mr. Mouse");
 		Character_Enum.Characters.BUNNY:

@@ -2,9 +2,28 @@
 
 [ext_resource type="Texture2D" uid="uid://clmsx741mk35w" path="res://art/character_pictures/pic_chamaleon.png" id="1_v10vq"]
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_r4pvv"]
-[ext_resource type="Resource" uid="uid://rksbo4xp7l8n" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_go_away.tres" id="3_e3x60"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="5_2iivk"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="7_j3ff3"]
+
+[sub_resource type="Resource" id="Resource_smre4"]
+script = ExtResource("5_2iivk")
+text_piece = "Who are you and why do you come to this private party?"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_1c0e7"]
+script = ExtResource("5_2iivk")
+text_piece = "...A detective you say!"
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_gtgp4"]
+script = ExtResource("5_2iivk")
+text_piece = "I don't see why a detective is needed here."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_ynd4o"]
+script = ExtResource("2_r4pvv")
+dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_smre4"), SubResource("Resource_1c0e7"), SubResource("Resource_gtgp4")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [sub_resource type="Resource" id="Resource_e3x60"]
 script = ExtResource("5_2iivk")
@@ -73,6 +92,6 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [resource]
 script = ExtResource("7_j3ff3")
-dialogue_state_pieces = Array[ExtResource("2_r4pvv")]([ExtResource("3_e3x60"), SubResource("Resource_r4pvv"), SubResource("Resource_sxm2a"), SubResource("Resource_w7phi"), SubResource("Resource_of0pc")])
+dialogue_state_pieces = Array[ExtResource("2_r4pvv")]([SubResource("Resource_ynd4o"), SubResource("Resource_r4pvv"), SubResource("Resource_sxm2a"), SubResource("Resource_w7phi"), SubResource("Resource_of0pc")])
 dialogue_picture = ExtResource("1_v10vq")
 metadata/_custom_type_script = "uid://dnv403tys4e44"

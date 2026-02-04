@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://jlrolyoja1lp"]
 
 [ext_resource type="Script" uid="uid://cruy3wohl7714" path="res://scripts/guest_character.gd" id="1_634s6"]
-[ext_resource type="Resource" uid="uid://b1twtos8a42mn" path="res://prefabs/dialogues/dialogue_shrimp.tres" id="2_634s6"]
+[ext_resource type="Resource" uid="uid://6f4v207u3hap" path="res://prefabs/dialogues/dialogue_shrimp.tres" id="2_634s6"]
 [ext_resource type="SpriteFrames" uid="uid://2vq20xxbf4mb" path="res://prefabs/character_frames/peacock_shrimp_frames.tres" id="3_634s6"]
 [ext_resource type="Texture2D" uid="uid://c767wrns47nah" path="res://art/character/masks/peacock_shrimp.png" id="4_vjjwj"]
 [ext_resource type="Texture2D" uid="uid://b4yvg2aa1mv31" path="res://art/character/rufzeichen.png" id="5_tm6il"]

@@ -18,7 +18,7 @@ config/name="MMMMM"
 run/main_scene="uid://c252o4kygyunh"
 config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/show_image=false
-config/icon="res://art/icon.svg"
+config/icon="uid://b1v60jts1cff5"
 
 [display]
 

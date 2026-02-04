@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ckj1cwipmhiwh" path="res://scripts/dialogue_panel.gd" id="1_hqhia"]
 [ext_resource type="Texture2D" uid="uid://chrcxxy83ud1y" path="res://art/character_pictures/pic_mole.png" id="2_8x2p3"]
-[ext_resource type="PackedScene" uid="uid://dr0fuonbhijan" path="res://prefabs/boss_battle.tscn" id="3_8x2p3"]
+[ext_resource type="PackedScene" path="res://prefabs/boss_battle.tscn" id="3_8x2p3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4rg8y"]
 bg_color = Color(0.18717611, 0.18717617, 0.18717602, 1)
@@ -63,9 +63,7 @@ theme_override_constants/margin_bottom = 10
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
-text = "Hi, welcome to the [b]mansion[/b] of [color=red] mr. mole[/color], wahaha [img=50]art/icon.svg[/img] this isfakkj soo great and i will write this text to get a line break"
+text = "Hi, welcome to the [b]mansion[/b] of [color=red] mr. mole[/color], wahaha [img=50]art/symbols/spiral.png[/img] this isfakkj soo great and i will write this text to get a line break"
 
 [node name="BossBattle" parent="." unique_id=810529075 instance=ExtResource("3_8x2p3")]
 visible = false
-position = Vector2(579, 498)
-scale = Vector2(0.7, 0.7)

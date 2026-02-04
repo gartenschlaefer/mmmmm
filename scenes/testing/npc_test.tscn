@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ye4oaxd1xixs" path="res://art/interior/window.png" id="5_7lhpy"]
 [ext_resource type="Texture2D" uid="uid://bmc10csdeqabk" path="res://art/interior/wall_above.png" id="6_a78q3"]
 [ext_resource type="Texture2D" uid="uid://dxark1dk65mir" path="res://art/interior/pendulum clock.png" id="7_fl01n"]
-[ext_resource type="PackedScene" uid="uid://df8xv1nmmg3vu" path="res://scenes/DetectiveCharacter.tscn" id="8_plvdy"]
+[ext_resource type="PackedScene" uid="uid://df8xv1nmmg3vu" path="res://prefabs/detective_character.tscn" id="8_plvdy"]
 [ext_resource type="PackedScene" uid="uid://dlgl3qabvhmwf" path="res://prefabs/not_relevant/npc_lady.tscn" id="9_k73x7"]
 [ext_resource type="PackedScene" uid="uid://b8wj2vua6qjrj" path="res://prefabs/not_relevant/npc_gentleman.tscn" id="10_kncfx"]
 [ext_resource type="PackedScene" uid="uid://d1egntrdxqk80" path="res://prefabs/dead_mouse.tscn" id="11_kncfx"]
