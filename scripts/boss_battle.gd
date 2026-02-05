@@ -34,11 +34,11 @@ func _ready() -> void:
 	reset()
 
 
-'func _input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("next_page"):
 		give_clue()
 	elif event.is_action_pressed("prev_page"):
-		reset()'
+		reset()
 
 func _process(delta: float) -> void:
 	if not shake_timer.is_stopped():
@@ -63,6 +63,8 @@ func reset():
 	tears_start.hide()
 	tears_mid.hide()
 	tears_end.hide()
+	left_eye_shake = false
+	right_eye_shake = false
 	curr_round = 0
 
 func give_clue():
@@ -87,14 +89,14 @@ func give_clue():
 func eye_movement(start_shake: bool):
 	match randi_range(1,3):
 		1:
-			advance_eye_movement(left_eye,left_eye_state,start_shake)
+			left_eye_state = advance_eye_movement(left_eye,left_eye_state,start_shake)
 		2:
-			advance_eye_movement(right_eye,right_eye_state,start_shake)
+			right_eye_state = advance_eye_movement(right_eye,right_eye_state,start_shake)
 		3:
-			advance_eye_movement(left_eye,left_eye_state,start_shake)
-			advance_eye_movement(right_eye,right_eye_state,start_shake)
+			left_eye_state = advance_eye_movement(left_eye,left_eye_state,start_shake)
+			right_eye_state = advance_eye_movement(right_eye,right_eye_state,start_shake)
 
-func advance_eye_movement(eyes: Node2D, eyes_state: eye_state, start_shake: bool):
+func advance_eye_movement(eyes: Node2D, eyes_state: eye_state, start_shake: bool) -> eye_state:
 	var small_eye: Node2D = eyes.get_child(0)
 	var bulge_eye: Node2D = eyes.get_child(1)
 	eyes.show()
@@ -111,6 +113,7 @@ func advance_eye_movement(eyes: Node2D, eyes_state: eye_state, start_shake: bool
 
 	if start_shake:
 		start_eye_shaking(eyes)
+	return eyes_state
 
 func start_eye_shaking(eyes: Node2D):
 	if eyes == left_eye:
