@@ -5,13 +5,26 @@
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_cyl8i"]
 [ext_resource type="Resource" uid="uid://boc0mu72u4ji0" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_carrot_rabbit.tres" id="4_4mx0e"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_cxdab"]
-[ext_resource type="Resource" uid="uid://dval8eie3hihx" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_book.tres" id="5_cyl8i"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="6_cxdab"]
-[ext_resource type="Resource" uid="uid://bx76bsibc12kv" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="7_23sc5"]
+
+[sub_resource type="Resource" id="Resource_cyl8i"]
+script = ExtResource("6_cxdab")
+text_piece = "As the oldest member of the town, people trust me. I don't just keep books; I also keep the villagers' secrets."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_uyo76"]
+script = ExtResource("2_4mx0e")
+dialogue_pieces = Array[ExtResource("6_cxdab")]([SubResource("Resource_cyl8i")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [sub_resource type="Resource" id="Resource_23sc5"]
 script = ExtResource("6_cxdab")
 text_piece = "Ah, I missed that already. Are you gonna pay the late fee? "
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_ren3c"]
+script = ExtResource("6_cxdab")
+text_piece = "NOT? You are here to solve [color=red]Mr. Mouse[/color]'s murder? "
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_kfjjv"]
@@ -21,7 +34,7 @@ metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_2tvwo"]
 script = ExtResource("6_cxdab")
-text_piece = "Ah, sorry this happens from time to time! So, [color=red]Mr. Mouse[/color] is dead you say? So, well I assume no one's gonna pay the depts "
+text_piece = "Ah, sorry this happens from time to time! So, [color=red]Mr. Mouse[/color] is dead you say? So, well I assume no one's gonna pay the depts from him either?! "
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_em8ao"]
@@ -66,7 +79,7 @@ metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_bu556"]
 script = ExtResource("2_4mx0e")
-dialogue_pieces = Array[ExtResource("6_cxdab")]([SubResource("Resource_23sc5"), SubResource("Resource_kfjjv"), SubResource("Resource_2tvwo"), SubResource("Resource_em8ao"), SubResource("Resource_wj8ik"), SubResource("Resource_2qxkk"), SubResource("Resource_82d1a"), SubResource("Resource_kdibn"), SubResource("Resource_cjpmr"), SubResource("Resource_dt6am"), SubResource("Resource_xpuvv")])
+dialogue_pieces = Array[ExtResource("6_cxdab")]([SubResource("Resource_23sc5"), SubResource("Resource_ren3c"), SubResource("Resource_kfjjv"), SubResource("Resource_2tvwo"), SubResource("Resource_em8ao"), SubResource("Resource_wj8ik"), SubResource("Resource_2qxkk"), SubResource("Resource_82d1a"), SubResource("Resource_kdibn"), SubResource("Resource_cjpmr"), SubResource("Resource_dt6am"), SubResource("Resource_xpuvv")])
 metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [sub_resource type="Resource" id="Resource_cxdab"]
@@ -81,6 +94,7 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [resource]
 script = ExtResource("4_cxdab")
-dialogue_state_pieces = Array[ExtResource("2_4mx0e")]([ExtResource("3_cyl8i"), ExtResource("4_4mx0e"), ExtResource("5_cyl8i"), SubResource("Resource_bu556"), SubResource("Resource_di5fj"), ExtResource("7_23sc5")])
+dialogue_state_pieces = Array[ExtResource("2_4mx0e")]([ExtResource("3_cyl8i"), ExtResource("4_4mx0e"), SubResource("Resource_uyo76"), SubResource("Resource_bu556"), SubResource("Resource_di5fj")])
 dialogue_picture = ExtResource("1_23sc5")
+character = 3
 metadata/_custom_type_script = "uid://dnv403tys4e44"

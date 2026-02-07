@@ -6,11 +6,10 @@
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="2_p67qg"]
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_wbwcx"]
 [ext_resource type="Resource" uid="uid://dval8eie3hihx" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_book.tres" id="5_1q0de"]
-[ext_resource type="Resource" uid="uid://bx76bsibc12kv" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="6_0yyct"]
 
 [sub_resource type="Resource" id="Resource_7bfi6"]
 script = ExtResource("2_hlne0")
-text_piece = "Oh, how did you get this [b]invitation[/b]? This was only meant for [color=red]Mr. Mouse[/color]!"
+text_piece = "Oh, how did you get this invitation? This was only meant for [color=red]Mr. Mouse[/color]!"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_bd2m5"]
@@ -60,7 +59,7 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [sub_resource type="Resource" id="Resource_qw8mt"]
 script = ExtResource("2_hlne0")
-text_piece = "Why does [color=red]Mr. Fox[/color] let is toolbox lying around during my party."
+text_piece = "Why does [color=red]Mr. Fox[/color] let his toolbox lying around during my party."
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_1gdep"]
@@ -80,6 +79,6 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [resource]
 script = ExtResource("2_p67qg")
-dialogue_state_pieces = Array[ExtResource("1_dj7u0")]([ExtResource("3_wbwcx"), SubResource("Resource_tqq1j"), ExtResource("5_1q0de"), SubResource("Resource_1gdep"), SubResource("Resource_b1wkk"), ExtResource("6_0yyct")])
+dialogue_state_pieces = Array[ExtResource("1_dj7u0")]([ExtResource("3_wbwcx"), SubResource("Resource_tqq1j"), ExtResource("5_1q0de"), SubResource("Resource_1gdep"), SubResource("Resource_b1wkk")])
 dialogue_picture = ExtResource("1_hlne0")
 metadata/_custom_type_script = "uid://dnv403tys4e44"

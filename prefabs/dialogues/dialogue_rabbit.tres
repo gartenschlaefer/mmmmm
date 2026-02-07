@@ -5,7 +5,6 @@
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_j8yq7"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_0grvd"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="4_1yy28"]
-[ext_resource type="Resource" uid="uid://bx76bsibc12kv" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="5_j8yq7"]
 
 [sub_resource type="Resource" id="Resource_j8yq7"]
 script = ExtResource("4_1yy28")
@@ -74,6 +73,7 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [resource]
 script = ExtResource("4_0grvd")
-dialogue_state_pieces = Array[ExtResource("2_1yy28")]([ExtResource("3_j8yq7"), SubResource("Resource_0grvd"), SubResource("Resource_gsp7d"), SubResource("Resource_d0oga"), SubResource("Resource_ujtgm"), ExtResource("5_j8yq7")])
+dialogue_state_pieces = Array[ExtResource("2_1yy28")]([ExtResource("3_j8yq7"), SubResource("Resource_0grvd"), SubResource("Resource_gsp7d"), SubResource("Resource_d0oga"), SubResource("Resource_ujtgm")])
 dialogue_picture = ExtResource("1_j8yq7")
+character = 2
 metadata/_custom_type_script = "uid://dnv403tys4e44"

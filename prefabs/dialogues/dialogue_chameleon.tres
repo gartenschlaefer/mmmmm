@@ -40,9 +40,14 @@ script = ExtResource("5_2iivk")
 text_piece = "I wonder where he is? Haven't seen him tonight, since I arrived late"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
+[sub_resource type="Resource" id="Resource_ur3wa"]
+script = ExtResource("5_2iivk")
+text_piece = "I know this look, yes this piece of art is made by my precious hands. I am an artist, this is how I make sure my children are fed."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
 [sub_resource type="Resource" id="Resource_r4pvv"]
 script = ExtResource("2_r4pvv")
-dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_e3x60"), SubResource("Resource_xdj7m"), SubResource("Resource_v10vq")])
+dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_e3x60"), SubResource("Resource_xdj7m"), SubResource("Resource_v10vq"), SubResource("Resource_ur3wa")])
 metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [sub_resource type="Resource" id="Resource_vg18a"]
@@ -52,12 +57,12 @@ metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_2iivk"]
 script = ExtResource("5_2iivk")
-text_piece = "Did you heard about the fight between [color= red]Mrs. Rabbit[/color] and [color= red]Mr. Fox[/color]?"
+text_piece = "Did you hear about the fight between [color= red]Mrs. Rabbit[/color] and [color= red]Mr. Fox[/color]?"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_4ogfl"]
 script = ExtResource("5_2iivk")
-text_piece = "Suspicious guy, this [color= red]Mr. Fox[/color] if you ask me!"
+text_piece = "Suspicious guy, this [color= red]Mr. Fox[/color] if you ask me, since he is the new one!"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_sxm2a"]
@@ -72,7 +77,7 @@ metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_856wr"]
 script = ExtResource("5_2iivk")
-text_piece = "Have never seen this before, I have never been to the wintergarden!"
+text_piece = "Have never seen this before, I have never been to the wintergarden, I mean fireplace room. No I was just here all the time, and thinking about my wife!"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
 [sub_resource type="Resource" id="Resource_w7phi"]
@@ -85,13 +90,19 @@ script = ExtResource("5_2iivk")
 text_piece = "OK - fine! I confess, it was me! Yes, I did it! You got me!"
 metadata/_custom_type_script = "uid://ceboagsql2avx"
 
+[sub_resource type="Resource" id="Resource_cf80o"]
+script = ExtResource("5_2iivk")
+text_piece = "Let me tell you my story ..."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
 [sub_resource type="Resource" id="Resource_of0pc"]
 script = ExtResource("2_r4pvv")
-dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_eycoo")])
+dialogue_pieces = Array[ExtResource("5_2iivk")]([SubResource("Resource_eycoo"), SubResource("Resource_cf80o")])
 metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [resource]
 script = ExtResource("7_j3ff3")
 dialogue_state_pieces = Array[ExtResource("2_r4pvv")]([SubResource("Resource_ynd4o"), SubResource("Resource_r4pvv"), SubResource("Resource_sxm2a"), SubResource("Resource_w7phi"), SubResource("Resource_of0pc")])
 dialogue_picture = ExtResource("1_v10vq")
+character = 6
 metadata/_custom_type_script = "uid://dnv403tys4e44"

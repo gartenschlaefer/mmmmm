@@ -4,9 +4,17 @@
 [ext_resource type="Script" uid="uid://cinbncgo4xpfj" path="res://scripts/dialogue_state_pieces.gd" id="2_3wpex"]
 [ext_resource type="Resource" uid="uid://cqlruwntrkcc3" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_invitation.tres" id="3_uba2g"]
 [ext_resource type="Script" uid="uid://dnv403tys4e44" path="res://scripts/dialogue.gd" id="4_7albm"]
-[ext_resource type="Resource" uid="uid://boc0mu72u4ji0" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_carrot_rabbit.tres" id="4_my0md"]
 [ext_resource type="Script" uid="uid://ceboagsql2avx" path="res://scripts/dialogue_piece.gd" id="4_naiyi"]
-[ext_resource type="Resource" uid="uid://bx76bsibc12kv" path="res://prefabs/dialogues/fixed_pieces/dialogue_pieces_art.tres" id="6_7albm"]
+
+[sub_resource type="Resource" id="Resource_8314y"]
+script = ExtResource("4_naiyi")
+text_piece = "I am new here. Don’t know the others well, but I heard that [color=red]Mrs. Rabbit[/color] grows the best vegetables in town."
+metadata/_custom_type_script = "uid://ceboagsql2avx"
+
+[sub_resource type="Resource" id="Resource_igjnl"]
+script = ExtResource("2_3wpex")
+dialogue_pieces = Array[ExtResource("4_naiyi")]([SubResource("Resource_8314y")])
+metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [sub_resource type="Resource" id="Resource_cfjri"]
 script = ExtResource("4_naiyi")
@@ -70,6 +78,7 @@ metadata/_custom_type_script = "uid://cinbncgo4xpfj"
 
 [resource]
 script = ExtResource("4_7albm")
-dialogue_state_pieces = Array[ExtResource("2_3wpex")]([ExtResource("3_uba2g"), ExtResource("4_my0md"), SubResource("Resource_l8csx"), SubResource("Resource_aska5"), SubResource("Resource_8x1e6"), ExtResource("6_7albm")])
+dialogue_state_pieces = Array[ExtResource("2_3wpex")]([ExtResource("3_uba2g"), SubResource("Resource_igjnl"), SubResource("Resource_l8csx"), SubResource("Resource_aska5"), SubResource("Resource_8x1e6")])
 dialogue_picture = ExtResource("1_3wpex")
+character = 1
 metadata/_custom_type_script = "uid://dnv403tys4e44"
